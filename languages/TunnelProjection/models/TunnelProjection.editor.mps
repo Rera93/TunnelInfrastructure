@@ -937,14 +937,6 @@
     <ref role="1XX52x" to="j6tt:4upM0B7OaRi" resolve="Layout" />
     <node concept="3EZMnI" id="19DD6w4ydgO" role="2wV5jI">
       <node concept="2iRkQZ" id="19DD6w4ydgP" role="2iSdaV" />
-      <node concept="1X3_iC" id="19DD6w4L1WF" role="lGtFl">
-        <property role="3V$3am" value="childCellModel" />
-        <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
-        <node concept="3F2HdR" id="19DD6w4ydgU" role="8Wnug">
-          <ref role="1NtTu8" to="j6tt:4upM0B7OaXy" resolve="points" />
-          <node concept="2iRkQZ" id="19DD6w4ydgW" role="2czzBx" />
-        </node>
-      </node>
       <node concept="1X3_iC" id="19DD6w4L1Wx" role="lGtFl">
         <property role="3V$3am" value="childCellModel" />
         <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
