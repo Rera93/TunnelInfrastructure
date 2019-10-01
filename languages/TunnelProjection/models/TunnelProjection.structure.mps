@@ -13,7 +13,7 @@
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
       </concept>
-      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclartaion" flags="ng" index="25R3W">
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
@@ -297,6 +297,7 @@
     <property role="EcuMT" value="1326772331900697350" />
     <property role="TrG5h" value="StraightRoadRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1TBjFCGee_p" role="PzmwI" />
     <node concept="1TJgyj" id="19DD6w4KvG7" role="1TKVEi">
       <property role="IQ2ns" value="1326772331900697351" />
       <property role="20kJfa" value="roadRef" />
