@@ -81,10 +81,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 
 
-          @Override
-          public boolean allowScaling() {
-            return false;
-          }
 
 
         };

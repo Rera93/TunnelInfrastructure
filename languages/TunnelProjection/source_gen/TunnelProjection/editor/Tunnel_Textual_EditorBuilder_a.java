@@ -63,7 +63,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createConstant_4());
@@ -76,6 +75,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Collection_7liw6w_a0");
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createConstant_1());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -110,41 +110,41 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_7liw6w_b0");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    editorCell.setCellId("Constant_7liw6w_c0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_7liw6w_c0");
+    editorCell.setCellId("Constant_7liw6w_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "TunnelConnections: ");
-    editorCell.setCellId("Constant_7liw6w_d0");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Tunnel Holes:");
+    editorCell.setCellId("Constant_7liw6w_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_7liw6w_e0");
+    editorCell.setCellId("Constant_7liw6w_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new tunnelConnectionListHandler_7liw6w_f0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new holesListHandler_7liw6w_e0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_tunnelConnection");
+    editorCell.setCellId("refNodeList_holes");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class tunnelConnectionListHandler_7liw6w_f0 extends RefNodeListHandler {
+  private static class holesListHandler_7liw6w_e0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public tunnelConnectionListHandler_7liw6w_f0(SNode ownerNode, EditorContext context) {
+    public holesListHandler_7liw6w_e0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -154,10 +154,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.tunnelConnection$zqNQ;
+      return LINKS.holes$OmIQ;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.TunelConnection$g8;
+      return CONCEPTS.TunnelHole$g8;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -167,7 +167,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(tunnelConnectionListHandler_7liw6w_f0.this.getNode(), LINKS.tunnelConnection$zqNQ));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(holesListHandler_7liw6w_e0.this.getNode(), LINKS.holes$OmIQ));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -193,7 +193,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_5() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_7liw6w_g0");
+    editorCell.setCellId("Constant_7liw6w_f0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -204,10 +204,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept TunelConnection$g8 = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, "TunnelProjection.structure.TunelConnection");
+    /*package*/ static final SConcept TunnelHole$g8 = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, "TunnelProjection.structure.TunnelHole");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink tunnelConnection$zqNQ = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L, 0x1269a46804c14805L, "tunnelConnection");
+    /*package*/ static final SContainmentLink holes$OmIQ = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L, 0x1e674eba2c62fc07L, "holes");
   }
 }

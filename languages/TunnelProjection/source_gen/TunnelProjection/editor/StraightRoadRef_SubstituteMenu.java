@@ -50,7 +50,7 @@ public class StraightRoadRef_SubstituteMenu extends SubstituteMenuBase {
 
     public SMP_ReferenceScope_44nr1r_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051 
-      super((SAbstractConcept) CONCEPTS.StraightRoadRef$mj, LINKS.roadRef$FS6w);
+      super((SAbstractConcept) CONCEPTS.StraightRoadRef$mj, LINKS.roadConnection$FS6w);
     }
     @NotNull
     @Override
@@ -92,6 +92,6 @@ public class StraightRoadRef_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink roadRef$FS6w = MetaAdapterFactory.getReferenceLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L, 0x1269a46804c1fb07L, "roadRef");
+    /*package*/ static final SReferenceLink roadConnection$FS6w = MetaAdapterFactory.getReferenceLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L, 0x1269a46804c1fb07L, "roadConnection");
   }
 }

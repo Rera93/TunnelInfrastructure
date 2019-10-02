@@ -10,14 +10,16 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_CurvyRoad;
-  private ConceptPresentation props_Layout;
+  private ConceptPresentation props_LeftPointReference;
   private ConceptPresentation props_LeftTunnelPoint;
+  private ConceptPresentation props_RightPointReference;
   private ConceptPresentation props_RightTunnelPoint;
   private ConceptPresentation props_StraightRoad;
   private ConceptPresentation props_StraightRoadRef;
-  private ConceptPresentation props_TunelConnection;
   private ConceptPresentation props_Tunnel;
-  private ConceptPresentation props_TunnelReference;
+  private ConceptPresentation props_TunnelHole;
+  private ConceptPresentation props_TunnelHoleReference;
+  private ConceptPresentation props_TunnelOverview;
 
   @Override
   @Nullable
@@ -31,24 +33,31 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_CurvyRoad = cpb.create();
         }
         return props_CurvyRoad;
-      case LanguageConceptSwitch.Layout:
-        if (props_Layout == null) {
+      case LanguageConceptSwitch.LeftPointReference:
+        if (props_LeftPointReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_Layout = cpb.create();
+          cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x13e8a493a7663348L, 0x13e8a493a7663349L, "leftPointConnect", "", "");
+          props_LeftPointReference = cpb.create();
         }
-        return props_Layout;
+        return props_LeftPointReference;
       case LanguageConceptSwitch.LeftTunnelPoint:
         if (props_LeftTunnelPoint == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("LeftTunnelPoint");
+          cpb.presentationByName();
           props_LeftTunnelPoint = cpb.create();
         }
         return props_LeftTunnelPoint;
+      case LanguageConceptSwitch.RightPointReference:
+        if (props_RightPointReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L, 0x1e674eba2c398dc2L, "rightPointConnection", "", "");
+          props_RightPointReference = cpb.create();
+        }
+        return props_RightPointReference;
       case LanguageConceptSwitch.RightTunnelPoint:
         if (props_RightTunnelPoint == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("RightTunnelPoint");
+          cpb.presentationByName();
           props_RightTunnelPoint = cpb.create();
         }
         return props_RightTunnelPoint;
@@ -62,17 +71,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.StraightRoadRef:
         if (props_StraightRoadRef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L, 0x1269a46804c1fb07L, "roadRef", "", "");
+          cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L, 0x1269a46804c1fb07L, "roadConnection", "", "");
           props_StraightRoadRef = cpb.create();
         }
         return props_StraightRoadRef;
-      case LanguageConceptSwitch.TunelConnection:
-        if (props_TunelConnection == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TunelConnection");
-          props_TunelConnection = cpb.create();
-        }
-        return props_TunelConnection;
       case LanguageConceptSwitch.Tunnel:
         if (props_Tunnel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -80,13 +82,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Tunnel = cpb.create();
         }
         return props_Tunnel;
-      case LanguageConceptSwitch.TunnelReference:
-        if (props_TunnelReference == null) {
+      case LanguageConceptSwitch.TunnelHole:
+        if (props_TunnelHole == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TunnelHole = cpb.create();
+        }
+        return props_TunnelHole;
+      case LanguageConceptSwitch.TunnelHoleReference:
+        if (props_TunnelHoleReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L, 0x1269a46804cd85a4L, "leftConnect", "", "");
-          props_TunnelReference = cpb.create();
+          props_TunnelHoleReference = cpb.create();
         }
-        return props_TunnelReference;
+        return props_TunnelHoleReference;
+      case LanguageConceptSwitch.TunnelOverview:
+        if (props_TunnelOverview == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TunnelOverview = cpb.create();
+        }
+        return props_TunnelOverview;
     }
     return null;
   }

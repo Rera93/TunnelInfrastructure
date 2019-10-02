@@ -17,14 +17,16 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCurvyRoad = createDescriptorForCurvyRoad();
-  /*package*/ final ConceptDescriptor myConceptLayout = createDescriptorForLayout();
+  /*package*/ final ConceptDescriptor myConceptLeftPointReference = createDescriptorForLeftPointReference();
   /*package*/ final ConceptDescriptor myConceptLeftTunnelPoint = createDescriptorForLeftTunnelPoint();
+  /*package*/ final ConceptDescriptor myConceptRightPointReference = createDescriptorForRightPointReference();
   /*package*/ final ConceptDescriptor myConceptRightTunnelPoint = createDescriptorForRightTunnelPoint();
   /*package*/ final ConceptDescriptor myConceptStraightRoad = createDescriptorForStraightRoad();
   /*package*/ final ConceptDescriptor myConceptStraightRoadRef = createDescriptorForStraightRoadRef();
-  /*package*/ final ConceptDescriptor myConceptTunelConnection = createDescriptorForTunelConnection();
   /*package*/ final ConceptDescriptor myConceptTunnel = createDescriptorForTunnel();
-  /*package*/ final ConceptDescriptor myConceptTunnelReference = createDescriptorForTunnelReference();
+  /*package*/ final ConceptDescriptor myConceptTunnelHole = createDescriptorForTunnelHole();
+  /*package*/ final ConceptDescriptor myConceptTunnelHoleReference = createDescriptorForTunnelHoleReference();
+  /*package*/ final ConceptDescriptor myConceptTunnelOverview = createDescriptorForTunnelOverview();
   /*package*/ final EnumerationDescriptor myEnumerationRoadType = new EnumerationDescriptor_RoadType();
   /*package*/ final EnumerationDescriptor myEnumerationTunnelPointType = new EnumerationDescriptor_TunnelPointType();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -41,7 +43,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCurvyRoad, myConceptLayout, myConceptLeftTunnelPoint, myConceptRightTunnelPoint, myConceptStraightRoad, myConceptStraightRoadRef, myConceptTunelConnection, myConceptTunnel, myConceptTunnelReference);
+    return Arrays.asList(myConceptCurvyRoad, myConceptLeftPointReference, myConceptLeftTunnelPoint, myConceptRightPointReference, myConceptRightTunnelPoint, myConceptStraightRoad, myConceptStraightRoadRef, myConceptTunnel, myConceptTunnelHole, myConceptTunnelHoleReference, myConceptTunnelOverview);
   }
 
   @Override
@@ -50,22 +52,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.CurvyRoad:
         return myConceptCurvyRoad;
-      case LanguageConceptSwitch.Layout:
-        return myConceptLayout;
+      case LanguageConceptSwitch.LeftPointReference:
+        return myConceptLeftPointReference;
       case LanguageConceptSwitch.LeftTunnelPoint:
         return myConceptLeftTunnelPoint;
+      case LanguageConceptSwitch.RightPointReference:
+        return myConceptRightPointReference;
       case LanguageConceptSwitch.RightTunnelPoint:
         return myConceptRightTunnelPoint;
       case LanguageConceptSwitch.StraightRoad:
         return myConceptStraightRoad;
       case LanguageConceptSwitch.StraightRoadRef:
         return myConceptStraightRoadRef;
-      case LanguageConceptSwitch.TunelConnection:
-        return myConceptTunelConnection;
       case LanguageConceptSwitch.Tunnel:
         return myConceptTunnel;
-      case LanguageConceptSwitch.TunnelReference:
-        return myConceptTunnelReference;
+      case LanguageConceptSwitch.TunnelHole:
+        return myConceptTunnelHole;
+      case LanguageConceptSwitch.TunnelHoleReference:
+        return myConceptTunnelHoleReference;
+      case LanguageConceptSwitch.TunnelOverview:
+        return myConceptTunnelOverview;
       default:
         return null;
     }
@@ -90,19 +96,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("angle", 0x1269a468049550d7L).type(PrimitiveTypeId.INTEGER).origin("1326772331897770199").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForLayout() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "Layout", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x4799c809c7d0add2L);
-    b.class_(false, false, true);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/5159374792462216658");
+  private static ConceptDescriptor createDescriptorForLeftPointReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "LeftPointReference", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x13e8a493a7663348L);
+    b.class_(false, false, false);
+    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1434577435393143624");
     b.version(2);
-    b.aggregate("tunnels", 0x1269a46804c41f1aL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L).optional(true).ordered(true).multiple(true).origin("1326772331900837658").done();
-    b.aggregate("straightRoads", 0x1269a4680495503bL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L).optional(true).ordered(true).multiple(true).origin("1326772331897770043").done();
+    b.associate("leftPointConnect", 0x13e8a493a7663349L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL).optional(false).origin("1434577435393143625").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLeftTunnelPoint() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "LeftTunnelPoint", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900548954");
     b.version(2);
     b.property("x", 0x1269a46804bfb766L).type(PrimitiveTypeId.INTEGER).origin("1326772331900548966").done();
@@ -112,15 +117,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("leftConnect", 0x1269a46804cd859fL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L).optional(false).ordered(true).multiple(false).origin("1326772331901453727").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForRightPointReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "RightPointReference", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L);
+    b.class_(false, false, false);
+    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/2190806305251888577");
+    b.version(2);
+    b.associate("rightPointConnection", 0x1e674eba2c398dc2L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL).optional(false).origin("2190806305251888578").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRightTunnelPoint() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "RightTunnelPoint", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900548975");
     b.version(2);
     b.property("x", 0x1269a46804bfb920L).type(PrimitiveTypeId.INTEGER).origin("1326772331900549408").done();
     b.property("y", 0x1269a46804bfb922L).type(PrimitiveTypeId.INTEGER).origin("1326772331900549410").done();
     b.property("entryPoint", 0x1269a46804bfb925L).type(PrimitiveTypeId.BOOLEAN).origin("1326772331900549413").done();
-    b.associate("roadConnect", 0x1269a46804bfb770L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L).optional(true).origin("1326772331900548976").done();
+    b.associate("hole", 0x1e674eba2c6d6877L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L).optional(false).origin("2190806305255286903").done();
+    b.aggregate("roadReference", 0x13e8a493a771deebL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L).optional(true).ordered(true).multiple(false).origin("1434577435393908459").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStraightRoad() {
@@ -135,7 +150,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("startY", 0x1269a46804bfba07L).type(PrimitiveTypeId.INTEGER).origin("1326772331900549639").done();
     b.property("endX", 0x1269a46804bfba0cL).type(PrimitiveTypeId.INTEGER).origin("1326772331900549644").done();
     b.property("endY", 0x1269a46804bfba12L).type(PrimitiveTypeId.INTEGER).origin("1326772331900549650").done();
-    b.associate("connect", 0x1269a46804bfb75fL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL).optional(false).origin("1326772331900548959").done();
+    b.property("lanes", 0x1e674eba2c584393L).type(PrimitiveTypeId.INTEGER).origin("2190806305253901203").done();
+    b.property("insideTunnel", 0x1e674eba2c58439bL).type(PrimitiveTypeId.BOOLEAN).origin("2190806305253901211").done();
+    b.aggregate("roadConnections", 0x1e674eba2c5843a7L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L).optional(true).ordered(true).multiple(true).origin("2190806305253901223").done();
+    b.aggregate("leftPointConnection", 0x13e8a493a766334bL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x13e8a493a7663348L).optional(true).ordered(true).multiple(false).origin("1434577435393143627").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStraightRoadRef() {
@@ -143,33 +161,46 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900697350");
     b.version(2);
-    b.associate("roadRef", 0x1269a46804c1fb07L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L).optional(false).origin("1326772331900697351").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTunelConnection() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "TunelConnection", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L);
-    b.class_(false, false, false);
-    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900651524");
-    b.version(2);
-    b.aggregate("leftPoint", 0x1269a46804c1480cL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL).optional(false).ordered(true).multiple(false).origin("1326772331900651532").done();
-    b.aggregate("rightPoint", 0x1269a46804c1480aL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL).optional(false).ordered(true).multiple(false).origin("1326772331900651530").done();
+    b.associate("roadConnection", 0x1269a46804c1fb07L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L).optional(false).origin("1326772331900697351").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTunnel() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "Tunnel", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900548961");
     b.version(2);
-    b.aggregate("tunnelConnection", 0x1269a46804c14805L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L).optional(false).ordered(true).multiple(true).origin("1326772331900651525").done();
+    b.aggregate("holes", 0x1e674eba2c62fc07L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L).optional(false).ordered(true).multiple(true).origin("2190806305254603783").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForTunnelReference() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "TunnelReference", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L);
+  private static ConceptDescriptor createDescriptorForTunnelHole() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "TunnelHole", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900651524");
+    b.version(2);
+    b.aggregate("leftPoints", 0x1269a46804c1480cL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL).optional(false).ordered(true).multiple(true).origin("1326772331900651532").done();
+    b.aggregate("rightPoints", 0x1269a46804c1480aL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL).optional(false).ordered(true).multiple(true).origin("1326772331900651530").done();
+    b.aggregate("tunnelHoleRoads", 0x1e674eba2c637e5dL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L).optional(false).ordered(true).multiple(true).origin("2190806305254637149").done();
+    b.aggregate("rightPointReferences", 0x1e674eba2c63b2a8L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L).optional(false).ordered(true).multiple(true).origin("2190806305254650536").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTunnelHoleReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "TunnelHoleReference", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L);
     b.class_(false, false, false);
     b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331901453731");
     b.version(2);
-    b.associate("leftConnect", 0x1269a46804cd85a4L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L).optional(false).origin("1326772331901453732").done();
+    b.associate("leftConnect", 0x1269a46804cd85a4L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L).optional(false).origin("1326772331901453732").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTunnelOverview() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "TunnelOverview", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x4799c809c7d0add2L);
+    b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/5159374792462216658");
+    b.version(2);
+    b.aggregate("tunnels", 0x1269a46804c41f1aL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L).optional(true).ordered(true).multiple(true).origin("1326772331900837658").done();
+    b.aggregate("straightRoads", 0x1269a4680495503bL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L).optional(true).ordered(true).multiple(true).origin("1326772331897770043").done();
     return b.create();
   }
 }

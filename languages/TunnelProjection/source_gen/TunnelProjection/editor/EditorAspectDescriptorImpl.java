@@ -26,19 +26,25 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
       case 0:
         return Collections.<ConceptEditor>singletonList(new CurvyRoad_Textual_Editor());
       case 1:
-        return Arrays.asList(new ConceptEditor[]{new Layout_Editor(), new Layout_Textual_Editor()});
+        return Collections.<ConceptEditor>singletonList(new LeftPointReference_Editor());
       case 2:
         return Arrays.asList(new ConceptEditor[]{new LeftTunnelPoint_Editor(), new LeftTunnelPoint_Textual_Editor()});
       case 3:
-        return Arrays.asList(new ConceptEditor[]{new RightTunnelPoint_Editor(), new RightTunnelPoint_Textual_Editor()});
+        return Collections.<ConceptEditor>singletonList(new RightPointReference_Editor());
       case 4:
-        return Arrays.asList(new ConceptEditor[]{new StraightRoad_Editor(), new StraightRoad_Textual_Editor()});
+        return Arrays.asList(new ConceptEditor[]{new RightTunnelPoint_Editor(), new RightTunnelPoint_Textual_Editor()});
       case 5:
-        return Collections.<ConceptEditor>singletonList(new TunelConnection_Textual_Editor());
+        return Arrays.asList(new ConceptEditor[]{new StraightRoad_Editor(), new StraightRoad_Textual_Editor()});
       case 6:
-        return Arrays.asList(new ConceptEditor[]{new Tunnel_Editor(), new Tunnel_Textual_Editor()});
+        return Collections.<ConceptEditor>singletonList(new StraightRoadRef_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new TunnelReference_Editor());
+        return Arrays.asList(new ConceptEditor[]{new Tunnel_Editor(), new Tunnel_Textual_Editor()});
+      case 8:
+        return Arrays.asList(new ConceptEditor[]{new TunnelHole_Editor(), new TunnelHole_Textual_Editor()});
+      case 9:
+        return Collections.<ConceptEditor>singletonList(new TunnelHoleReference_Editor());
+      case 10:
+        return Arrays.asList(new ConceptEditor[]{new TunnelOverview_Editor(), new TunnelOverview_Textual_Editor()});
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -54,16 +60,20 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     SAbstractConcept cncpt = concept;
     switch (conceptIndex1.index(cncpt)) {
       case 0:
-        return Collections.<SubstituteMenu>singletonList(new StraightRoad_SubstituteMenu());
+        return Collections.<SubstituteMenu>singletonList(new LeftPointReference_SubstituteMenu());
       case 1:
-        return Collections.<SubstituteMenu>singletonList(new StraightRoadRef_SubstituteMenu());
+        return Collections.<SubstituteMenu>singletonList(new RightPointReference_SubstituteMenu());
       case 2:
-        return Collections.<SubstituteMenu>singletonList(new TunnelReference_SubstituteMenu());
+        return Collections.<SubstituteMenu>singletonList(new RightTunnelPoint_SubstituteMenu());
+      case 3:
+        return Collections.<SubstituteMenu>singletonList(new StraightRoadRef_SubstituteMenu());
+      case 4:
+        return Collections.<SubstituteMenu>singletonList(new TunnelHoleReference_SubstituteMenu());
       default:
     }
     return Collections.<SubstituteMenu>emptyList();
   }
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a468049550ceL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x4799c809c7d0add2L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L)).seal();
-  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a468049550ceL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x13e8a493a7663348L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x4799c809c7d0add2L)).seal();
+  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x13e8a493a7663348L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L)).seal();
 }
