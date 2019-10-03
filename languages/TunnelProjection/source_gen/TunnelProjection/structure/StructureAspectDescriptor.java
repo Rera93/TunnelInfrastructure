@@ -27,6 +27,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTunnelHole = createDescriptorForTunnelHole();
   /*package*/ final ConceptDescriptor myConceptTunnelHoleReference = createDescriptorForTunnelHoleReference();
   /*package*/ final ConceptDescriptor myConceptTunnelOverview = createDescriptorForTunnelOverview();
+  /*package*/ final EnumerationDescriptor myEnumerationConnectionType = new EnumerationDescriptor_ConnectionType();
   /*package*/ final EnumerationDescriptor myEnumerationRoadType = new EnumerationDescriptor_RoadType();
   /*package*/ final EnumerationDescriptor myEnumerationTunnelPointType = new EnumerationDescriptor_TunnelPointType();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -79,7 +80,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationRoadType, myEnumerationTunnelPointType);
+    return Arrays.asList(myEnumerationConnectionType, myEnumerationRoadType, myEnumerationTunnelPointType);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {

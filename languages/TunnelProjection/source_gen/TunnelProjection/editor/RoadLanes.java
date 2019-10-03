@@ -7,11 +7,11 @@ import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
 import de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle;
 
-public class Rectangle extends AbstractShape {
+public class RoadLanes extends AbstractShape {
 
   private String color;
 
-  public Rectangle(String color) {
+  public RoadLanes(String color) {
     this.color = color;
   }
 

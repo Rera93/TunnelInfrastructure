@@ -7,169 +7,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed6757e0-28e6-4209-80c9-1cd57afa0ae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftPointReference_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftPointReference_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftPointReference_SubstituteMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightPointReference_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightPointReference_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightPointReference_SubstituteMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoadRef_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHoleReference_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/EnumerationDescriptor_ConnectionType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$1$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$1$1$2$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$1$1$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$1$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1$1$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1$1$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$CONCEPTS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$LINKS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a$PROPS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a$CONCEPTS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a$LINKS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a$curvyRoadsListHandler_ewfunr_b0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a$pointsListHandler_ewfunr_a0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a$straightRoadsListHandler_ewfunr_c0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a$tunnelsListHandler_ewfunr_g0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$Inline_Builder3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$Inline_Builder3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$Inline_Builder3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2$Inline_Builder3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$Inline_Builder2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoadRef_SubstituteMenu$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoadRef_SubstituteMenu$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoadRef_SubstituteMenu$SMP_ReferenceScope_44nr1r_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoadRef_SubstituteMenu$SMP_ReferenceScope_44nr1r_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/TunnelProjection.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/TunnelProjection.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Straight.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Straight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$1$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a$PROPS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_SubstituteMenu$CONCEPTS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_SubstituteMenu$LINKS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_SubstituteMenu$SMP_ReferenceScope_5e244f_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_SubstituteMenu$SMP_Subconcepts_5e244f_b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_SubstituteMenu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0$Inline_Builder1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$Inline_Builder0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$LINKS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a$PROPS.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunelConnection_Textual_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunelConnection_Textual_EditorBuilder_a$LINKS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunelConnection_Textual_EditorBuilder_a$leftPointSingleRoleHandler_69sghf_c0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunelConnection_Textual_EditorBuilder_a$leftPointSingleRoleHandler_69sghf_e0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunelConnection_Textual_EditorBuilder_a$rightPointSingleRoleHandler_69sghf_g0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunelConnection_Textual_EditorBuilder_a$rightPointSingleRoleHandler_69sghf_i0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunelConnection_Textual_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_Editor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_EditorBuilder_a$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_EditorBuilder_a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_EditorBuilder_a$CONCEPTS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_EditorBuilder_a$LINKS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_EditorBuilder_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_SubstituteMenu$CONCEPTS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_SubstituteMenu$LINKS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_SubstituteMenu$SMP_ReferenceScope_5z12ne_a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_SubstituteMenu$SMP_Subconcepts_5z12ne_b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelReference_SubstituteMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/LanguageConceptSwitch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/StructureAspectDescriptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.editor.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.structure.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/TunnelProjection.sandbox.msd" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/TunnelProjection.sandbox.msd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.Layouts.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.Layouts.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/source_gen.caches/TunnelProjection/sandbox/Layouts/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/source_gen.caches/TunnelProjection/sandbox/Layouts/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Layout_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Layout_EditorBuilder_a.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Layout_Textual_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_Textual_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Layout_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoadRef_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoadRef_SubstituteMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/EdgeIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Straight.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Straight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoad_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoad_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_SubstituteMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoad_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunelConnection_Textual_Editor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunelConnection_Textual_EditorBuilder_a.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelReference_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/StraightRoadRef_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelReference_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHoleReference_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelReference_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHoleReference_SubstituteMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_Textual_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelOverview_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/LanguageConceptSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/StructureAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/trace.info" afterDir="false" />
@@ -194,7 +108,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="5b79cd04-479f-4202-9607-97dadbb09c80/r:9e5c9812-a677-4f5f-9f3f-0b5b59f60acb(TempModule5b79cd04-479f-4202-9607-97dadbb09c80/ConsoleModel_502033708166049)">
+            <model ref="747ec38f-3c10-425d-a9ab-f4b8803a80d7/r:d3279fc7-39a7-4513-859a-0a7d9e2e2ae3(TempModule747ec38f-3c10-425d-a9ab-f4b8803a80d7/ConsoleModel_586718948800822)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -214,11 +128,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1fCD9eBmEmT">
-                <node concept="3balQm" id="1fCD9eBmEmU" role="aymYE" />
-                <node concept="2Clz$F" id="1fCD9eBmEmV" role="aymYO" />
-                <node concept="2_V_lH" id="1fCD9eBmEmW" role="1PhJh3">
-                  <ref role="2_V_lI" node="1fCD9eBmEmV" resolve="CommandHolder" />
+              <node concept="aymSD" id="3E8a4NU5JM6">
+                <node concept="3balQm" id="3E8a4NU5JM7" role="aymYE" />
+                <node concept="2Clz$F" id="3E8a4NU5JM8" role="aymYO" />
+                <node concept="2_V_lH" id="3E8a4NU5JM9" role="1PhJh3">
+                  <ref role="2_V_lI" node="3E8a4NU5JM8" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -580,8 +494,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -642,50 +573,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunnelProjection" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -700,11 +587,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
+              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -717,28 +604,33 @@
               <option name="myItemId" value="TunnelProjection" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:4aeff14b-faa3-4dcd-b902-b3176a080e0a(TunnelProjection.sandbox) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.mps]" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:359cf1c3-9b97-4367-92c4-a29d976ef343(TunnelProjection.sandbox.Layouts) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.Layouts.mps]" />
+              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7064263213544043922" />
+              <option name="myItemId" value="r:f412b4d7-7fa6-482b-a6b4-ebb812714b46(TunnelProjection.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/models/TunnelProjection.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="4217665362112140939" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="FileSystem" />
       <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../IDL" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RunDashboard">

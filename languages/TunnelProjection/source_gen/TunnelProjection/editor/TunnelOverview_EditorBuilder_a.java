@@ -46,6 +46,9 @@ import de.itemis.mps.editor.diagram.runtime.model.IConnectionType;
 import java.util.Collections;
 import de.itemis.mps.editor.diagram.runtime.model.GeneratedConnectionType;
 import de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpoint;
+import de.itemis.mps.editor.diagram.runtime.shape.IShape;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import de.itemis.mps.editor.diagram.runtime.model.DiagramModel;
 import de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider;
 import de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider;
@@ -56,8 +59,9 @@ import org.apache.log4j.Level;
 import de.itemis.mps.editor.diagram.runtime.model.AbstractPaletteEntry;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import de.itemis.mps.editor.diagram.runtime.model.SubstituteInfoPaletteEntryProvider;
+import de.itemis.mps.editor.diagram.runtime.substitute.SubstituteInfoFactory;
 import de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell;
 import de.itemis.mps.editor.diagram.runtime.jgraph.RootDCell;
@@ -286,6 +290,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
                             final String toPort = to.getPortName();
                             return true;
                           }
+                          @Override
+                          protected IShape getIconShape() {
+                            return new EdgeIcon(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f2eL, "LeftPointToTunnel"));
+                          }
                         }));
                         connectionTypes.addAll(Collections.singletonList(new GeneratedConnectionType() {
                           public String getName() {
@@ -320,6 +328,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
                             }
                             final String toPort = to.getPortName();
                             return true;
+                          }
+                          @Override
+                          protected IShape getIconShape() {
+                            return new EdgeIcon(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f2fL, "TunnelToRightPoint"));
                           }
                         }));
                         connectionTypes.addAll(Collections.singletonList(new GeneratedConnectionType() {
@@ -356,6 +368,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
                             final String toPort = to.getPortName();
                             return true;
                           }
+                          @Override
+                          protected IShape getIconShape() {
+                            return new EdgeIcon(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f32L, "RoadToRoad"));
+                          }
                         }));
                         connectionTypes.addAll(Collections.singletonList(new GeneratedConnectionType() {
                           public String getName() {
@@ -390,6 +406,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
                             }
                             final String toPort = to.getPortName();
                             return true;
+                          }
+                          @Override
+                          protected IShape getIconShape() {
+                            return new EdgeIcon(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f36L, "RoadToLeftPoint"));
                           }
                         }));
                         connectionTypes.addAll(Collections.singletonList(new GeneratedConnectionType() {
@@ -426,6 +446,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
                             final String toPort = to.getPortName();
                             return true;
                           }
+                          @Override
+                          protected IShape getIconShape() {
+                            return new EdgeIcon(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f3bL, "RightPointToRoad"));
+                          }
                         }));
                         return connectionTypes;
                       }
@@ -453,7 +477,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
                         });
                         return entries;
                       }
-                    });
+                    }, new SubstituteInfoPaletteEntryProvider(new SubstituteInfoFactory(editorContext, node).forChildLink(node, SLinkOperations.findLinkDeclaration(LINKS.straightRoads$Lh$z))), new SubstituteInfoPaletteEntryProvider(new SubstituteInfoFactory(editorContext, node).forChildLink(node, SLinkOperations.findLinkDeclaration(LINKS.tunnels$XEk2))));
                     model.setPaletteEntryProvider(paletteEntryProvider);
 
                     if (DiagramCreationContext.isSubdiagram()) {

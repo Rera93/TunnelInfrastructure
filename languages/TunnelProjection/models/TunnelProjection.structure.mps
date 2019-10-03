@@ -372,5 +372,29 @@
       <ref role="20lvS9" node="19DD6w4JVtq" resolve="LeftTunnelPoint" />
     </node>
   </node>
+  <node concept="25R3W" id="3E8a4NUayWH">
+    <property role="3F6X1D" value="4217665362112163629" />
+    <property role="TrG5h" value="ConnectionType" />
+    <node concept="25R33" id="3E8a4NUayWI" role="25R1y">
+      <property role="3tVfz5" value="4217665362112163630" />
+      <property role="TrG5h" value="LeftPointToTunnel" />
+    </node>
+    <node concept="25R33" id="3E8a4NUayWJ" role="25R1y">
+      <property role="3tVfz5" value="4217665362112163631" />
+      <property role="TrG5h" value="TunnelToRightPoint" />
+    </node>
+    <node concept="25R33" id="3E8a4NUayWM" role="25R1y">
+      <property role="3tVfz5" value="4217665362112163634" />
+      <property role="TrG5h" value="RoadToRoad" />
+    </node>
+    <node concept="25R33" id="3E8a4NUayWQ" role="25R1y">
+      <property role="3tVfz5" value="4217665362112163638" />
+      <property role="TrG5h" value="RoadToLeftPoint" />
+    </node>
+    <node concept="25R33" id="3E8a4NUayWV" role="25R1y">
+      <property role="3tVfz5" value="4217665362112163643" />
+      <property role="TrG5h" value="RightPointToRoad" />
+    </node>
+  </node>
 </model>
 
