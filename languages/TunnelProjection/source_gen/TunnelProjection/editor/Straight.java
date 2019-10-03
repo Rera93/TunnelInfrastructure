@@ -10,15 +10,19 @@ import de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.awt.Color;
+import java.awt.Stroke;
+import java.awt.BasicStroke;
 
 public class Straight extends AbstractShape {
 
   private int length;
   private SEnumerationLiteral type;
+  private int lanes;
 
-  public Straight(int length, SEnumerationLiteral type) {
+  public Straight(int length, SEnumerationLiteral type, int lanes) {
     this.length = length;
     this.type = type;
+    this.lanes = lanes;
   }
 
 
@@ -50,7 +54,33 @@ public class Straight extends AbstractShape {
     int rightPointX = (int) bounds.getMaxX();
     int rightPointY = leftPointY;
 
-    graphics.drawLine(leftPointX, leftPointY, rightPointX, rightPointY);
+    Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0);
+    graphics.setStroke(dashed);
+
+    int equalLanesDivision = 0;
+
+    if (this.lanes == 1) {
+      // do nothing 
+    } else if (this.lanes == 2) {
+      graphics.drawLine(leftPointX, leftPointY, rightPointX, rightPointY);
+    } else if (this.lanes == 3) {
+      equalLanesDivision = ((int) bounds.getHeight()) / 3;
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision);
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 2, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 2);
+    } else if (this.lanes == 4) {
+      equalLanesDivision = ((int) bounds.getHeight()) / 4;
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision);
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 2, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 2);
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 3, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 3);
+    } else if (this.lanes == 5) {
+      equalLanesDivision = ((int) bounds.getHeight()) / 5;
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision);
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 2, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 2);
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 3, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 3);
+      graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 4, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 4);
+
+    }
+
 
 
 

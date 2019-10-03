@@ -27,7 +27,7 @@ public class Image extends AbstractShape {
   protected void draw(final Graphics2D graphics, final Rectangle2D bounds, IShapeStyle style) {
     BufferedImage img = null;
     try {
-      img = ImageIO.read(new File("semaphorasdasde.png"));
+      img = ImageIO.read(new File("./semaphore.png"));
     } catch (IOException e) {
     }
     int topLeftX = (int) bounds.getMinX();

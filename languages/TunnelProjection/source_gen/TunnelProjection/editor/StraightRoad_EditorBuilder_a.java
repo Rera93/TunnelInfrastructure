@@ -19,6 +19,8 @@ import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
@@ -33,6 +35,7 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -64,10 +67,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
 
-        EditorCell contentCell = createProperty_0();
+        EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new Straight(SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.length$MpC4), SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$_A_w));
+        final IShape shape = new Straight(SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.length$MpC4), SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$_A_w), SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.lanes$1_gj));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
@@ -112,6 +115,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createDiagramNode_1() {
     return createDiagramNode_0(getEditorContext(), myNode);
   }
+  private EditorCell createCollection_0() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    editorCell.setCellId("Collection_q8bvux_a0");
+    editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createConstant_0());
+    editorCell.addEditorCell(createProperty_1());
+    return editorCell;
+  }
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
@@ -137,10 +148,42 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
+  private EditorCell createConstant_0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ", ");
+    editorCell.setCellId("Constant_q8bvux_b0a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_1() {
+    getCellFactory().pushCellContext();
+    try {
+      final SProperty property = PROPS.lanes$1_gj;
+      getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
+      editorCell.setDefaultText("<no lanes>");
+      editorCell.setCellId("property_lanes");
+      editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
+      setCellContext(editorCell);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
+      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
+        }
+      });
+      if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
+        EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+        return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
+      } else
+      return editorCell;
+    } finally {
+      getCellFactory().popCellContext();
+    }
+  }
 
   private static final class PROPS {
     /*package*/ static final SProperty length$MpC4 = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L, 0x1269a46804959a80L, "length");
     /*package*/ static final SProperty type$_A_w = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L, 0x1269a468049550bdL, "type");
+    /*package*/ static final SProperty lanes$1_gj = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L, 0x1e674eba2c584393L, "lanes");
   }
 
   private static final class CONCEPTS {

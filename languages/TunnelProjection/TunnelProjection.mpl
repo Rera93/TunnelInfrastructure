@@ -56,6 +56,7 @@
     <dependency reexport="false">f7ad14aa-a3e2-4301-8822-d919845c8bcf(de.itemis.mps.editor.diagram.shapes)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">eef1aa08-6b84-4194-90d9-ff3e9d6b4505(de.itemis.mps.editor.enumeration)</dependency>
+    <dependency reexport="false">d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:72c81d76-4250-49a4-8dfa-274e9e7a2b19:TunnelProjection" version="0" />

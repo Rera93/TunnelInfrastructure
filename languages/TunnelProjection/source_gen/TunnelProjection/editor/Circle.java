@@ -38,13 +38,13 @@ public class Circle extends AbstractShape {
     style.configureShadow(bounds);
     style.configureFill(bounds);
 
+    graphics.setColor(Color.BLACK);
     if (this.entryPoint == true) {
-      graphics.setColor(Color.GREEN);
+      graphics.drawOval((int) bounds.getCenterX() - width / 2, (int) bounds.getCenterY() - height / 2, width, height);
     } else {
-      graphics.setColor(Color.RED);
+      graphics.fillOval((int) bounds.getCenterX() - width / 2, (int) bounds.getCenterY() - height / 2, width, height);
     }
 
-    graphics.fillOval((int) bounds.getCenterX() - width / 2, (int) bounds.getCenterY() - height / 2, width, height);
   }
 
 }
