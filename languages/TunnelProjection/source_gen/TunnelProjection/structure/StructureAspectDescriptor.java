@@ -114,6 +114,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("x", 0x1269a46804bfb766L).type(PrimitiveTypeId.INTEGER).origin("1326772331900548966").done();
     b.property("y", 0x1269a46804bfb76cL).type(PrimitiveTypeId.INTEGER).origin("1326772331900548972").done();
     b.property("entryPoint", 0x1269a46804bfb92eL).type(PrimitiveTypeId.BOOLEAN).origin("1326772331900549422").done();
+    b.property("leftToRightDirection", 0x3a88284cfa7f3ad3L).type(PrimitiveTypeId.BOOLEAN).origin("4217665362117737171").done();
     b.aggregate("roadConnection", 0x1269a46804bfb777L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L).optional(false).ordered(true).multiple(false).origin("1326772331900548983").done();
     b.aggregate("leftConnect", 0x1269a46804cd859fL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L).optional(false).ordered(true).multiple(false).origin("1326772331901453727").done();
     return b.create();
@@ -134,7 +135,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("x", 0x1269a46804bfb920L).type(PrimitiveTypeId.INTEGER).origin("1326772331900549408").done();
     b.property("y", 0x1269a46804bfb922L).type(PrimitiveTypeId.INTEGER).origin("1326772331900549410").done();
-    b.property("entryPoint", 0x1269a46804bfb925L).type(PrimitiveTypeId.BOOLEAN).origin("1326772331900549413").done();
+    b.property("isLeftPoint", 0x1269a46804bfb925L).type(PrimitiveTypeId.BOOLEAN).origin("1326772331900549413").done();
+    b.property("leftToRightDirection", 0x3a88284cfa80944dL).type(PrimitiveTypeId.BOOLEAN).origin("4217665362117825613").done();
     b.associate("hole", 0x1e674eba2c6d6877L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L).optional(false).origin("2190806305255286903").done();
     b.aggregate("roadReference", 0x13e8a493a771deebL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L).optional(true).ordered(true).multiple(false).origin("1434577435393908459").done();
     return b.create();

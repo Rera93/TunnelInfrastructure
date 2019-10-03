@@ -19,9 +19,7 @@ import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
-import jetbrains.mps.editor.runtime.EditorCell_Empty;
-import jetbrains.mps.openapi.editor.cells.CellActionType;
-import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -53,10 +51,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         final ContextVariables _variablesContext = ContextVariables.getCurrent();
         final List<Port> ports = new ArrayList<Port>();
 
-        EditorCell contentCell = createEmpty_0();
+        EditorCell contentCell = createConstant_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new Circle(SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.entryPoint$oI16));
+        final IShape shape = new TunnelConnectionPoint(SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.entryPoint$oI16), SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.leftToRightDirection$XJAF));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
@@ -101,15 +99,15 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   private EditorCell createDiagramNode_1() {
     return createDiagramNode_0(getEditorContext(), myNode);
   }
-  private EditorCell createEmpty_0() {
-    EditorCell_Empty editorCell = new EditorCell_Empty(getEditorContext(), myNode);
-    editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.FORWARD));
-    editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
-    editorCell.setCellId("Empty_2nbzmd_a0");
+  private EditorCell createConstant_0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_2nbzmd_a0");
+    editorCell.setDefaultText("");
     return editorCell;
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty entryPoint$oI16 = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x1269a46804bfb92eL, "entryPoint");
+    /*package*/ static final SProperty leftToRightDirection$XJAF = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x3a88284cfa7f3ad3L, "leftToRightDirection");
   }
 }

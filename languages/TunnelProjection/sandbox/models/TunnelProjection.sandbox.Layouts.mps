@@ -35,6 +35,7 @@
       <concept id="1326772331900548975" name="TunnelProjection.structure.RightTunnelPoint" flags="ng" index="mPxc7">
         <property id="1326772331900549408" name="x" index="mPxP8" />
         <property id="1326772331900549410" name="y" index="mPxPa" />
+        <property id="4217665362117825613" name="leftToRightDirection" index="302bK1" />
         <reference id="1326772331900548976" name="roadConnect" index="mPxco" />
         <reference id="2190806305255286903" name="hole" index="M2yrd" />
         <child id="1434577435393908459" name="roadReference" index="2OAnDS" />
@@ -54,6 +55,7 @@
         <property id="1326772331900548972" name="y" index="mPxc4" />
         <property id="1326772331900548966" name="x" index="mPxce" />
         <property id="1326772331900549422" name="entryPoint" index="mPxP6" />
+        <property id="4217665362117737171" name="leftToRightDirection" index="30XLav" />
         <child id="1326772331901453727" name="leftConnect" index="mD27R" />
         <child id="1326772331900548983" name="roadConnection" index="mPxcv" />
       </concept>
@@ -393,6 +395,9 @@
         <property role="TrG5h" value="hole2" />
         <node concept="mZfhg" id="1fCD9eBGmJf" role="M133B" />
         <node concept="MnGdV" id="1fCD9eBGmJg" role="M1fKi" />
+        <node concept="MnGdV" id="3E8a4NU_VRV" role="M1fKi">
+          <ref role="MnGdS" node="1TBjFCGq25Q" resolve="point10" />
+        </node>
       </node>
       <node concept="mEeLG" id="1TBjFCGq25M" role="M1raX">
         <property role="TrG5h" value="hole1" />
@@ -401,11 +406,12 @@
           <property role="mPxce" value="0" />
           <property role="mPxc4" value="0" />
           <property role="mPxP6" value="true" />
+          <property role="30XLav" value="true" />
           <node concept="mE5XI" id="1TBjFCGqtVP" role="mPxcv">
             <ref role="mE5XJ" node="19DD6w4_yJ4" resolve="suzi" />
           </node>
-          <node concept="mD27b" id="1fCD9eB$vwH" role="mD27R">
-            <ref role="mD27c" node="1TBjFCGq25M" resolve="hole1" />
+          <node concept="mD27b" id="3E8a4NU_VS0" role="mD27R">
+            <ref role="mD27c" node="1fCD9eBGmJa" resolve="hole2" />
           </node>
         </node>
         <node concept="mPxcM" id="1TBjFCGrmx1" role="mEeL$">
@@ -424,6 +430,7 @@
           <property role="TrG5h" value="point10" />
           <property role="mPxP8" value="100" />
           <property role="mPxPa" value="0" />
+          <property role="302bK1" value="true" />
           <ref role="M2yrd" node="1TBjFCGq25M" resolve="hole1" />
           <node concept="mE5XI" id="1fCD9eBANVW" role="2OAnDS">
             <ref role="mE5XJ" node="19DD6w4Lf0j" resolve="a" />
@@ -437,11 +444,8 @@
         </node>
         <node concept="mZfhg" id="1TBjFCGq25R" role="M133B" />
         <node concept="MnGdV" id="1TBjFCGq25S" role="M1fKi" />
-        <node concept="MnGdV" id="1fCD9eBmP21" role="M1fKi">
+        <node concept="MnGdV" id="3E8a4NU_VRS" role="M1fKi">
           <ref role="MnGdS" node="1TBjFCGrmxg" resolve="point20" />
-        </node>
-        <node concept="MnGdV" id="1fCD9eBBTyv" role="M1fKi">
-          <ref role="MnGdS" node="1TBjFCGq25Q" resolve="point10" />
         </node>
       </node>
       <node concept="mZfhg" id="1TBjFCGoJJU" role="MfNh7">
@@ -534,9 +538,9 @@
       <node concept="37mRIm" id="19DD6w4Lf0x" role="37mRID">
         <property role="37mO49" value="1326772331900891155" />
         <node concept="gqqVs" id="19DD6w4Lf0v" role="37mO4d">
-          <property role="gqqTZ" value="779.0" />
-          <property role="gqqTW" value="19.0" />
-          <property role="gqqTX" value="108.0" />
+          <property role="gqqTZ" value="705.0" />
+          <property role="gqqTW" value="183.0" />
+          <property role="gqqTX" value="162.0" />
           <property role="gqqTy" value="59.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -743,7 +747,7 @@
         <property role="37mO49" value="2190806305254941043" />
         <node concept="gqqVs" id="1fCD9eBmP0D" role="37mO4d">
           <property role="gqqTZ" value="303.0001" />
-          <property role="gqqTW" value="88.0" />
+          <property role="gqqTW" value="197.5" />
           <property role="gqqTX" value="14.0" />
           <property role="gqqTy" value="30.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -762,8 +766,8 @@
       <node concept="37mRIm" id="1fCD9eBmP0I" role="37mRID">
         <property role="37mO49" value="2190806305254941046" />
         <node concept="gqqVs" id="1fCD9eBmP0H" role="37mO4d">
-          <property role="gqqTZ" value="675.0003002716064" />
-          <property role="gqqTW" value="19.0" />
+          <property role="gqqTZ" value="649.0" />
+          <property role="gqqTW" value="197.5" />
           <property role="gqqTX" value="14.0" />
           <property role="gqqTy" value="30.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -772,9 +776,9 @@
       <node concept="37mRIm" id="1fCD9eBmP0K" role="37mRID">
         <property role="37mO49" value="2190806305255286864" />
         <node concept="gqqVs" id="1fCD9eBmP0J" role="37mO4d">
-          <property role="gqqTZ" value="675.0" />
-          <property role="gqqTW" value="88.0" />
-          <property role="gqqTX" value="24.0" />
+          <property role="gqqTZ" value="649.0" />
+          <property role="gqqTW" value="48.0" />
+          <property role="gqqTX" value="14.0" />
           <property role="gqqTy" value="30.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -790,17 +794,17 @@
       <node concept="37mRIm" id="1fCD9eBrFcB" role="37mRID">
         <property role="37mO49" value="1434577435393700639" />
         <node concept="gqqVs" id="1fCD9eBrFcA" role="37mO4d">
-          <property role="gqqTZ" value="139.0" />
-          <property role="gqqTW" value="88.0" />
+          <property role="gqqTZ" value="70.0" />
+          <property role="gqqTW" value="180.0" />
           <property role="gqqTX" value="124.0" />
-          <property role="gqqTy" value="82.0" />
+          <property role="gqqTy" value="65.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
       <node concept="37mRIm" id="1fCD9eBrFcD" role="37mRID">
         <property role="37mO49" value="1434577435393700642" />
         <node concept="gqqVs" id="1fCD9eBrFcC" role="37mO4d">
-          <property role="gqqTZ" value="29.0" />
+          <property role="gqqTZ" value="70.0" />
           <property role="gqqTW" value="22.5" />
           <property role="gqqTX" value="146.0" />
           <property role="gqqTy" value="47.0" />

@@ -70,7 +70,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
         EditorCell contentCell = createCollection_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new Straight(SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.length$MpC4), SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$_A_w), SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.lanes$1_gj));
+        final IShape shape = new Road(SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.length$MpC4), SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$_A_w), SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.lanes$1_gj));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {

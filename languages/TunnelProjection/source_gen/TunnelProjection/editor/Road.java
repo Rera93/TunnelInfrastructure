@@ -13,13 +13,13 @@ import java.awt.Color;
 import java.awt.Stroke;
 import java.awt.BasicStroke;
 
-public class Straight extends AbstractShape {
+public class Road extends AbstractShape {
 
   private int length;
   private SEnumerationLiteral type;
   private int lanes;
 
-  public Straight(int length, SEnumerationLiteral type, int lanes) {
+  public Road(int length, SEnumerationLiteral type, int lanes) {
     this.length = length;
     this.type = type;
     this.lanes = lanes;
@@ -80,10 +80,6 @@ public class Straight extends AbstractShape {
       graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 4, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 4);
 
     }
-
-
-
-
   }
 
 }

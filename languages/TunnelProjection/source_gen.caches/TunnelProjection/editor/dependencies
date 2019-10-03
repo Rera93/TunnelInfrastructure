@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="TunnelProjection.editor.Circle">
-    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
-    <classNode dependClassName="java.awt.Color" />
-    <classNode dependClassName="java.awt.Graphics2D" />
-    <classNode dependClassName="java.awt.geom.Rectangle2D" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
-  </dependency>
   <dependency className="TunnelProjection.editor.CurvyRoad_Textual_Editor">
     <classNode dependClassName="TunnelProjection.editor.CurvyRoad_Textual_EditorBuilder_a" />
     <classNode dependClassName="java.lang.Override" />
@@ -101,28 +93,6 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.EditorAspectDescriptorBase" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.EditorHintsProvider" />
   </dependency>
-  <dependency className="TunnelProjection.editor.EntryPoint">
-    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
-    <classNode dependClassName="java.awt.Graphics2D" />
-    <classNode dependClassName="java.awt.geom.Rectangle2D" />
-    <classNode dependClassName="java.awt.image.BufferedImage" />
-    <classNode dependClassName="java.io.File" />
-    <classNode dependClassName="java.io.IOException" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="javax.imageio.ImageIO" />
-    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
-  </dependency>
-  <dependency className="TunnelProjection.editor.Image">
-    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
-    <classNode dependClassName="java.awt.Graphics2D" />
-    <classNode dependClassName="java.awt.geom.Rectangle2D" />
-    <classNode dependClassName="java.awt.image.BufferedImage" />
-    <classNode dependClassName="java.io.File" />
-    <classNode dependClassName="java.io.IOException" />
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="javax.imageio.ImageIO" />
-    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
-  </dependency>
   <dependency className="TunnelProjection.editor.LeftPointReference_Editor">
     <classNode dependClassName="TunnelProjection.editor.LeftPointReference_EditorBuilder_a" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
@@ -192,7 +162,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="TunnelProjection.editor.LeftTunnelPoint_EditorBuilder_a">
-    <classNode dependClassName="TunnelProjection.editor.Circle" />
+    <classNode dependClassName="TunnelProjection.editor.TunnelConnectionPoint" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
@@ -206,11 +176,9 @@
     <classNode dependClassName="java.util.ArrayList" />
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
-    <classNode dependClassName="jetbrains.mps.editor.runtime.EditorCell_Empty" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
@@ -345,7 +313,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="TunnelProjection.editor.RightTunnelPoint_EditorBuilder_a">
-    <classNode dependClassName="TunnelProjection.editor.Circle" />
+    <classNode dependClassName="TunnelProjection.editor.TunnelConnectionPoint" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
@@ -454,7 +422,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
-  <dependency className="TunnelProjection.editor.Straight">
+  <dependency className="TunnelProjection.editor.Road">
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
     <classNode dependClassName="java.awt.BasicStroke" />
     <classNode dependClassName="java.awt.Color" />
@@ -536,7 +504,7 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="TunnelProjection.editor.StraightRoad_EditorBuilder_a">
-    <classNode dependClassName="TunnelProjection.editor.Straight" />
+    <classNode dependClassName="TunnelProjection.editor.Road" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement" />
     <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
@@ -641,6 +609,15 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
+  </dependency>
+  <dependency className="TunnelProjection.editor.TunnelConnectionPoint">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle" />
+    <classNode dependClassName="java.awt.Color" />
+    <classNode dependClassName="java.awt.Graphics2D" />
+    <classNode dependClassName="java.awt.Polygon" />
+    <classNode dependClassName="java.awt.geom.Rectangle2D" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode extendsClassName="de.itemis.mps.editor.diagram.runtime.shape.AbstractShape" />
   </dependency>
   <dependency className="TunnelProjection.editor.TunnelHoleReference_Editor">
     <classNode dependClassName="TunnelProjection.editor.TunnelHoleReference_EditorBuilder_a" />

@@ -77,8 +77,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createProperty_3());
     editorCell.addEditorCell(createConstant_4());
-    editorCell.addEditorCell(createRefCell_0());
+    editorCell.addEditorCell(createProperty_4());
     editorCell.addEditorCell(createConstant_5());
+    editorCell.addEditorCell(createRefCell_0());
+    editorCell.addEditorCell(createConstant_6());
     editorCell.addEditorCell(createRefCell_2());
     return editorCell;
   }
@@ -176,7 +178,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     }
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Entry Point: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Left Point: ");
     editorCell.setCellId("Constant_ftaqnv_g0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -207,8 +209,39 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     }
   }
   private EditorCell createConstant_4() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Road: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "LeftToRight: ");
     editorCell.setCellId("Constant_ftaqnv_i0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_4() {
+    getCellFactory().pushCellContext();
+    try {
+      final SProperty property = PROPS.leftToRightDirection$XJAF;
+      getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
+      editorCell.setDefaultText("<no leftToRightDirection>");
+      editorCell.setCellId("property_leftToRightDirection");
+      editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
+      setCellContext(editorCell);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
+      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
+        }
+      });
+      if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
+        EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+        return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
+      } else
+      return editorCell;
+    } finally {
+      getCellFactory().popCellContext();
+    }
+  }
+  private EditorCell createConstant_5() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Road: ");
+    editorCell.setCellId("Constant_ftaqnv_k0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -260,7 +293,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
     private EditorCell createCollection_1() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-      editorCell.setCellId("Collection_ftaqnv_a0j0");
+      editorCell.setCellId("Collection_ftaqnv_a0l0");
       editorCell.addEditorCell(createRefCell_1());
       return editorCell;
     }
@@ -319,7 +352,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       }
 
       /*package*/ EditorCell createCell() {
-        return createProperty_4();
+        return createProperty_5();
       }
 
       @NotNull
@@ -328,7 +361,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
         return myNode;
       }
 
-      private EditorCell createProperty_4() {
+      private EditorCell createProperty_5() {
         getCellFactory().pushCellContext();
         try {
           final SProperty property = PROPS.name$tAp1;
@@ -358,9 +391,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       }
     }
   }
-  private EditorCell createConstant_5() {
+  private EditorCell createConstant_6() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Tunnel Left Hole: ");
-    editorCell.setCellId("Constant_ftaqnv_k0");
+    editorCell.setCellId("Constant_ftaqnv_m0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -412,7 +445,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
     private EditorCell createCollection_2() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-      editorCell.setCellId("Collection_ftaqnv_a0l0");
+      editorCell.setCellId("Collection_ftaqnv_a0n0");
       editorCell.addEditorCell(createRefCell_3());
       return editorCell;
     }
@@ -471,7 +504,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       }
 
       /*package*/ EditorCell createCell() {
-        return createProperty_5();
+        return createProperty_6();
       }
 
       @NotNull
@@ -480,7 +513,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
         return myNode;
       }
 
-      private EditorCell createProperty_5() {
+      private EditorCell createProperty_6() {
         getCellFactory().pushCellContext();
         try {
           final SProperty property = PROPS.name$tAp1;
@@ -516,6 +549,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     /*package*/ static final SProperty x$lLSw = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x1269a46804bfb766L, "x");
     /*package*/ static final SProperty y$lM5_ = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x1269a46804bfb76cL, "y");
     /*package*/ static final SProperty entryPoint$oI16 = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x1269a46804bfb92eL, "entryPoint");
+    /*package*/ static final SProperty leftToRightDirection$XJAF = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x3a88284cfa7f3ad3L, "leftToRightDirection");
   }
 
   private static final class CONCEPTS {

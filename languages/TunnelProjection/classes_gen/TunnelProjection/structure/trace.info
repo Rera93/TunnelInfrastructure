@@ -19,7 +19,7 @@
       <unit at="10,0,48,0" name="TunnelProjection.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="18,0,208,0" name="TunnelProjection.structure.StructureAspectDescriptor" />
+      <unit at="18,0,210,0" name="TunnelProjection.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331897770040">
@@ -42,28 +42,28 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1326772331897770040" at="24,0,25,0" concept="2" trace="myConceptStraightRoad" />
       <node id="1326772331897770040" at="64,46,65,37" concept="6" />
-      <node id="1326772331897770040" at="142,70,143,163" concept="5" />
-      <node id="1326772331897770040" at="143,163,144,34" concept="1" />
-      <node id="1326772331897770040" at="144,34,145,71" concept="1" />
-      <node id="1326772331897770040" at="145,71,146,103" concept="1" />
-      <node id="1326772331897770040" at="146,103,147,17" concept="1" />
-      <node id="1326772331897770173" at="147,17,148,175" concept="1" />
-      <node id="1326772331897789056" at="148,175,149,113" concept="1" />
-      <node id="1326772331900549606" at="149,113,150,113" concept="1" />
-      <node id="1326772331900549639" at="150,113,151,113" concept="1" />
-      <node id="1326772331900549644" at="151,113,152,111" concept="1" />
-      <node id="1326772331900549650" at="152,111,153,111" concept="1" />
-      <node id="2190806305253901203" at="153,111,154,112" concept="1" />
-      <node id="2190806305253901211" at="154,112,155,119" concept="1" />
-      <node id="2190806305253901223" at="155,119,156,207" concept="1" />
-      <node id="1434577435393143627" at="156,207,157,212" concept="1" />
-      <node id="1326772331897770040" at="157,212,158,22" concept="6" />
-      <node id="1326772331897770040" at="142,0,160,0" concept="8" trace="createDescriptorForStraightRoad#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1326772331897770040" at="144,70,145,163" concept="5" />
+      <node id="1326772331897770040" at="145,163,146,34" concept="1" />
+      <node id="1326772331897770040" at="146,34,147,71" concept="1" />
+      <node id="1326772331897770040" at="147,71,148,103" concept="1" />
+      <node id="1326772331897770040" at="148,103,149,17" concept="1" />
+      <node id="1326772331897770173" at="149,17,150,175" concept="1" />
+      <node id="1326772331897789056" at="150,175,151,113" concept="1" />
+      <node id="1326772331900549606" at="151,113,152,113" concept="1" />
+      <node id="1326772331900549639" at="152,113,153,113" concept="1" />
+      <node id="1326772331900549644" at="153,113,154,111" concept="1" />
+      <node id="1326772331900549650" at="154,111,155,111" concept="1" />
+      <node id="2190806305253901203" at="155,111,156,112" concept="1" />
+      <node id="2190806305253901211" at="156,112,157,119" concept="1" />
+      <node id="2190806305253901223" at="157,119,158,207" concept="1" />
+      <node id="1434577435393143627" at="158,207,159,212" concept="1" />
+      <node id="1326772331897770040" at="159,212,160,22" concept="6" />
+      <node id="1326772331897770040" at="144,0,162,0" concept="8" trace="createDescriptorForStraightRoad#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1326772331897770040" at="64,46,65,37" />
-      <scope id="1326772331897770040" at="142,70,158,22">
+      <scope id="1326772331897770040" at="144,70,160,22">
         <var name="b" id="1326772331897770040" />
       </scope>
-      <scope id="1326772331897770040" at="142,0,160,0" />
+      <scope id="1326772331897770040" at="144,0,162,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331897770176">
@@ -186,15 +186,16 @@
       <node id="1326772331900548966" at="113,17,114,108" concept="1" />
       <node id="1326772331900548972" at="114,108,115,108" concept="1" />
       <node id="1326772331900549422" at="115,108,116,117" concept="1" />
-      <node id="1326772331900548983" at="116,117,117,208" concept="1" />
-      <node id="1326772331901453727" at="117,208,118,205" concept="1" />
-      <node id="1326772331900548954" at="118,205,119,22" concept="6" />
-      <node id="1326772331900548954" at="108,0,121,0" concept="8" trace="createDescriptorForLeftTunnelPoint#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="4217665362117737171" at="116,117,117,127" concept="1" />
+      <node id="1326772331900548983" at="117,127,118,208" concept="1" />
+      <node id="1326772331901453727" at="118,208,119,205" concept="1" />
+      <node id="1326772331900548954" at="119,205,120,22" concept="6" />
+      <node id="1326772331900548954" at="108,0,122,0" concept="8" trace="createDescriptorForLeftTunnelPoint#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1326772331900548954" at="58,49,59,40" />
-      <scope id="1326772331900548954" at="108,73,119,22">
+      <scope id="1326772331900548954" at="108,73,120,22">
         <var name="b" id="1326772331900548954" />
       </scope>
-      <scope id="1326772331900548954" at="108,0,121,0" />
+      <scope id="1326772331900548954" at="108,0,122,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900548961">
@@ -217,19 +218,19 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1326772331900548961" at="26,0,27,0" concept="2" trace="myConceptTunnel" />
       <node id="1326772331900548961" at="68,40,69,31" concept="6" />
-      <node id="1326772331900548961" at="168,64,169,157" concept="5" />
-      <node id="1326772331900548961" at="169,157,170,34" concept="1" />
-      <node id="1326772331900548961" at="170,34,171,71" concept="1" />
-      <node id="1326772331900548961" at="171,71,172,103" concept="1" />
-      <node id="1326772331900548961" at="172,103,173,17" concept="1" />
-      <node id="2190806305254603783" at="173,17,174,198" concept="1" />
-      <node id="1326772331900548961" at="174,198,175,22" concept="6" />
-      <node id="1326772331900548961" at="168,0,177,0" concept="8" trace="createDescriptorForTunnel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1326772331900548961" at="170,64,171,157" concept="5" />
+      <node id="1326772331900548961" at="171,157,172,34" concept="1" />
+      <node id="1326772331900548961" at="172,34,173,71" concept="1" />
+      <node id="1326772331900548961" at="173,71,174,103" concept="1" />
+      <node id="1326772331900548961" at="174,103,175,17" concept="1" />
+      <node id="2190806305254603783" at="175,17,176,198" concept="1" />
+      <node id="1326772331900548961" at="176,198,177,22" concept="6" />
+      <node id="1326772331900548961" at="170,0,179,0" concept="8" trace="createDescriptorForTunnel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1326772331900548961" at="68,40,69,31" />
-      <scope id="1326772331900548961" at="168,64,175,22">
+      <scope id="1326772331900548961" at="170,64,177,22">
         <var name="b" id="1326772331900548961" />
       </scope>
-      <scope id="1326772331900548961" at="168,0,177,0" />
+      <scope id="1326772331900548961" at="170,0,179,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900548975">
@@ -252,23 +253,24 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1326772331900548975" at="23,0,24,0" concept="2" trace="myConceptRightTunnelPoint" />
       <node id="1326772331900548975" at="62,50,63,41" concept="6" />
-      <node id="1326772331900548975" at="129,74,130,167" concept="5" />
-      <node id="1326772331900548975" at="130,167,131,34" concept="1" />
-      <node id="1326772331900548975" at="131,34,132,71" concept="1" />
-      <node id="1326772331900548975" at="132,71,133,103" concept="1" />
-      <node id="1326772331900548975" at="133,103,134,17" concept="1" />
-      <node id="1326772331900549408" at="134,17,135,108" concept="1" />
-      <node id="1326772331900549410" at="135,108,136,108" concept="1" />
-      <node id="1326772331900549413" at="136,108,137,117" concept="1" />
-      <node id="2190806305255286903" at="137,117,138,168" concept="1" />
-      <node id="1434577435393908459" at="138,168,139,206" concept="1" />
-      <node id="1326772331900548975" at="139,206,140,22" concept="6" />
-      <node id="1326772331900548975" at="129,0,142,0" concept="8" trace="createDescriptorForRightTunnelPoint#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1326772331900548975" at="130,74,131,167" concept="5" />
+      <node id="1326772331900548975" at="131,167,132,34" concept="1" />
+      <node id="1326772331900548975" at="132,34,133,71" concept="1" />
+      <node id="1326772331900548975" at="133,71,134,103" concept="1" />
+      <node id="1326772331900548975" at="134,103,135,17" concept="1" />
+      <node id="1326772331900549408" at="135,17,136,108" concept="1" />
+      <node id="1326772331900549410" at="136,108,137,108" concept="1" />
+      <node id="1326772331900549413" at="137,108,138,118" concept="1" />
+      <node id="4217665362117825613" at="138,118,139,127" concept="1" />
+      <node id="2190806305255286903" at="139,127,140,168" concept="1" />
+      <node id="1434577435393908459" at="140,168,141,206" concept="1" />
+      <node id="1326772331900548975" at="141,206,142,22" concept="6" />
+      <node id="1326772331900548975" at="130,0,144,0" concept="8" trace="createDescriptorForRightTunnelPoint#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1326772331900548975" at="62,50,63,41" />
-      <scope id="1326772331900548975" at="129,74,140,22">
+      <scope id="1326772331900548975" at="130,74,142,22">
         <var name="b" id="1326772331900548975" />
       </scope>
-      <scope id="1326772331900548975" at="129,0,142,0" />
+      <scope id="1326772331900548975" at="130,0,144,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900549417">
@@ -341,22 +343,22 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1326772331900651524" at="27,0,28,0" concept="2" trace="myConceptTunnelHole" />
       <node id="1326772331900651524" at="70,44,71,35" concept="6" />
-      <node id="1326772331900651524" at="177,68,178,161" concept="5" />
-      <node id="1326772331900651524" at="178,161,179,34" concept="1" />
-      <node id="1326772331900651524" at="179,34,180,71" concept="1" />
-      <node id="1326772331900651524" at="180,71,181,103" concept="1" />
-      <node id="1326772331900651524" at="181,103,182,17" concept="1" />
-      <node id="1326772331900651532" at="182,17,183,203" concept="1" />
-      <node id="1326772331900651530" at="183,203,184,204" concept="1" />
-      <node id="2190806305254637149" at="184,204,185,208" concept="1" />
-      <node id="2190806305254650536" at="185,208,186,213" concept="1" />
-      <node id="1326772331900651524" at="186,213,187,22" concept="6" />
-      <node id="1326772331900651524" at="177,0,189,0" concept="8" trace="createDescriptorForTunnelHole#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1326772331900651524" at="179,68,180,161" concept="5" />
+      <node id="1326772331900651524" at="180,161,181,34" concept="1" />
+      <node id="1326772331900651524" at="181,34,182,71" concept="1" />
+      <node id="1326772331900651524" at="182,71,183,103" concept="1" />
+      <node id="1326772331900651524" at="183,103,184,17" concept="1" />
+      <node id="1326772331900651532" at="184,17,185,203" concept="1" />
+      <node id="1326772331900651530" at="185,203,186,204" concept="1" />
+      <node id="2190806305254637149" at="186,204,187,208" concept="1" />
+      <node id="2190806305254650536" at="187,208,188,213" concept="1" />
+      <node id="1326772331900651524" at="188,213,189,22" concept="6" />
+      <node id="1326772331900651524" at="179,0,191,0" concept="8" trace="createDescriptorForTunnelHole#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1326772331900651524" at="70,44,71,35" />
-      <scope id="1326772331900651524" at="177,68,187,22">
+      <scope id="1326772331900651524" at="179,68,189,22">
         <var name="b" id="1326772331900651524" />
       </scope>
-      <scope id="1326772331900651524" at="177,0,189,0" />
+      <scope id="1326772331900651524" at="179,0,191,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900697350">
@@ -379,18 +381,18 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1326772331900697350" at="25,0,26,0" concept="2" trace="myConceptStraightRoadRef" />
       <node id="1326772331900697350" at="66,49,67,40" concept="6" />
-      <node id="1326772331900697350" at="160,73,161,166" concept="5" />
-      <node id="1326772331900697350" at="161,166,162,34" concept="1" />
-      <node id="1326772331900697350" at="162,34,163,103" concept="1" />
-      <node id="1326772331900697350" at="163,103,164,17" concept="1" />
-      <node id="1326772331900697351" at="164,17,165,178" concept="1" />
-      <node id="1326772331900697350" at="165,178,166,22" concept="6" />
-      <node id="1326772331900697350" at="160,0,168,0" concept="8" trace="createDescriptorForStraightRoadRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1326772331900697350" at="162,73,163,166" concept="5" />
+      <node id="1326772331900697350" at="163,166,164,34" concept="1" />
+      <node id="1326772331900697350" at="164,34,165,103" concept="1" />
+      <node id="1326772331900697350" at="165,103,166,17" concept="1" />
+      <node id="1326772331900697351" at="166,17,167,178" concept="1" />
+      <node id="1326772331900697350" at="167,178,168,22" concept="6" />
+      <node id="1326772331900697350" at="162,0,170,0" concept="8" trace="createDescriptorForStraightRoadRef#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1326772331900697350" at="66,49,67,40" />
-      <scope id="1326772331900697350" at="160,73,166,22">
+      <scope id="1326772331900697350" at="162,73,168,22">
         <var name="b" id="1326772331900697350" />
       </scope>
-      <scope id="1326772331900697350" at="160,0,168,0" />
+      <scope id="1326772331900697350" at="162,0,170,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331901453731">
@@ -413,18 +415,18 @@
     <file name="StructureAspectDescriptor.java">
       <node id="1326772331901453731" at="28,0,29,0" concept="2" trace="myConceptTunnelHoleReference" />
       <node id="1326772331901453731" at="72,53,73,44" concept="6" />
-      <node id="1326772331901453731" at="189,77,190,170" concept="5" />
-      <node id="1326772331901453731" at="190,170,191,34" concept="1" />
-      <node id="1326772331901453731" at="191,34,192,103" concept="1" />
-      <node id="1326772331901453731" at="192,103,193,17" concept="1" />
-      <node id="1326772331901453732" at="193,17,194,175" concept="1" />
-      <node id="1326772331901453731" at="194,175,195,22" concept="6" />
-      <node id="1326772331901453731" at="189,0,197,0" concept="8" trace="createDescriptorForTunnelHoleReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="1326772331901453731" at="191,77,192,170" concept="5" />
+      <node id="1326772331901453731" at="192,170,193,34" concept="1" />
+      <node id="1326772331901453731" at="193,34,194,103" concept="1" />
+      <node id="1326772331901453731" at="194,103,195,17" concept="1" />
+      <node id="1326772331901453732" at="195,17,196,175" concept="1" />
+      <node id="1326772331901453731" at="196,175,197,22" concept="6" />
+      <node id="1326772331901453731" at="191,0,199,0" concept="8" trace="createDescriptorForTunnelHoleReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="1326772331901453731" at="72,53,73,44" />
-      <scope id="1326772331901453731" at="189,77,195,22">
+      <scope id="1326772331901453731" at="191,77,197,22">
         <var name="b" id="1326772331901453731" />
       </scope>
-      <scope id="1326772331901453731" at="189,0,197,0" />
+      <scope id="1326772331901453731" at="191,0,199,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1434577435393143624">
@@ -481,18 +483,18 @@
     <file name="StructureAspectDescriptor.java">
       <node id="2190806305251888577" at="22,0,23,0" concept="2" trace="myConceptRightPointReference" />
       <node id="2190806305251888577" at="60,53,61,44" concept="6" />
-      <node id="2190806305251888577" at="121,77,122,170" concept="5" />
-      <node id="2190806305251888577" at="122,170,123,34" concept="1" />
-      <node id="2190806305251888577" at="123,34,124,103" concept="1" />
-      <node id="2190806305251888577" at="124,103,125,17" concept="1" />
-      <node id="2190806305251888578" at="125,17,126,184" concept="1" />
-      <node id="2190806305251888577" at="126,184,127,22" concept="6" />
-      <node id="2190806305251888577" at="121,0,129,0" concept="8" trace="createDescriptorForRightPointReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="2190806305251888577" at="122,77,123,170" concept="5" />
+      <node id="2190806305251888577" at="123,170,124,34" concept="1" />
+      <node id="2190806305251888577" at="124,34,125,103" concept="1" />
+      <node id="2190806305251888577" at="125,103,126,17" concept="1" />
+      <node id="2190806305251888578" at="126,17,127,184" concept="1" />
+      <node id="2190806305251888577" at="127,184,128,22" concept="6" />
+      <node id="2190806305251888577" at="122,0,130,0" concept="8" trace="createDescriptorForRightPointReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="2190806305251888577" at="60,53,61,44" />
-      <scope id="2190806305251888577" at="121,77,127,22">
+      <scope id="2190806305251888577" at="122,77,128,22">
         <var name="b" id="2190806305251888577" />
       </scope>
-      <scope id="2190806305251888577" at="121,0,129,0" />
+      <scope id="2190806305251888577" at="122,0,130,0" />
     </file>
   </root>
   <root nodeRef="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/4217665362112163629">
@@ -574,20 +576,20 @@
     <file name="StructureAspectDescriptor.java">
       <node id="5159374792462216658" at="29,0,30,0" concept="2" trace="myConceptTunnelOverview" />
       <node id="5159374792462216658" at="74,48,75,39" concept="6" />
-      <node id="5159374792462216658" at="197,72,198,165" concept="5" />
-      <node id="5159374792462216658" at="198,165,199,33" concept="1" />
-      <node id="5159374792462216658" at="199,33,200,71" concept="1" />
-      <node id="5159374792462216658" at="200,71,201,103" concept="1" />
-      <node id="5159374792462216658" at="201,103,202,17" concept="1" />
-      <node id="1326772331900837658" at="202,17,203,199" concept="1" />
-      <node id="1326772331897770043" at="203,199,204,205" concept="1" />
-      <node id="5159374792462216658" at="204,205,205,22" concept="6" />
-      <node id="5159374792462216658" at="197,0,207,0" concept="8" trace="createDescriptorForTunnelOverview#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="5159374792462216658" at="199,72,200,165" concept="5" />
+      <node id="5159374792462216658" at="200,165,201,33" concept="1" />
+      <node id="5159374792462216658" at="201,33,202,71" concept="1" />
+      <node id="5159374792462216658" at="202,71,203,103" concept="1" />
+      <node id="5159374792462216658" at="203,103,204,17" concept="1" />
+      <node id="1326772331900837658" at="204,17,205,199" concept="1" />
+      <node id="1326772331897770043" at="205,199,206,205" concept="1" />
+      <node id="5159374792462216658" at="206,205,207,22" concept="6" />
+      <node id="5159374792462216658" at="199,0,209,0" concept="8" trace="createDescriptorForTunnelOverview#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="5159374792462216658" at="74,48,75,39" />
-      <scope id="5159374792462216658" at="197,72,205,22">
+      <scope id="5159374792462216658" at="199,72,207,22">
         <var name="b" id="5159374792462216658" />
       </scope>
-      <scope id="5159374792462216658" at="197,0,207,0" />
+      <scope id="5159374792462216658" at="199,0,209,0" />
     </file>
   </root>
 </debug-info>

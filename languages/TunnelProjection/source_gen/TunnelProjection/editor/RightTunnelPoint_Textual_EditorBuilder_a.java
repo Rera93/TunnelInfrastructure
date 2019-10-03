@@ -81,8 +81,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.addEditorCell(createConstant_3());
     editorCell.addEditorCell(createProperty_3());
     editorCell.addEditorCell(createConstant_4());
-    editorCell.addEditorCell(createModelAccess_0());
+    editorCell.addEditorCell(createProperty_4());
     editorCell.addEditorCell(createConstant_5());
+    editorCell.addEditorCell(createModelAccess_0());
+    editorCell.addEditorCell(createConstant_6());
     editorCell.addEditorCell(createRefCell_0());
     return editorCell;
   }
@@ -180,7 +182,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     }
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Entry Point: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Left Point: ");
     editorCell.setCellId("Constant_f18dvq_g0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -188,11 +190,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
   private EditorCell createProperty_3() {
     getCellFactory().pushCellContext();
     try {
-      final SProperty property = PROPS.entryPoint$oHNz;
+      final SProperty property = PROPS.isLeftPoint$oHNz;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<no entryPoint>");
-      editorCell.setCellId("property_entryPoint");
+      editorCell.setDefaultText("<no isLeftPoint>");
+      editorCell.setCellId("property_isLeftPoint");
       editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
@@ -211,8 +213,39 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     }
   }
   private EditorCell createConstant_4() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Hole: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "LeftToRight: ");
     editorCell.setCellId("Constant_f18dvq_i0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_4() {
+    getCellFactory().pushCellContext();
+    try {
+      final SProperty property = PROPS.leftToRightDirection$3_Ot;
+      getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
+      editorCell.setDefaultText("<no leftToRightDirection>");
+      editorCell.setCellId("property_leftToRightDirection");
+      editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
+      setCellContext(editorCell);
+      Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(AttributeOperations.getAttributeList(myNode, new IAttributeDescriptor.AllAttributes()), CONCEPTS.PropertyAttribute$jT);
+      Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property);
+        }
+      });
+      if (Sequence.fromIterable(currentPropertyAttributes).isNotEmpty()) {
+        EditorManager manager = EditorManager.getInstanceFromContext(getEditorContext());
+        return manager.createNodeRoleAttributeCell(Sequence.fromIterable(currentPropertyAttributes).first(), AttributeKind.PROPERTY, editorCell);
+      } else
+      return editorCell;
+    } finally {
+      getCellFactory().popCellContext();
+    }
+  }
+  private EditorCell createConstant_5() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Hole: ");
+    editorCell.setCellId("Constant_f18dvq_k0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -231,13 +264,13 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), modelAccessor, myNode);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ModelAccess_f18dvq_j0");
+    editorCell.setCellId("ModelAccess_f18dvq_l0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_5() {
+  private EditorCell createConstant_6() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, " Road: ");
-    editorCell.setCellId("Constant_f18dvq_k0");
+    editorCell.setCellId("Constant_f18dvq_m0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -289,7 +322,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
     private EditorCell createCollection_1() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
-      editorCell.setCellId("Collection_f18dvq_a0l0");
+      editorCell.setCellId("Collection_f18dvq_a0n0");
       editorCell.addEditorCell(createRefCell_1());
       return editorCell;
     }
@@ -348,7 +381,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       }
 
       /*package*/ EditorCell createCell() {
-        return createProperty_4();
+        return createProperty_5();
       }
 
       @NotNull
@@ -357,7 +390,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
         return myNode;
       }
 
-      private EditorCell createProperty_4() {
+      private EditorCell createProperty_5() {
         getCellFactory().pushCellContext();
         try {
           final SProperty property = PROPS.name$tAp1;
@@ -392,7 +425,8 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     /*package*/ static final SProperty name$tAp1 = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty x$oHAX = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, 0x1269a46804bfb920L, "x");
     /*package*/ static final SProperty y$oHM6 = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, 0x1269a46804bfb922L, "y");
-    /*package*/ static final SProperty entryPoint$oHNz = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, 0x1269a46804bfb925L, "entryPoint");
+    /*package*/ static final SProperty isLeftPoint$oHNz = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, 0x1269a46804bfb925L, "isLeftPoint");
+    /*package*/ static final SProperty leftToRightDirection$3_Ot = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, 0x3a88284cfa80944dL, "leftToRightDirection");
   }
 
   private static final class CONCEPTS {

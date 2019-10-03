@@ -212,6 +212,11 @@
       <property role="TrG5h" value="entryPoint" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="3E8a4NUvNFj" role="1TKVEl">
+      <property role="IQ2nx" value="4217665362117737171" />
+      <property role="TrG5h" value="leftToRightDirection" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="19DD6w4JVtR" role="1TKVEi">
       <property role="IQ2ns" value="1326772331900548983" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -273,7 +278,12 @@
     </node>
     <node concept="1TJgyi" id="19DD6w4JV$_" role="1TKVEl">
       <property role="IQ2nx" value="1326772331900549413" />
-      <property role="TrG5h" value="entryPoint" />
+      <property role="TrG5h" value="isLeftPoint" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3E8a4NUw9hd" role="1TKVEl">
+      <property role="IQ2nx" value="4217665362117825613" />
+      <property role="TrG5h" value="leftToRightDirection" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="PrWs8" id="1TBjFCGfC_P" role="PzmwI">
