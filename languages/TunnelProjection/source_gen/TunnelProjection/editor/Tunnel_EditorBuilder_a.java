@@ -13,6 +13,9 @@ import de.itemis.mps.editor.diagram.runtime.ContextVariables;
 import java.util.List;
 import de.itemis.mps.editor.diagram.runtime.model.Port;
 import java.util.ArrayList;
+import de.itemis.mps.editor.diagram.runtime.shape.IShape;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
@@ -20,6 +23,8 @@ import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
 import jetbrains.mps.editor.runtime.EditorCell_Empty;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /*package*/ class Tunnel_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -52,6 +57,7 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
         EditorCell contentCell = createEmpty_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
+        final IShape shape = new TunnelShape(ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.holes$OmIQ)).count());
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
@@ -62,6 +68,9 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
           @Override
           public boolean isPreservePortOrder() {
             return true;
+          }
+          public IShape getShape() {
+            return shape;
           }
           @Override
           @NotNull
@@ -103,5 +112,9 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
     editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
     editorCell.setCellId("Empty_5j6qhe_a0");
     return editorCell;
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink holes$OmIQ = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L, 0x1e674eba2c62fc07L, "holes");
   }
 }

@@ -4249,20 +4249,19 @@
       <node concept="3clFbT" id="1TBjFCGlCC2" role="1pgz2C">
         <property role="3clFbU" value="true" />
       </node>
-      <node concept="1X3_iC" id="161Kj8PUFQI" role="lGtFl">
-        <property role="3V$3am" value="editor" />
-        <property role="3V$3ak" value="fa13cc63-c476-4d46-9c96-d53670abe7bc/6237710625713195816/1315262826372527521" />
-        <node concept="3EZMnI" id="3E8a4NUs0iF" role="8Wnug">
-          <node concept="2iRfu4" id="3E8a4NUs0iG" role="2iSdaV" />
-          <node concept="3F0ifn" id="3E8a4NUs0iy" role="3EZMnx">
-            <property role="3F0ifm" value="Tunnel" />
+      <node concept="35HoNQ" id="161Kj8PUFR4" role="1ytjkN" />
+      <node concept="2xQOud" id="GOgb$s4AZW" role="2xQQDV">
+        <ref role="2xQOue" node="GOgb$s4wPr" resolve="TunnelShape" />
+        <node concept="2OqwBi" id="GOgb$s7gL6" role="1xbcaF">
+          <node concept="2OqwBi" id="GOgb$s7emD" role="2Oq$k0">
+            <node concept="1Pxb5l" id="GOgb$s7ec6" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="GOgb$s7ezg" role="2OqNvi">
+              <ref role="3TtcxE" to="j6tt:1TBjFCGoJK7" resolve="holes" />
+            </node>
           </node>
-          <node concept="3F0A7n" id="3E8a4NUs0iT" role="3EZMnx">
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
+          <node concept="34oBXx" id="GOgb$s7iAw" role="2OqNvi" />
         </node>
       </node>
-      <node concept="35HoNQ" id="161Kj8PUFR4" role="1ytjkN" />
     </node>
   </node>
   <node concept="24kQdi" id="19DD6w4NomK">
@@ -5226,6 +5225,513 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2xDbr0" id="GOgb$s4wPr">
+    <property role="TrG5h" value="TunnelShape" />
+    <node concept="1xmO9C" id="GOgb$s7ebG" role="1xmOgE">
+      <property role="TrG5h" value="numberOfTunnelHoles" />
+      <node concept="10Oyi0" id="GOgb$s7ebW" role="1xmOb1" />
+    </node>
+    <node concept="2xDzp1" id="GOgb$s4wPC" role="2xOiiv">
+      <node concept="3clFbS" id="GOgb$s4wPD" role="2VODD2">
+        <node concept="3clFbF" id="GOgb$s5UBs" role="3cqZAp">
+          <node concept="2OqwBi" id="GOgb$s5UUq" role="3clFbG">
+            <node concept="2xDIQ0" id="GOgb$s5UBq" role="2Oq$k0" />
+            <node concept="liA8E" id="GOgb$s5V3Y" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
+              <node concept="10M0yZ" id="GOgb$s5V7A" role="37wK5m">
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="GOgb$s4wQd" role="3cqZAp">
+          <node concept="2OqwBi" id="GOgb$s4wYB" role="3clFbG">
+            <node concept="2xDIQ0" id="GOgb$s4wQc" role="2Oq$k0" />
+            <node concept="liA8E" id="GOgb$s4x8D" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Graphics.fillRect(int,int,int,int)" resolve="fillRect" />
+              <node concept="10QFUN" id="GOgb$s4_TZ" role="37wK5m">
+                <node concept="2OqwBi" id="GOgb$s4yV8" role="10QFUP">
+                  <node concept="2xDkLB" id="GOgb$s4yBn" role="2Oq$k0" />
+                  <node concept="liA8E" id="GOgb$s4zdP" role="2OqNvi">
+                    <ref role="37wK5l" to="fbzs:~RectangularShape.getMinX()" resolve="getMinX" />
+                  </node>
+                </node>
+                <node concept="10Oyi0" id="GOgb$s4A3h" role="10QFUM" />
+              </node>
+              <node concept="10QFUN" id="GOgb$s4AaL" role="37wK5m">
+                <node concept="10Oyi0" id="GOgb$s4ApY" role="10QFUM" />
+                <node concept="2OqwBi" id="GOgb$s4zxc" role="10QFUP">
+                  <node concept="2xDkLB" id="GOgb$s4zqO" role="2Oq$k0" />
+                  <node concept="liA8E" id="GOgb$s4zT0" role="2OqNvi">
+                    <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                  </node>
+                </node>
+              </node>
+              <node concept="10QFUN" id="GOgb$s4ACY" role="37wK5m">
+                <node concept="10Oyi0" id="GOgb$s4AFo" role="10QFUM" />
+                <node concept="2OqwBi" id="GOgb$s4$wb" role="10QFUP">
+                  <node concept="2xDkLB" id="GOgb$s4$2Z" role="2Oq$k0" />
+                  <node concept="liA8E" id="GOgb$s4$RJ" role="2OqNvi">
+                    <ref role="37wK5l" to="fbzs:~RectangularShape.getWidth()" resolve="getWidth" />
+                  </node>
+                </node>
+              </node>
+              <node concept="10QFUN" id="GOgb$s4ARi" role="37wK5m">
+                <node concept="10Oyi0" id="GOgb$s4AXZ" role="10QFUM" />
+                <node concept="2OqwBi" id="GOgb$s4_qA" role="10QFUP">
+                  <node concept="2xDkLB" id="GOgb$s4_30" role="2Oq$k0" />
+                  <node concept="liA8E" id="GOgb$s4_Ih" role="2OqNvi">
+                    <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="GOgb$s7iCl" role="3cqZAp" />
+        <node concept="3cpWs8" id="GOgb$s7kfP" role="3cqZAp">
+          <node concept="3cpWsn" id="GOgb$s7kfQ" role="3cpWs9">
+            <property role="TrG5h" value="leftPointX" />
+            <node concept="10Oyi0" id="GOgb$s7kfR" role="1tU5fm" />
+            <node concept="10QFUN" id="GOgb$s7kfS" role="33vP2m">
+              <node concept="10Oyi0" id="GOgb$s7kfT" role="10QFUM" />
+              <node concept="2OqwBi" id="GOgb$s7kfU" role="10QFUP">
+                <node concept="2xDkLB" id="GOgb$s7kfV" role="2Oq$k0" />
+                <node concept="liA8E" id="GOgb$s7kfW" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getMinX()" resolve="getMinX" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="GOgb$s7kfX" role="3cqZAp">
+          <node concept="3cpWsn" id="GOgb$s7kfY" role="3cpWs9">
+            <property role="TrG5h" value="leftPointY" />
+            <node concept="10Oyi0" id="GOgb$s7kfZ" role="1tU5fm" />
+            <node concept="10QFUN" id="GOgb$s7kg0" role="33vP2m">
+              <node concept="10Oyi0" id="GOgb$s7kg1" role="10QFUM" />
+              <node concept="1eOMI4" id="GOgb$s7kg2" role="10QFUP">
+                <node concept="3cpWs3" id="GOgb$s7kg3" role="1eOMHV">
+                  <node concept="2OqwBi" id="GOgb$s7kg4" role="3uHU7B">
+                    <node concept="2xDkLB" id="GOgb$s7kg5" role="2Oq$k0" />
+                    <node concept="liA8E" id="GOgb$s7kg6" role="2OqNvi">
+                      <ref role="37wK5l" to="fbzs:~RectangularShape.getMaxY()" resolve="getMaxY" />
+                    </node>
+                  </node>
+                  <node concept="1eOMI4" id="GOgb$s7kg7" role="3uHU7w">
+                    <node concept="FJ1c_" id="GOgb$s7kg8" role="1eOMHV">
+                      <node concept="1eOMI4" id="GOgb$s7kg9" role="3uHU7B">
+                        <node concept="3cpWsd" id="GOgb$s7kga" role="1eOMHV">
+                          <node concept="2OqwBi" id="GOgb$s7kgb" role="3uHU7w">
+                            <node concept="2xDkLB" id="GOgb$s7kgc" role="2Oq$k0" />
+                            <node concept="liA8E" id="GOgb$s7kgd" role="2OqNvi">
+                              <ref role="37wK5l" to="fbzs:~RectangularShape.getMaxY()" resolve="getMaxY" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="GOgb$s7kge" role="3uHU7B">
+                            <node concept="2xDkLB" id="GOgb$s7kgf" role="2Oq$k0" />
+                            <node concept="liA8E" id="GOgb$s7kgg" role="2OqNvi">
+                              <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3cmrfG" id="GOgb$s7kgh" role="3uHU7w">
+                        <property role="3cmrfH" value="2" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="GOgb$s7kgi" role="3cqZAp">
+          <node concept="3cpWsn" id="GOgb$s7kgj" role="3cpWs9">
+            <property role="TrG5h" value="rightPointX" />
+            <node concept="10Oyi0" id="GOgb$s7kgk" role="1tU5fm" />
+            <node concept="10QFUN" id="GOgb$s7kgl" role="33vP2m">
+              <node concept="10Oyi0" id="GOgb$s7kgm" role="10QFUM" />
+              <node concept="2OqwBi" id="GOgb$s7kgn" role="10QFUP">
+                <node concept="2xDkLB" id="GOgb$s7kgo" role="2Oq$k0" />
+                <node concept="liA8E" id="GOgb$s7kgp" role="2OqNvi">
+                  <ref role="37wK5l" to="fbzs:~RectangularShape.getMaxX()" resolve="getMaxX" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="GOgb$s7kgq" role="3cqZAp">
+          <node concept="3cpWsn" id="GOgb$s7kgr" role="3cpWs9">
+            <property role="TrG5h" value="rightPointY" />
+            <node concept="10Oyi0" id="GOgb$s7kgs" role="1tU5fm" />
+            <node concept="37vLTw" id="GOgb$s7kgt" role="33vP2m">
+              <ref role="3cqZAo" node="GOgb$s7kfY" resolve="leftPointY" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="GOgb$s7rBJ" role="3cqZAp" />
+        <node concept="3cpWs8" id="GOgb$s7rNq" role="3cqZAp">
+          <node concept="3cpWsn" id="GOgb$s7rNr" role="3cpWs9">
+            <property role="TrG5h" value="equalLanesDivision" />
+            <node concept="10Oyi0" id="GOgb$s7rNs" role="1tU5fm" />
+            <node concept="3cmrfG" id="GOgb$s7rNt" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="GOgb$s86Uo" role="3cqZAp" />
+        <node concept="3clFbF" id="GOgb$s87np" role="3cqZAp">
+          <node concept="2OqwBi" id="GOgb$s87DB" role="3clFbG">
+            <node concept="2xDIQ0" id="GOgb$s87nn" role="2Oq$k0" />
+            <node concept="liA8E" id="GOgb$s881z" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
+              <node concept="10M0yZ" id="GOgb$s885b" role="37wK5m">
+                <ref role="3cqZAo" to="z60i:~Color.MAGENTA" resolve="MAGENTA" />
+                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="GOgb$s7k3R" role="3cqZAp" />
+        <node concept="3clFbJ" id="GOgb$s7kty" role="3cqZAp">
+          <node concept="3clFbS" id="GOgb$s7kt$" role="3clFbx">
+            <node concept="3SKdUt" id="GOgb$s7m3a" role="3cqZAp">
+              <node concept="1PaTwC" id="GOgb$s7m3b" role="3ndbpf">
+                <node concept="3oM_SD" id="GOgb$s7m3B" role="1PaTwD">
+                  <property role="3oM_SC" value="do" />
+                </node>
+                <node concept="3oM_SD" id="GOgb$s7m3S" role="1PaTwD">
+                  <property role="3oM_SC" value="nothing" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="GOgb$s7nV7" role="3clFbw">
+            <node concept="3clFbC" id="GOgb$s7pnH" role="3uHU7B">
+              <node concept="3cmrfG" id="GOgb$s7po_" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+              <node concept="1xnly_" id="GOgb$s7oyu" role="3uHU7B">
+                <ref role="1xnlzC" node="GOgb$s7ebG" resolve="numberOfTunnelHoles" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="GOgb$s7l$8" role="3uHU7w">
+              <node concept="3cmrfG" id="GOgb$s7m2w" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="1xnly_" id="GOgb$s7kyR" role="3uHU7B">
+                <ref role="1xnlzC" node="GOgb$s7ebG" resolve="numberOfTunnelHoles" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="GOgb$s7m4t" role="3eNLev">
+            <node concept="3clFbC" id="GOgb$s7nws" role="3eO9$A">
+              <node concept="3cmrfG" id="GOgb$s7ppr" role="3uHU7w">
+                <property role="3cmrfH" value="2" />
+              </node>
+              <node concept="1xnly_" id="GOgb$s7mFD" role="3uHU7B">
+                <ref role="1xnlzC" node="GOgb$s7ebG" resolve="numberOfTunnelHoles" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="GOgb$s7m4v" role="3eOfB_">
+              <node concept="3clFbF" id="GOgb$s7qW_" role="3cqZAp">
+                <node concept="2OqwBi" id="GOgb$s7qWA" role="3clFbG">
+                  <node concept="2xDIQ0" id="GOgb$s7qWB" role="2Oq$k0" />
+                  <node concept="liA8E" id="GOgb$s7qWC" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
+                    <node concept="37vLTw" id="GOgb$s7qWD" role="37wK5m">
+                      <ref role="3cqZAo" node="GOgb$s7kfQ" resolve="leftPointX" />
+                    </node>
+                    <node concept="37vLTw" id="GOgb$s7qWE" role="37wK5m">
+                      <ref role="3cqZAo" node="GOgb$s7kfY" resolve="leftPointY" />
+                    </node>
+                    <node concept="37vLTw" id="GOgb$s7qWF" role="37wK5m">
+                      <ref role="3cqZAo" node="GOgb$s7kgj" resolve="rightPointX" />
+                    </node>
+                    <node concept="37vLTw" id="GOgb$s7qWG" role="37wK5m">
+                      <ref role="3cqZAo" node="GOgb$s7kgr" resolve="rightPointY" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="GOgb$s7qXC" role="9aQIa">
+            <node concept="3clFbS" id="GOgb$s7qXD" role="9aQI4">
+              <node concept="3clFbF" id="GOgb$s8QR1" role="3cqZAp">
+                <node concept="37vLTI" id="GOgb$s8RN7" role="3clFbG">
+                  <node concept="37vLTw" id="GOgb$s8QQZ" role="37vLTJ">
+                    <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                  </node>
+                  <node concept="FJ1c_" id="GOgb$s8RXn" role="37vLTx">
+                    <node concept="1eOMI4" id="GOgb$s8RXp" role="3uHU7B">
+                      <node concept="10QFUN" id="GOgb$s8RXq" role="1eOMHV">
+                        <node concept="10Oyi0" id="GOgb$s8RXr" role="10QFUM" />
+                        <node concept="2OqwBi" id="GOgb$s8RXs" role="10QFUP">
+                          <node concept="2xDkLB" id="GOgb$s8RXt" role="2Oq$k0" />
+                          <node concept="liA8E" id="GOgb$s8RXu" role="2OqNvi">
+                            <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1xnly_" id="GOgb$s8Spl" role="3uHU7w">
+                      <ref role="1xnlzC" node="GOgb$s7ebG" resolve="numberOfTunnelHoles" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Dw8fO" id="GOgb$s8NF0" role="3cqZAp">
+                <node concept="3clFbS" id="GOgb$s8NF2" role="2LFqv$">
+                  <node concept="3clFbF" id="GOgb$s8TkY" role="3cqZAp">
+                    <node concept="2OqwBi" id="GOgb$s8Tto" role="3clFbG">
+                      <node concept="2xDIQ0" id="GOgb$s8TkW" role="2Oq$k0" />
+                      <node concept="liA8E" id="GOgb$s8T_s" role="2OqNvi">
+                        <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
+                        <node concept="37vLTw" id="GOgb$s8T_X" role="37wK5m">
+                          <ref role="3cqZAo" node="GOgb$s7kfQ" resolve="leftPointX" />
+                        </node>
+                        <node concept="3cpWs3" id="GOgb$s8Vpw" role="37wK5m">
+                          <node concept="17qRlL" id="GOgb$s8Wji" role="3uHU7w">
+                            <node concept="1eOMI4" id="GOgb$s8Xc_" role="3uHU7w">
+                              <node concept="3cpWs3" id="GOgb$s8Xvj" role="1eOMHV">
+                                <node concept="37vLTw" id="GOgb$s8WlL" role="3uHU7B">
+                                  <ref role="3cqZAo" node="GOgb$s8NF3" resolve="i" />
+                                </node>
+                                <node concept="3cmrfG" id="GOgb$s8XE9" role="3uHU7w">
+                                  <property role="3cmrfH" value="1" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="GOgb$s8Vsh" role="3uHU7B">
+                              <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                            </node>
+                          </node>
+                          <node concept="1eOMI4" id="GOgb$s8TMK" role="3uHU7B">
+                            <node concept="10QFUN" id="GOgb$s8Uxj" role="1eOMHV">
+                              <node concept="10Oyi0" id="GOgb$s8UB0" role="10QFUM" />
+                              <node concept="2OqwBi" id="GOgb$s8U7M" role="10QFUP">
+                                <node concept="2xDkLB" id="GOgb$s8TQc" role="2Oq$k0" />
+                                <node concept="liA8E" id="GOgb$s8UqB" role="2OqNvi">
+                                  <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="GOgb$s8TFO" role="37wK5m">
+                          <ref role="3cqZAo" node="GOgb$s7kgj" resolve="rightPointX" />
+                        </node>
+                        <node concept="3cpWs3" id="GOgb$s8YUA" role="37wK5m">
+                          <node concept="17qRlL" id="GOgb$s8Zj4" role="3uHU7w">
+                            <node concept="1eOMI4" id="GOgb$s8Zmi" role="3uHU7w">
+                              <node concept="3cpWs3" id="GOgb$s90r_" role="1eOMHV">
+                                <node concept="3cmrfG" id="GOgb$s90rC" role="3uHU7w">
+                                  <property role="3cmrfH" value="1" />
+                                </node>
+                                <node concept="37vLTw" id="GOgb$s8ZwS" role="3uHU7B">
+                                  <ref role="3cqZAo" node="GOgb$s8NF3" resolve="i" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="GOgb$s8Z72" role="3uHU7B">
+                              <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                            </node>
+                          </node>
+                          <node concept="1eOMI4" id="GOgb$s8YgX" role="3uHU7B">
+                            <node concept="10QFUN" id="GOgb$s8YgY" role="1eOMHV">
+                              <node concept="10Oyi0" id="GOgb$s8YgZ" role="10QFUM" />
+                              <node concept="2OqwBi" id="GOgb$s8Yh0" role="10QFUP">
+                                <node concept="2xDkLB" id="GOgb$s8Yh1" role="2Oq$k0" />
+                                <node concept="liA8E" id="GOgb$s8Yh2" role="2OqNvi">
+                                  <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWsn" id="GOgb$s8NF3" role="1Duv9x">
+                  <property role="TrG5h" value="i" />
+                  <node concept="10Oyi0" id="GOgb$s8NYm" role="1tU5fm" />
+                  <node concept="3cmrfG" id="GOgb$s8NZD" role="33vP2m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+                <node concept="3eOVzh" id="GOgb$s8Pe8" role="1Dwp0S">
+                  <node concept="3cpWsd" id="GOgb$s8QaX" role="3uHU7w">
+                    <node concept="3cmrfG" id="GOgb$s8Qb0" role="3uHU7w">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                    <node concept="1xnly_" id="GOgb$s8PuE" role="3uHU7B">
+                      <ref role="1xnlzC" node="GOgb$s7ebG" resolve="numberOfTunnelHoles" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="GOgb$s8NZU" role="3uHU7B">
+                    <ref role="3cqZAo" node="GOgb$s8NF3" resolve="i" />
+                  </node>
+                </node>
+                <node concept="3uNrnE" id="GOgb$s8Q_H" role="1Dwrff">
+                  <node concept="37vLTw" id="GOgb$s8Q_J" role="2$L3a6">
+                    <ref role="3cqZAo" node="GOgb$s8NF3" resolve="i" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="GOgb$s90O6" role="3cqZAp" />
+              <node concept="1X3_iC" id="GOgb$s90wp" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="GOgb$s7sG4" role="8Wnug">
+                  <node concept="37vLTI" id="GOgb$s7sG5" role="3clFbG">
+                    <node concept="FJ1c_" id="GOgb$s7sG6" role="37vLTx">
+                      <node concept="3cmrfG" id="GOgb$s7sG7" role="3uHU7w">
+                        <property role="3cmrfH" value="3" />
+                      </node>
+                      <node concept="1eOMI4" id="GOgb$s7sG8" role="3uHU7B">
+                        <node concept="10QFUN" id="GOgb$s7sG9" role="1eOMHV">
+                          <node concept="10Oyi0" id="GOgb$s7sGa" role="10QFUM" />
+                          <node concept="2OqwBi" id="GOgb$s7sGb" role="10QFUP">
+                            <node concept="2xDkLB" id="GOgb$s7sGc" role="2Oq$k0" />
+                            <node concept="liA8E" id="GOgb$s7sGd" role="2OqNvi">
+                              <ref role="37wK5l" to="fbzs:~RectangularShape.getHeight()" resolve="getHeight" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="GOgb$s7sGe" role="37vLTJ">
+                      <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1X3_iC" id="GOgb$s90wq" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="GOgb$s7sGf" role="8Wnug">
+                  <node concept="2OqwBi" id="GOgb$s7sGg" role="3clFbG">
+                    <node concept="2xDIQ0" id="GOgb$s7sGh" role="2Oq$k0" />
+                    <node concept="liA8E" id="GOgb$s7sGi" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
+                      <node concept="37vLTw" id="GOgb$s7sGj" role="37wK5m">
+                        <ref role="3cqZAo" node="GOgb$s7kfQ" resolve="leftPointX" />
+                      </node>
+                      <node concept="3cpWs3" id="GOgb$s7sGk" role="37wK5m">
+                        <node concept="1eOMI4" id="GOgb$s7sGl" role="3uHU7B">
+                          <node concept="10QFUN" id="GOgb$s7sGm" role="1eOMHV">
+                            <node concept="10Oyi0" id="GOgb$s7sGn" role="10QFUM" />
+                            <node concept="2OqwBi" id="GOgb$s7sGo" role="10QFUP">
+                              <node concept="2xDkLB" id="GOgb$s7sGp" role="2Oq$k0" />
+                              <node concept="liA8E" id="GOgb$s7sGq" role="2OqNvi">
+                                <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="GOgb$s7sGr" role="3uHU7w">
+                          <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="GOgb$s7sGs" role="37wK5m">
+                        <ref role="3cqZAo" node="GOgb$s7kgj" resolve="rightPointX" />
+                      </node>
+                      <node concept="3cpWs3" id="GOgb$s7sGt" role="37wK5m">
+                        <node concept="1eOMI4" id="GOgb$s7sGu" role="3uHU7B">
+                          <node concept="10QFUN" id="GOgb$s7sGv" role="1eOMHV">
+                            <node concept="10Oyi0" id="GOgb$s7sGw" role="10QFUM" />
+                            <node concept="2OqwBi" id="GOgb$s7sGx" role="10QFUP">
+                              <node concept="2xDkLB" id="GOgb$s7sGy" role="2Oq$k0" />
+                              <node concept="liA8E" id="GOgb$s7sGz" role="2OqNvi">
+                                <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="GOgb$s7sG$" role="3uHU7w">
+                          <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1X3_iC" id="GOgb$s90wr" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="GOgb$s7sG_" role="8Wnug">
+                  <node concept="2OqwBi" id="GOgb$s7sGA" role="3clFbG">
+                    <node concept="2xDIQ0" id="GOgb$s7sGB" role="2Oq$k0" />
+                    <node concept="liA8E" id="GOgb$s7sGC" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Graphics.drawLine(int,int,int,int)" resolve="drawLine" />
+                      <node concept="37vLTw" id="GOgb$s7sGD" role="37wK5m">
+                        <ref role="3cqZAo" node="GOgb$s7kfQ" resolve="leftPointX" />
+                      </node>
+                      <node concept="3cpWs3" id="GOgb$s7sGE" role="37wK5m">
+                        <node concept="1eOMI4" id="GOgb$s7sGF" role="3uHU7B">
+                          <node concept="10QFUN" id="GOgb$s7sGG" role="1eOMHV">
+                            <node concept="10Oyi0" id="GOgb$s7sGH" role="10QFUM" />
+                            <node concept="2OqwBi" id="GOgb$s7sGI" role="10QFUP">
+                              <node concept="2xDkLB" id="GOgb$s7sGJ" role="2Oq$k0" />
+                              <node concept="liA8E" id="GOgb$s7sGK" role="2OqNvi">
+                                <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="17qRlL" id="GOgb$s7sGL" role="3uHU7w">
+                          <node concept="3cmrfG" id="GOgb$s7sGM" role="3uHU7w">
+                            <property role="3cmrfH" value="2" />
+                          </node>
+                          <node concept="37vLTw" id="GOgb$s7sGN" role="3uHU7B">
+                            <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="GOgb$s7sGO" role="37wK5m">
+                        <ref role="3cqZAo" node="GOgb$s7kgj" resolve="rightPointX" />
+                      </node>
+                      <node concept="3cpWs3" id="GOgb$s7sGP" role="37wK5m">
+                        <node concept="1eOMI4" id="GOgb$s7sGQ" role="3uHU7B">
+                          <node concept="10QFUN" id="GOgb$s7sGR" role="1eOMHV">
+                            <node concept="10Oyi0" id="GOgb$s7sGS" role="10QFUM" />
+                            <node concept="2OqwBi" id="GOgb$s7sGT" role="10QFUP">
+                              <node concept="2xDkLB" id="GOgb$s7sGU" role="2Oq$k0" />
+                              <node concept="liA8E" id="GOgb$s7sGV" role="2OqNvi">
+                                <ref role="37wK5l" to="fbzs:~RectangularShape.getMinY()" resolve="getMinY" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="17qRlL" id="GOgb$s7sGW" role="3uHU7w">
+                          <node concept="3cmrfG" id="GOgb$s7sGX" role="3uHU7w">
+                            <property role="3cmrfH" value="2" />
+                          </node>
+                          <node concept="37vLTw" id="GOgb$s7sGY" role="3uHU7B">
+                            <ref role="3cqZAo" node="GOgb$s7rNr" resolve="equalLanesDivision" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="GOgb$s7k4t" role="3cqZAp" />
+        <node concept="3clFbH" id="GOgb$s7dYZ" role="3cqZAp" />
+        <node concept="3clFbH" id="GOgb$s7dZu" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="2x7zL7" id="GOgb$s5g4H" role="2x7_pA">
+      <node concept="3clFbS" id="GOgb$s5g4I" role="2VODD2" />
     </node>
   </node>
 </model>
