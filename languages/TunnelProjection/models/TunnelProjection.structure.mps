@@ -14,6 +14,7 @@
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
@@ -24,6 +25,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -62,33 +64,22 @@
   </registry>
   <node concept="1TIwiD" id="4upM0B7OaRi">
     <property role="EcuMT" value="5159374792462216658" />
-    <property role="TrG5h" value="TunnelOverview" />
+    <property role="TrG5h" value="TunnelLayout" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="19DD6w4L1Wq" role="1TKVEi">
       <property role="IQ2ns" value="1326772331900837658" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="tunnels" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="tunnel" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="19DD6w4JVtx" resolve="Tunnel" />
     </node>
     <node concept="1TJgyj" id="19DD6w4_l0V" role="1TKVEi">
       <property role="IQ2ns" value="1326772331897770043" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="straightRoads" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="19DD6w4_l0S" resolve="StraightRoad" />
-    </node>
-    <node concept="1X3_iC" id="19DD6w4L1W7" role="lGtFl">
-      <property role="3V$3am" value="linkDeclaration" />
-      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
-      <node concept="1TJgyj" id="19DD6w4_l3j" role="8Wnug">
-        <property role="IQ2ns" value="1326772331897770195" />
-        <property role="20lmBu" value="fLJjDmT/aggregation" />
-        <property role="20kJfa" value="curvyRoads" />
-        <property role="20lbJX" value="fLJekj5/_0__n" />
-        <ref role="20lvS9" node="19DD6w4_l3e" resolve="CurvyRoad" />
-      </node>
+      <property role="20kJfa" value="outerTunnelRoads" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="19DD6w4_l0S" resolve="Road" />
     </node>
     <node concept="PrWs8" id="689jvrN9Jmj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -96,57 +87,29 @@
   </node>
   <node concept="1TIwiD" id="19DD6w4_l0S">
     <property role="EcuMT" value="1326772331897770040" />
-    <property role="TrG5h" value="StraightRoad" />
+    <property role="TrG5h" value="Road" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="19DD6w4_l0T" role="PzmwI">
+    <node concept="PrWs8" id="6_Y3_xRz1ce" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="19DD6w4_l2X" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331897770173" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="19DD6w4_l30" resolve="RoadType" />
+    <node concept="PrWs8" id="161Kj8PHqYL" role="PzmwI">
+      <ref role="PrY4T" node="161Kj8PHqYv" resolve="RoadProperties" />
     </node>
-    <node concept="1TJgyi" id="19DD6w4_pE0" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331897789056" />
-      <property role="TrG5h" value="length" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyi" id="161Kj8PHlYy" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034054050" />
+      <property role="TrG5h" value="connectionType" />
+      <ref role="AX2Wp" node="161Kj8PHlYG" resolve="RoadConnectionType" />
     </node>
-    <node concept="1TJgyi" id="19DD6w4JVBA" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331900549606" />
-      <property role="TrG5h" value="startX" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="19DD6w4JVC7" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331900549639" />
-      <property role="TrG5h" value="startY" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="19DD6w4JVCc" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331900549644" />
-      <property role="TrG5h" value="endX" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="19DD6w4JVCi" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331900549650" />
-      <property role="TrG5h" value="endY" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="1TBjFCGm4ej" role="1TKVEl">
-      <property role="IQ2nx" value="2190806305253901203" />
-      <property role="TrG5h" value="lanes" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="1TBjFCGm4er" role="1TKVEl">
-      <property role="IQ2nx" value="2190806305253901211" />
-      <property role="TrG5h" value="insideTunnel" />
+    <node concept="1TJgyi" id="2IxWHBToRNB" role="1TKVEl">
+      <property role="IQ2nx" value="3144061032887188711" />
+      <property role="TrG5h" value="isConnected" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="1TBjFCGm4eB" role="1TKVEi">
       <property role="IQ2ns" value="2190806305253901223" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="roadConnections" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="19DD6w4KvG6" resolve="StraightRoadRef" />
+      <property role="20kJfa" value="roadConnection" />
+      <ref role="20lvS9" node="19DD6w4KvG6" resolve="RoadReference" />
     </node>
     <node concept="1TJgyj" id="1fCD9eBpzdb" role="1TKVEi">
       <property role="IQ2ns" value="1434577435393143627" />
@@ -158,6 +121,7 @@
   <node concept="25R3W" id="19DD6w4_l30">
     <property role="3F6X1D" value="1326772331897770176" />
     <property role="TrG5h" value="RoadType" />
+    <ref role="1H5jkz" node="19DD6w4_l35" resolve="Car" />
     <node concept="25R33" id="19DD6w4_l31" role="25R1y">
       <property role="3tVfz5" value="1326772331897770177" />
       <property role="TrG5h" value="Bicycle" />
@@ -175,24 +139,6 @@
       <property role="TrG5h" value="Highway" />
     </node>
   </node>
-  <node concept="1TIwiD" id="19DD6w4_l3e">
-    <property role="EcuMT" value="1326772331897770190" />
-    <property role="TrG5h" value="CurvyRoad" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="19DD6w4_l3h" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331897770193" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="19DD6w4_l30" resolve="RoadType" />
-    </node>
-    <node concept="1TJgyi" id="19DD6w4_l3n" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331897770199" />
-      <property role="TrG5h" value="angle" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="PrWs8" id="19DD6w4_l3f" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="19DD6w4JVtq">
     <property role="EcuMT" value="1326772331900548954" />
     <property role="TrG5h" value="LeftTunnelPoint" />
@@ -207,11 +153,6 @@
       <property role="TrG5h" value="y" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="19DD6w4JV$I" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331900549422" />
-      <property role="TrG5h" value="entryPoint" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyi" id="3E8a4NUvNFj" role="1TKVEl">
       <property role="IQ2nx" value="4217665362117737171" />
       <property role="TrG5h" value="leftToRightDirection" />
@@ -220,16 +161,19 @@
     <node concept="1TJgyj" id="19DD6w4JVtR" role="1TKVEi">
       <property role="IQ2ns" value="1326772331900548983" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="roadConnection" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="19DD6w4KvG6" resolve="StraightRoadRef" />
+      <property role="20kJfa" value="tunnelRoadConnection" />
+      <ref role="20lvS9" node="161Kj8PHr7V" resolve="TunnelRoadReference" />
     </node>
-    <node concept="1TJgyj" id="19DD6w4Nomv" role="1TKVEi">
-      <property role="IQ2ns" value="1326772331901453727" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="leftConnect" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="19DD6w4Nomz" resolve="TunnelHoleReference" />
+    <node concept="1X3_iC" id="161Kj8PY_jn" role="lGtFl">
+      <property role="3V$3am" value="linkDeclaration" />
+      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
+      <node concept="1TJgyj" id="19DD6w4Nomv" role="8Wnug">
+        <property role="IQ2ns" value="1326772331901453727" />
+        <property role="20lmBu" value="fLJjDmT/aggregation" />
+        <property role="20kJfa" value="leftConnect" />
+        <property role="20lbJX" value="fLJekj4/_1" />
+        <ref role="20lvS9" node="19DD6w4Nomz" resolve="TunnelHoleReference" />
+      </node>
     </node>
     <node concept="PrWs8" id="1TBjFCGfYcc" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -257,14 +201,18 @@
     <node concept="1TJgyj" id="1fCD9eBstVF" role="1TKVEi">
       <property role="IQ2ns" value="1434577435393908459" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="roadReference" />
-      <ref role="20lvS9" node="19DD6w4KvG6" resolve="StraightRoadRef" />
+      <property role="20kJfa" value="roadConnection" />
+      <ref role="20lvS9" node="19DD6w4KvG6" resolve="RoadReference" />
     </node>
-    <node concept="1TJgyj" id="1TBjFCGrmxR" role="1TKVEi">
-      <property role="IQ2ns" value="2190806305255286903" />
-      <property role="20kJfa" value="hole" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="19DD6w4Kkw4" resolve="TunnelHole" />
+    <node concept="1X3_iC" id="161Kj8PYGbT" role="lGtFl">
+      <property role="3V$3am" value="linkDeclaration" />
+      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
+      <node concept="1TJgyj" id="1TBjFCGrmxR" role="8Wnug">
+        <property role="IQ2ns" value="2190806305255286903" />
+        <property role="20kJfa" value="hole" />
+        <property role="20lbJX" value="fLJekj4/_1" />
+        <ref role="20lvS9" node="19DD6w4Kkw4" resolve="TunnelHole" />
+      </node>
     </node>
     <node concept="1TJgyi" id="19DD6w4JV$w" role="1TKVEl">
       <property role="IQ2nx" value="1326772331900549408" />
@@ -275,11 +223,6 @@
       <property role="IQ2nx" value="1326772331900549410" />
       <property role="TrG5h" value="y" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="19DD6w4JV$_" role="1TKVEl">
-      <property role="IQ2nx" value="1326772331900549413" />
-      <property role="TrG5h" value="isLeftPoint" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="3E8a4NUw9hd" role="1TKVEl">
       <property role="IQ2nx" value="4217665362117825613" />
@@ -325,14 +268,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="tunnelHoleRoads" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="19DD6w4_l0S" resolve="StraightRoad" />
+      <ref role="20lvS9" node="161Kj8PGeG1" resolve="TunnelRoad" />
     </node>
-    <node concept="1TJgyj" id="1TBjFCGoVaC" role="1TKVEi">
-      <property role="IQ2ns" value="2190806305254650536" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="rightPointReferences" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="1TBjFCGeoR1" resolve="RightPointReference" />
+    <node concept="1X3_iC" id="161Kj8PXYMB" role="lGtFl">
+      <property role="3V$3am" value="linkDeclaration" />
+      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
+      <node concept="1TJgyj" id="1TBjFCGoVaC" role="8Wnug">
+        <property role="IQ2ns" value="2190806305254650536" />
+        <property role="20lmBu" value="fLJjDmT/aggregation" />
+        <property role="20kJfa" value="rightPointReferences" />
+        <property role="20lbJX" value="fLJekj6/_1__n" />
+        <ref role="20lvS9" node="1TBjFCGeoR1" resolve="RightPointReference" />
+      </node>
     </node>
     <node concept="PrWs8" id="1TBjFCGoRSU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -340,13 +287,13 @@
   </node>
   <node concept="1TIwiD" id="19DD6w4KvG6">
     <property role="EcuMT" value="1326772331900697350" />
-    <property role="TrG5h" value="StraightRoadRef" />
+    <property role="TrG5h" value="RoadReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="19DD6w4KvG7" role="1TKVEi">
       <property role="IQ2ns" value="1326772331900697351" />
-      <property role="20kJfa" value="roadConnection" />
+      <property role="20kJfa" value="roadReference" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="19DD6w4_l0S" resolve="StraightRoad" />
+      <ref role="20lvS9" node="19DD6w4_l0S" resolve="Road" />
     </node>
   </node>
   <node concept="1TIwiD" id="19DD6w4Nomz">
@@ -387,15 +334,19 @@
     <property role="TrG5h" value="ConnectionType" />
     <node concept="25R33" id="3E8a4NUayWI" role="25R1y">
       <property role="3tVfz5" value="4217665362112163630" />
-      <property role="TrG5h" value="LeftPointToTunnel" />
+      <property role="TrG5h" value="LeftPointToTunnelRoad" />
     </node>
     <node concept="25R33" id="3E8a4NUayWJ" role="25R1y">
       <property role="3tVfz5" value="4217665362112163631" />
-      <property role="TrG5h" value="TunnelToRightPoint" />
+      <property role="TrG5h" value="TunnelRoadToRightPoint" />
     </node>
     <node concept="25R33" id="3E8a4NUayWM" role="25R1y">
       <property role="3tVfz5" value="4217665362112163634" />
       <property role="TrG5h" value="RoadToRoad" />
+    </node>
+    <node concept="25R33" id="161Kj8PW$4w" role="25R1y">
+      <property role="3tVfz5" value="1261501792038043936" />
+      <property role="TrG5h" value="TunnelRoadToTunnelRoad" />
     </node>
     <node concept="25R33" id="3E8a4NUayWQ" role="25R1y">
       <property role="3tVfz5" value="4217665362112163638" />
@@ -404,6 +355,110 @@
     <node concept="25R33" id="3E8a4NUayWV" role="25R1y">
       <property role="3tVfz5" value="4217665362112163643" />
       <property role="TrG5h" value="RightPointToRoad" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="161Kj8PGeG1">
+    <property role="EcuMT" value="1261501792033762049" />
+    <property role="TrG5h" value="TunnelRoad" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="161Kj8PHr7T" role="1TKVEi">
+      <property role="IQ2ns" value="1261501792034075129" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="tunnelRoadConnection" />
+      <ref role="20lvS9" node="161Kj8PHr7V" resolve="TunnelRoadReference" />
+    </node>
+    <node concept="1TJgyj" id="161Kj8PHr7Y" role="1TKVEi">
+      <property role="IQ2ns" value="1261501792034075134" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rightPointConnection" />
+      <ref role="20lvS9" node="1TBjFCGeoR1" resolve="RightPointReference" />
+    </node>
+    <node concept="PrWs8" id="161Kj8QeyLS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="161Kj8PHr7Q" role="PzmwI">
+      <ref role="PrY4T" node="161Kj8PHqYv" resolve="RoadProperties" />
+    </node>
+    <node concept="1TJgyi" id="161Kj8PHr8g" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034075152" />
+      <property role="TrG5h" value="connectionType" />
+      <ref role="AX2Wp" node="161Kj8PHqYp" resolve="TunnelRoadConnectionType" />
+    </node>
+  </node>
+  <node concept="25R3W" id="161Kj8PHlYG">
+    <property role="3F6X1D" value="1261501792034054060" />
+    <property role="TrG5h" value="RoadConnectionType" />
+    <ref role="1H5jkz" node="161Kj8PHlYI" resolve="LeftTunnelPoint" />
+    <node concept="25R33" id="161Kj8PHlYH" role="25R1y">
+      <property role="3tVfz5" value="1261501792034054061" />
+      <property role="TrG5h" value="Road" />
+    </node>
+    <node concept="25R33" id="161Kj8PHlYI" role="25R1y">
+      <property role="3tVfz5" value="1261501792034054062" />
+      <property role="TrG5h" value="LeftTunnelPoint" />
+    </node>
+  </node>
+  <node concept="25R3W" id="161Kj8PHqYp">
+    <property role="3F6X1D" value="1261501792034074521" />
+    <property role="TrG5h" value="TunnelRoadConnectionType" />
+    <ref role="1H5jkz" node="161Kj8PHqYr" resolve="RightTunnelPoint" />
+    <node concept="25R33" id="161Kj8PHqYq" role="25R1y">
+      <property role="3tVfz5" value="1261501792034074522" />
+      <property role="TrG5h" value="TunnelRoad" />
+    </node>
+    <node concept="25R33" id="161Kj8PHqYr" role="25R1y">
+      <property role="3tVfz5" value="1261501792034074523" />
+      <property role="TrG5h" value="RightTunnelPoint" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="161Kj8PHqYv">
+    <property role="EcuMT" value="1261501792034074527" />
+    <property role="TrG5h" value="RoadProperties" />
+    <node concept="1TJgyi" id="161Kj8PHqYw" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034074528" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="19DD6w4_l30" resolve="RoadType" />
+    </node>
+    <node concept="1TJgyi" id="161Kj8PHqYx" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034074529" />
+      <property role="TrG5h" value="length" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="161Kj8PHqYy" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034074530" />
+      <property role="TrG5h" value="startX" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="161Kj8PHqYz" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034074531" />
+      <property role="TrG5h" value="startY" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="161Kj8PHqY$" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034074532" />
+      <property role="TrG5h" value="endX" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="161Kj8PHqY_" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034074533" />
+      <property role="TrG5h" value="endY" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="161Kj8PHqYA" role="1TKVEl">
+      <property role="IQ2nx" value="1261501792034074534" />
+      <property role="TrG5h" value="lanes" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="161Kj8PHr7V">
+    <property role="EcuMT" value="1261501792034075131" />
+    <property role="TrG5h" value="TunnelRoadReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="161Kj8PHr7W" role="1TKVEi">
+      <property role="IQ2ns" value="1261501792034075132" />
+      <property role="20kJfa" value="tunnelRoadReference" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="161Kj8PGeG1" resolve="TunnelRoad" />
     </node>
   </node>
 </model>

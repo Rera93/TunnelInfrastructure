@@ -30,7 +30,7 @@ public class EdgeIcon extends AbstractShape {
     String symbol = null;
     Color symbolColor = null;
 
-    if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f2eL, "LeftPointToTunnel"))) {
+    if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f2eL, "LeftPointToTunnelRoad"))) {
       symbol = "T";
       symbolColor = Color.BLACK;
     } else if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f3bL, "RightPointToRoad"))) {
@@ -39,10 +39,10 @@ public class EdgeIcon extends AbstractShape {
     } else if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f36L, "RoadToLeftPoint"))) {
       symbol = "P";
       symbolColor = Color.MAGENTA;
-    } else if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f32L, "RoadToRoad"))) {
+    } else if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f32L, "RoadToRoad")) || this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x1181c13235f24120L, "TunnelRoadToTunnelRoad"))) {
       symbol = "R";
       symbolColor = Color.ORANGE;
-    } else if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f2fL, "TunnelToRightPoint"))) {
+    } else if (this.connection.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x3a88284cfa2a2f2dL, "TunnelProjection.structure.ConnectionType"), 0x3a88284cfa2a2f2fL, "TunnelRoadToRightPoint"))) {
       symbol = "P";
       symbolColor = Color.MAGENTA;
     }

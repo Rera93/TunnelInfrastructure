@@ -62,7 +62,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
           private IShape endShape = null;
           private IShape startShape = null;
 
-          private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SNodeOperations.getNodeAncestor(((SNode) _variablesContext.getValue("thisNode")), CONCEPTS.TunnelHole$g8, false, false));
+          private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SNodeOperations.getNodeAncestor(((SNode) _variablesContext.getValue("thisNode")), CONCEPTS.TunnelRoad$J5, false, false));
           private IConnectionEndpointReference endpointTo = EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.rightPointConnection$IrX0));
 
           {
@@ -157,7 +157,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept TunnelHole$g8 = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, "TunnelProjection.structure.TunnelHole");
+    /*package*/ static final SConcept TunnelRoad$J5 = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b0eb01L, "TunnelProjection.structure.TunnelRoad");
   }
 
   private static final class LINKS {

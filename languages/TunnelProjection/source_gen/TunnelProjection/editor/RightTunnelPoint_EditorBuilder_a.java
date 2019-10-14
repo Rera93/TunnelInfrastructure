@@ -54,7 +54,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         EditorCell contentCell = createConstant_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new TunnelConnectionPoint(SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.isLeftPoint$oHNz), SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.leftToRightDirection$3_Ot));
+        final IShape shape = new TunnelConnectionPoint(((SNode) _variablesContext.getValue("thisNode")), SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.leftToRightDirection$3_Ot));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
@@ -107,7 +107,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty isLeftPoint$oHNz = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, 0x1269a46804bfb925L, "isLeftPoint");
     /*package*/ static final SProperty leftToRightDirection$3_Ot = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, 0x3a88284cfa80944dL, "leftToRightDirection");
   }
 }

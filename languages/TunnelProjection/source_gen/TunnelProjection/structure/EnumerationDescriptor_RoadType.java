@@ -26,7 +26,7 @@ public class EnumerationDescriptor_RoadType extends EnumerationDescriptorBase {
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return null;
+    return myMember_Car_0;
   }
 
   @NotNull

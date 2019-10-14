@@ -2,6 +2,7 @@
 <dependenciesRoot>
   <dependency className="TunnelProjection.Language">
     <classNode dependClassName="TunnelProjection.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="TunnelProjection.intentions.IntentionsDescriptor" />
     <classNode dependClassName="TunnelProjection.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="TunnelProjection.structure.StructureAspectDescriptor" />
     <classNode dependClassName="java.lang.Class" />
@@ -9,6 +10,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />

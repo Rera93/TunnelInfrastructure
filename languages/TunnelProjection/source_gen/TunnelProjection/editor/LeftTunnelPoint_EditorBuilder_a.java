@@ -54,7 +54,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         EditorCell contentCell = createConstant_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new TunnelConnectionPoint(SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.entryPoint$oI16), SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.leftToRightDirection$XJAF));
+        final IShape shape = new TunnelConnectionPoint(((SNode) _variablesContext.getValue("thisNode")), SPropertyOperations.getBoolean(((SNode) _variablesContext.getValue("thisNode")), PROPS.leftToRightDirection$XJAF));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
@@ -81,6 +81,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 
 
+          @Override
+          public boolean allowScaling() {
+            return false;
+          }
 
 
         };
@@ -107,7 +111,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty entryPoint$oI16 = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x1269a46804bfb92eL, "entryPoint");
     /*package*/ static final SProperty leftToRightDirection$XJAF = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x3a88284cfa7f3ad3L, "leftToRightDirection");
   }
 }

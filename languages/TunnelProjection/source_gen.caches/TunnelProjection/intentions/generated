@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="72ta8tqmhggm7ek8kt1x0hg0734mgth">
+  <files names="AddNewLeftTunnelPoint_Intention.java:AddNewRightTunnelPoint_Intention.java:AddNewTunnelHole_Intention.java:ChangeRoadLanes_Intention.java:ChangeRoadType_Intention.java:ChangeTunnelRoadType_Intention.java:ChangedTunnelRoadLanes_Intention.java:FlipLeftPointDirection_Intention.java:FlipRightPointDirection_Intention.java:IntentionsDescriptor.java" />
+</product>
+

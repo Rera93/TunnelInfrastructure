@@ -15,12 +15,10 @@ import java.awt.BasicStroke;
 
 public class Road extends AbstractShape {
 
-  private int length;
   private SEnumerationLiteral type;
   private int lanes;
 
-  public Road(int length, SEnumerationLiteral type, int lanes) {
-    this.length = length;
+  public Road(SEnumerationLiteral type, int lanes) {
     this.type = type;
     this.lanes = lanes;
   }

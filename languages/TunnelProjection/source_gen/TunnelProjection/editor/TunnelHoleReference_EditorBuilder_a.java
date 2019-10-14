@@ -28,7 +28,6 @@ import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 /*package*/ class TunnelHoleReference_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -133,7 +132,6 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
           @Override
           public void delete() {
-            SNodeOperations.replaceWithNewChild(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(((SNode) _variablesContext.getValue("thisNode")), CONCEPTS.LeftTunnelPoint$5I, false, false), LINKS.leftConnect$JRGP), CONCEPTS.TunnelHoleReference$m9);
           }
 
         };
@@ -163,11 +161,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept LeftTunnelPoint$5I = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, "TunnelProjection.structure.LeftTunnelPoint");
-    /*package*/ static final SConcept TunnelHoleReference$m9 = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L, "TunnelProjection.structure.TunnelHoleReference");
   }
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink leftConnect$ZaFw = MetaAdapterFactory.getReferenceLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804cd85a3L, 0x1269a46804cd85a4L, "leftConnect");
-    /*package*/ static final SContainmentLink leftConnect$JRGP = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, 0x1269a46804cd859fL, "leftConnect");
   }
 }

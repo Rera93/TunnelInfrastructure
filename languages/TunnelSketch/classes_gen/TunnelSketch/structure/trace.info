@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,30,0" name="TunnelSketch.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,28,0" name="TunnelSketch.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="17,0,68,0" name="TunnelSketch.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:42c0481e-3e0c-436e-9d1a-6c1630c3c226(TunnelSketch.structure)/7602151113221791157">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="7602151113221791157" at="12,0,13,0" concept="2" trace="props_TunnelDefinition" />
+      <node id="7602151113221791157" at="20,45,21,76" concept="5" />
+      <node id="7602151113221791157" at="21,76,22,50" concept="1" />
+      <node id="7602151113221791157" at="22,50,23,48" concept="1" />
+      <node id="7602151113221791157" at="24,9,25,38" concept="6" />
+      <node id="7602151113221791157" at="19,50,24,9" concept="3" />
+      <scope id="7602151113221791157" at="20,45,23,48">
+        <var name="cpb" id="7602151113221791157" />
+      </scope>
+      <scope id="7602151113221791157" at="19,50,25,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="7602151113221791157" at="12,0,13,0" concept="7" trace="TunnelDefinition" />
+      <node id="7602151113221791157" at="15,116,16,55" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7602151113221791157" at="18,0,19,0" concept="2" trace="myConceptTunnelDefinition" />
+      <node id="7602151113221791157" at="42,50,43,41" concept="6" />
+      <node id="7602151113221791157" at="58,74,59,163" concept="5" />
+      <node id="7602151113221791157" at="59,163,60,33" concept="1" />
+      <node id="7602151113221791157" at="60,33,61,99" concept="1" />
+      <node id="7602151113221791157" at="61,99,62,17" concept="1" />
+      <node id="7602151113222145125" at="62,17,63,175" concept="1" />
+      <node id="7640032606618538208" at="63,175,64,200" concept="1" />
+      <node id="7602151113221791157" at="64,200,65,22" concept="6" />
+      <node id="7602151113221791157" at="58,0,67,0" concept="8" trace="createDescriptorForTunnelDefinition#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="7602151113221791157" at="42,50,43,41" />
+      <scope id="7602151113221791157" at="58,74,65,22">
+        <var name="b" id="7602151113221791157" />
+      </scope>
+      <scope id="7602151113221791157" at="58,0,67,0" />
+    </file>
+  </root>
+  <root nodeRef="r:42c0481e-3e0c-436e-9d1a-6c1630c3c226(TunnelSketch.structure)/7602151113222145120">
+    <file name="EnumerationDescriptor_TunnelLayouts.java">
+      <node id="7602151113222145120" at="14,48,15,176" concept="9" />
+      <node id="7602151113222145121" at="18,0,19,0" concept="2" trace="myMember_StandardLayout_0" />
+      <node id="7602151113222145122" at="19,0,20,0" concept="2" trace="myMember_EmptyLayout_0" />
+      <node id="7602151113222145120" at="21,0,22,0" concept="2" trace="myIndex" />
+      <node id="7602151113222145120" at="22,0,23,0" concept="2" trace="myMembers" />
+      <node id="7602151113222145120" at="26,62,27,34" concept="6" />
+      <node id="7602151113222145120" at="32,68,33,21" concept="6" />
+      <node id="7602151113222145120" at="39,29,40,18" concept="6" />
+      <node id="7602151113222145121" at="43,28,44,41" concept="6" />
+      <node id="7602151113222145122" at="45,25,46,38" concept="6" />
+      <node id="7602151113222145120" at="47,5,48,16" concept="6" />
+      <node id="7602151113222145120" at="53,73,54,39" concept="5" />
+      <node id="7602151113222145120" at="55,22,56,18" concept="6" />
+      <node id="7602151113222145120" at="57,5,58,32" concept="6" />
+      <node id="7602151113222145120" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_TunnelLayouts#()V" />
+      <node id="7602151113222145120" at="38,88,41,5" concept="3" />
+      <node id="7602151113222145120" at="54,39,57,5" concept="3" />
+      <node id="7602151113222145120" at="24,0,29,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="7602151113222145120" at="30,0,35,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="7602151113222145120" at="41,5,47,5" concept="10" />
+      <node id="7602151113222145120" at="51,0,60,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="7602151113222145120" at="36,0,50,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="7602151113222145120" at="14,48,15,176" />
+      <scope id="7602151113222145120" at="26,62,27,34" />
+      <scope id="7602151113222145120" at="32,68,33,21" />
+      <scope id="7602151113222145120" at="39,29,40,18" />
+      <scope id="7602151113222145121" at="43,28,44,41" />
+      <scope id="7602151113222145122" at="45,25,46,38" />
+      <scope id="7602151113222145120" at="55,22,56,18" />
+      <scope id="7602151113222145120" at="14,0,17,0" />
+      <scope id="7602151113222145120" at="24,0,29,0" />
+      <scope id="7602151113222145120" at="30,0,35,0" />
+      <scope id="7602151113222145120" at="53,73,58,32">
+        <var name="index" id="7602151113222145120" />
+      </scope>
+      <scope id="7602151113222145120" at="51,0,60,0">
+        <var name="idValue" id="7602151113222145120" />
+      </scope>
+      <scope id="7602151113222145120" at="38,88,48,16" />
+      <scope id="7602151113222145120" at="36,0,50,0">
+        <var name="memberName" id="7602151113222145120" />
+      </scope>
+      <unit id="7602151113222145120" at="12,0,61,0" name="TunnelSketch.structure.EnumerationDescriptor_TunnelLayouts" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="7602151113222145120" at="19,0,20,0" concept="2" trace="myEnumerationTunnelLayouts" />
+    </file>
+  </root>
+</debug-info>
+

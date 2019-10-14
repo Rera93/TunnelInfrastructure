@@ -62,7 +62,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
           private IShape endShape = null;
           private IShape startShape = null;
 
-          private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SNodeOperations.getNodeAncestor(((SNode) _variablesContext.getValue("thisNode")), CONCEPTS.StraightRoad$CO, false, false));
+          private IConnectionEndpointReference endpointFrom = EndpointUtil.createEndpointReferenceForNodeSafe(SNodeOperations.getNodeAncestor(((SNode) _variablesContext.getValue("thisNode")), CONCEPTS.Road$CO, false, false));
           private IConnectionEndpointReference endpointTo = EndpointUtil.createEndpointReferenceForNodeSafe(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.leftPointConnect$Vlnw));
 
           {
@@ -157,7 +157,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept StraightRoad$CO = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L, "TunnelProjection.structure.StraightRoad");
+    /*package*/ static final SConcept Road$CO = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L, "TunnelProjection.structure.Road");
   }
 
   private static final class LINKS {

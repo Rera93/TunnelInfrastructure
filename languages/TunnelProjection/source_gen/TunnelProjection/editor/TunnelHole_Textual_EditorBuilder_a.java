@@ -36,15 +36,8 @@ import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
-import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import java.util.List;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import org.jetbrains.mps.openapi.language.SConcept;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 /*package*/ class TunnelHole_Textual_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -79,8 +72,12 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     editorCell.addEditorCell(createCollection_4());
     editorCell.addEditorCell(createConstant_7());
     editorCell.addEditorCell(createCollection_5());
-    editorCell.addEditorCell(createModelAccess_0());
-    editorCell.addEditorCell(createConstant_8());
+    editorCell.addEditorCell(createCollection_6());
+    editorCell.addEditorCell(createConstant_9());
+    editorCell.addEditorCell(createCollection_7());
+    editorCell.addEditorCell(createConstant_10());
+    editorCell.addEditorCell(createCollection_8());
+    editorCell.addEditorCell(createConstant_12());
     return editorCell;
   }
   private EditorCell createCollection_1() {
@@ -97,7 +94,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Hole");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Tunnel Hole");
     editorCell.setCellId("Constant_erx3pk_b0a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -128,7 +125,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "{");
     editorCell.setCellId("Constant_erx3pk_d0a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -156,7 +153,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createConstant_3() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Left Connection Points: ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Right Connection Points:");
     editorCell.setCellId("Constant_erx3pk_c2a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -189,17 +186,17 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new leftPointsListHandler_erx3pk_d4a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new rightPointsListHandler_erx3pk_d4a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_leftPoints");
+    editorCell.setCellId("refNodeList_rightPoints");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class leftPointsListHandler_erx3pk_d4a extends RefNodeListHandler {
+  private static class rightPointsListHandler_erx3pk_d4a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public leftPointsListHandler_erx3pk_d4a(SNode ownerNode, EditorContext context) {
+    public rightPointsListHandler_erx3pk_d4a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -209,10 +206,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.leftPoints$jm9$;
+      return LINKS.rightPoints$jm8A;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.LeftTunnelPoint$5I;
+      return CONCEPTS.RightTunnelPoint$$f;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -222,7 +219,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(leftPointsListHandler_erx3pk_d4a.this.getNode(), LINKS.leftPoints$jm9$));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(rightPointsListHandler_erx3pk_d4a.this.getNode(), LINKS.rightPoints$jm8A));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -269,7 +266,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createConstant_6() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Right Connection Points:");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Tunnel Roads: ");
     editorCell.setCellId("Constant_erx3pk_c6a");
     editorCell.setDefaultText("");
     return editorCell;
@@ -302,17 +299,17 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createRefNodeList_1() {
-    AbstractCellListHandler handler = new rightPointsListHandler_erx3pk_d8a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new tunnelHoleRoadsListHandler_erx3pk_d8a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
-    editorCell.setCellId("refNodeList_rightPoints");
+    editorCell.setCellId("refNodeList_tunnelHoleRoads");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class rightPointsListHandler_erx3pk_d8a extends RefNodeListHandler {
+  private static class tunnelHoleRoadsListHandler_erx3pk_d8a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public rightPointsListHandler_erx3pk_d8a(SNode ownerNode, EditorContext context) {
+    public tunnelHoleRoadsListHandler_erx3pk_d8a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -322,10 +319,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.rightPoints$jm8A;
+      return LINKS.tunnelHoleRoads$TjOt;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.RightTunnelPoint$$f;
+      return CONCEPTS.TunnelRoad$J5;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -335,7 +332,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(rightPointsListHandler_erx3pk_d8a.this.getNode(), LINKS.rightPoints$jm8A));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(tunnelHoleRoadsListHandler_erx3pk_d8a.this.getNode(), LINKS.tunnelHoleRoads$TjOt));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -359,34 +356,139 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       }
     }
   }
-  private EditorCell createModelAccess_0() {
-    ModelAccessor modelAccessor = new ModelAccessor() {
-      public String getText() {
-        return "";
-      }
-      public void setText(String text) {
-        List<SNode> points = SLinkOperations.getChildren(myNode, LINKS.rightPoints$jm8A);
-        SNode tempRPRef = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L, "TunnelProjection.structure.RightPointReference"));
-        for (int i = 0; i < ListSequence.fromList(points).count(); i++) {
-          SLinkOperations.setTarget(tempRPRef, LINKS.rightPointConnection$IrX0, ListSequence.fromList(points).getElement(i));
-          ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.rightPointReferences$VxsM)).addElement(tempRPRef);
-          tempRPRef = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L, "TunnelProjection.structure.RightPointReference"));
-        }
-      }
-      public boolean isValidText(String text) {
-        return true;
-      }
-    };
-    EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), modelAccessor, myNode);
-    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
-    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setCellId("ModelAccess_erx3pk_j0");
-    editorCell.setDefaultText("");
+  private EditorCell createCollection_6() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    editorCell.setCellId("Collection_erx3pk_j0");
+    editorCell.addEditorCell(createIndentCell_11());
+    editorCell.addEditorCell(createIndentCell_12());
+    editorCell.addEditorCell(createConstant_8());
+    return editorCell;
+  }
+  private EditorCell createIndentCell_11() {
+    EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
+    return editorCell;
+  }
+  private EditorCell createIndentCell_12() {
+    EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
     return editorCell;
   }
   private EditorCell createConstant_8() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Left Connection Points: ");
+    editorCell.setCellId("Constant_erx3pk_c9a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_9() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_erx3pk_k0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_7() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    editorCell.setCellId("Collection_erx3pk_l0");
+    editorCell.addEditorCell(createIndentCell_13());
+    editorCell.addEditorCell(createIndentCell_14());
+    editorCell.addEditorCell(createIndentCell_15());
+    editorCell.addEditorCell(createRefNodeList_2());
+    return editorCell;
+  }
+  private EditorCell createIndentCell_13() {
+    EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
+    return editorCell;
+  }
+  private EditorCell createIndentCell_14() {
+    EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
+    return editorCell;
+  }
+  private EditorCell createIndentCell_15() {
+    EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_2() {
+    AbstractCellListHandler handler = new leftPointsListHandler_erx3pk_d11a(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
+    editorCell.setCellId("refNodeList_leftPoints");
+    editorCell.setSRole(handler.getElementSRole());
+    return editorCell;
+  }
+  private static class leftPointsListHandler_erx3pk_d11a extends RefNodeListHandler {
+    @NotNull
+    private SNode myNode;
+
+    public leftPointsListHandler_erx3pk_d11a(SNode ownerNode, EditorContext context) {
+      super(context, false);
+      myNode = ownerNode;
+    }
+
+    @NotNull
+    public SNode getNode() {
+      return myNode;
+    }
+    public SContainmentLink getSLink() {
+      return LINKS.leftPoints$jm9$;
+    }
+    public SAbstractConcept getChildSConcept() {
+      return CONCEPTS.LeftTunnelPoint$5I;
+    }
+
+    public EditorCell createNodeCell(SNode elementNode) {
+      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
+      installElementCellActions(elementNode, elementCell, false);
+      return elementCell;
+    }
+    public EditorCell createEmptyCell() {
+      getCellFactory().pushCellContext();
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(leftPointsListHandler_erx3pk_d11a.this.getNode(), LINKS.leftPoints$jm9$));
+      try {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell();
+        installElementCellActions(null, emptyCell, true);
+        setCellContext(emptyCell);
+        return emptyCell;
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET);
+        if (elementNode != null) {
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
+        }
+      }
+    }
+  }
+  private EditorCell createConstant_10() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_erx3pk_m0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createCollection_8() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    editorCell.setCellId("Collection_erx3pk_n0");
+    editorCell.addEditorCell(createIndentCell_16());
+    editorCell.addEditorCell(createConstant_11());
+    return editorCell;
+  }
+  private EditorCell createIndentCell_16() {
+    EditorCell_Indent editorCell = new EditorCell_Indent(getEditorContext(), myNode);
+    return editorCell;
+  }
+  private EditorCell createConstant_11() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
+    editorCell.setCellId("Constant_erx3pk_b31a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_12() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
+    editorCell.setCellId("Constant_erx3pk_o0");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -397,14 +499,14 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$jT = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept LeftTunnelPoint$5I = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, "TunnelProjection.structure.LeftTunnelPoint");
     /*package*/ static final SConcept RightTunnelPoint$$f = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL, "TunnelProjection.structure.RightTunnelPoint");
+    /*package*/ static final SConcept TunnelRoad$J5 = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b0eb01L, "TunnelProjection.structure.TunnelRoad");
+    /*package*/ static final SConcept LeftTunnelPoint$5I = MetaAdapterFactory.getConcept(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL, "TunnelProjection.structure.LeftTunnelPoint");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink leftPoints$jm9$ = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, 0x1269a46804c1480cL, "leftPoints");
     /*package*/ static final SContainmentLink rightPoints$jm8A = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, 0x1269a46804c1480aL, "rightPoints");
-    /*package*/ static final SReferenceLink rightPointConnection$IrX0 = MetaAdapterFactory.getReferenceLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L, 0x1e674eba2c398dc2L, "rightPointConnection");
-    /*package*/ static final SContainmentLink rightPointReferences$VxsM = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, 0x1e674eba2c63b2a8L, "rightPointReferences");
+    /*package*/ static final SContainmentLink tunnelHoleRoads$TjOt = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, 0x1e674eba2c637e5dL, "tunnelHoleRoads");
+    /*package*/ static final SContainmentLink leftPoints$jm9$ = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c14804L, 0x1269a46804c1480cL, "leftPoints");
   }
 }

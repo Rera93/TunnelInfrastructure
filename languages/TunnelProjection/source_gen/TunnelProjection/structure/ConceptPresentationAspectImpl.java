@@ -9,30 +9,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_CurvyRoad;
   private ConceptPresentation props_LeftPointReference;
   private ConceptPresentation props_LeftTunnelPoint;
   private ConceptPresentation props_RightPointReference;
   private ConceptPresentation props_RightTunnelPoint;
-  private ConceptPresentation props_StraightRoad;
-  private ConceptPresentation props_StraightRoadRef;
+  private ConceptPresentation props_Road;
+  private ConceptPresentation props_RoadProperties;
+  private ConceptPresentation props_RoadReference;
   private ConceptPresentation props_Tunnel;
   private ConceptPresentation props_TunnelHole;
   private ConceptPresentation props_TunnelHoleReference;
-  private ConceptPresentation props_TunnelOverview;
+  private ConceptPresentation props_TunnelLayout;
+  private ConceptPresentation props_TunnelRoad;
+  private ConceptPresentation props_TunnelRoadReference;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.CurvyRoad:
-        if (props_CurvyRoad == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_CurvyRoad = cpb.create();
-        }
-        return props_CurvyRoad;
       case LanguageConceptSwitch.LeftPointReference:
         if (props_LeftPointReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -61,20 +56,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RightTunnelPoint = cpb.create();
         }
         return props_RightTunnelPoint;
-      case LanguageConceptSwitch.StraightRoad:
-        if (props_StraightRoad == null) {
+      case LanguageConceptSwitch.Road:
+        if (props_Road == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_StraightRoad = cpb.create();
+          props_Road = cpb.create();
         }
-        return props_StraightRoad;
-      case LanguageConceptSwitch.StraightRoadRef:
-        if (props_StraightRoadRef == null) {
+        return props_Road;
+      case LanguageConceptSwitch.RoadProperties:
+        if (props_RoadProperties == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L, 0x1269a46804c1fb07L, "roadConnection", "", "");
-          props_StraightRoadRef = cpb.create();
+          props_RoadProperties = cpb.create();
         }
-        return props_StraightRoadRef;
+        return props_RoadProperties;
+      case LanguageConceptSwitch.RoadReference:
+        if (props_RoadReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L, 0x1269a46804c1fb07L, "roadReference", "", "");
+          props_RoadReference = cpb.create();
+        }
+        return props_RoadReference;
       case LanguageConceptSwitch.Tunnel:
         if (props_Tunnel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -96,13 +97,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TunnelHoleReference = cpb.create();
         }
         return props_TunnelHoleReference;
-      case LanguageConceptSwitch.TunnelOverview:
-        if (props_TunnelOverview == null) {
+      case LanguageConceptSwitch.TunnelLayout:
+        if (props_TunnelLayout == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          props_TunnelOverview = cpb.create();
+          props_TunnelLayout = cpb.create();
         }
-        return props_TunnelOverview;
+        return props_TunnelLayout;
+      case LanguageConceptSwitch.TunnelRoad:
+        if (props_TunnelRoad == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_TunnelRoad = cpb.create();
+        }
+        return props_TunnelRoad;
+      case LanguageConceptSwitch.TunnelRoadReference:
+        if (props_TunnelRoadReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b5b1fbL, 0x1181c13235b5b1fcL, "tunnelRoadReference", "", "");
+          props_TunnelRoadReference = cpb.create();
+        }
+        return props_TunnelRoadReference;
     }
     return null;
   }

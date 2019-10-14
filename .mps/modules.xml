@@ -4,6 +4,8 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/TunnelProjection/TunnelProjection.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/TunnelProjection/sandbox/TunnelProjection.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TunnelSketch/TunnelSketch.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TunnelSketch/sandbox/TunnelSketch.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
