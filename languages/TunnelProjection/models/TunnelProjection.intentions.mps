@@ -1291,7 +1291,7 @@
     </node>
   </node>
   <node concept="3dkpOd" id="GOgb$rZJO4">
-    <property role="TrG5h" value="ChangedTunnelRoadLanes" />
+    <property role="TrG5h" value="ChangeTunnelRoadLanes" />
     <ref role="2ZfgGC" to="j6tt:161Kj8PGeG1" resolve="TunnelRoad" />
     <node concept="2S6ZIM" id="GOgb$rZJO5" role="2ZfVej">
       <node concept="3clFbS" id="GOgb$rZJO6" role="2VODD2">
@@ -1918,6 +1918,133 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="GOgb$s9FCD">
+    <property role="TrG5h" value="AddNewOuterTunnelRoad" />
+    <ref role="2ZfgGC" to="j6tt:4upM0B7OaRi" resolve="TunnelLayout" />
+    <node concept="2S6ZIM" id="GOgb$s9FCE" role="2ZfVej">
+      <node concept="3clFbS" id="GOgb$s9FCF" role="2VODD2">
+        <node concept="3clFbF" id="GOgb$s9FHV" role="3cqZAp">
+          <node concept="Xl_RD" id="GOgb$s9FHU" role="3clFbG">
+            <property role="Xl_RC" value="Add New Outer Tunnel Road" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="GOgb$s9FCG" role="2ZfgGD">
+      <node concept="3clFbS" id="GOgb$s9FCH" role="2VODD2">
+        <node concept="3clFbF" id="GOgb$s9FYg" role="3cqZAp">
+          <node concept="2OqwBi" id="GOgb$s9IfT" role="3clFbG">
+            <node concept="2OqwBi" id="GOgb$s9G6W" role="2Oq$k0">
+              <node concept="2Sf5sV" id="GOgb$s9FYe" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="GOgb$s9GhY" role="2OqNvi">
+                <ref role="3TtcxE" to="j6tt:19DD6w4_l0V" resolve="outerTunnelRoads" />
+              </node>
+            </node>
+            <node concept="WFELt" id="GOgb$s9K2X" role="2OqNvi">
+              <ref role="1A0vxQ" to="j6tt:19DD6w4_l0S" resolve="Road" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3dkpOd" id="GOgb$s9XE7">
+    <property role="TrG5h" value="AddNewTunnelRoad" />
+    <ref role="2ZfgGC" to="j6tt:19DD6w4JVtx" resolve="Tunnel" />
+    <node concept="2S6ZIM" id="GOgb$s9XE8" role="2ZfVej">
+      <node concept="3clFbS" id="GOgb$s9XE9" role="2VODD2">
+        <node concept="3clFbF" id="GOgb$sa28Y" role="3cqZAp">
+          <node concept="3cpWs3" id="GOgb$sa2VQ" role="3clFbG">
+            <node concept="Xl_RD" id="GOgb$sa357" role="3uHU7w">
+              <property role="Xl_RC" value=" Tunnel Hole" />
+            </node>
+            <node concept="3cpWs3" id="GOgb$sa2Dt" role="3uHU7B">
+              <node concept="Xl_RD" id="GOgb$sa28X" role="3uHU7B">
+                <property role="Xl_RC" value="Add New Tunnel Road To " />
+              </node>
+              <node concept="38Zlrr" id="GOgb$sa2E6" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="GOgb$s9XEa" role="2ZfgGD">
+      <node concept="3clFbS" id="GOgb$s9XEb" role="2VODD2">
+        <node concept="2Gpval" id="GOgb$sa4jg" role="3cqZAp">
+          <node concept="2GrKxI" id="GOgb$sa4jh" role="2Gsz3X">
+            <property role="TrG5h" value="hole" />
+          </node>
+          <node concept="2OqwBi" id="GOgb$sa4ji" role="2GsD0m">
+            <node concept="2Sf5sV" id="GOgb$sa4jj" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="GOgb$sa4jk" role="2OqNvi">
+              <ref role="3TtcxE" to="j6tt:1TBjFCGoJK7" resolve="holes" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="GOgb$sa4jl" role="2LFqv$">
+            <node concept="3clFbJ" id="GOgb$sa4jm" role="3cqZAp">
+              <node concept="3clFbC" id="GOgb$sa4jn" role="3clFbw">
+                <node concept="2OqwBi" id="GOgb$sa4jo" role="3uHU7w">
+                  <node concept="38Zlrr" id="GOgb$sa4jp" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="GOgb$sa4jq" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="GOgb$sa4jr" role="3uHU7B">
+                  <node concept="2GrUjf" id="GOgb$sa4js" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="GOgb$sa4jh" resolve="hole" />
+                  </node>
+                  <node concept="3TrcHB" id="GOgb$sa4jt" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="GOgb$sa4ju" role="3clFbx">
+                <node concept="3clFbF" id="GOgb$sa4jv" role="3cqZAp">
+                  <node concept="2OqwBi" id="GOgb$sa4jw" role="3clFbG">
+                    <node concept="2OqwBi" id="GOgb$sa4jx" role="2Oq$k0">
+                      <node concept="2GrUjf" id="GOgb$sa4jy" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="GOgb$sa4jh" resolve="hole" />
+                      </node>
+                      <node concept="3Tsc0h" id="GOgb$sa55X" role="2OqNvi">
+                        <ref role="3TtcxE" to="j6tt:1TBjFCGoRTt" resolve="tunnelHoleRoads" />
+                      </node>
+                    </node>
+                    <node concept="TSZUe" id="GOgb$sa4j$" role="2OqNvi">
+                      <node concept="2ShNRf" id="GOgb$sa4j_" role="25WWJ7">
+                        <node concept="3zrR0B" id="GOgb$sa4jA" role="2ShVmc">
+                          <node concept="3Tqbb2" id="GOgb$sa4jB" role="3zrR0E">
+                            <ref role="ehGHo" to="j6tt:161Kj8PGeG1" resolve="TunnelRoad" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="38BcoT" id="GOgb$s9XJy" role="3dlsAV">
+      <node concept="3clFbS" id="GOgb$s9XJz" role="2VODD2">
+        <node concept="3clFbF" id="GOgb$s9Yl0" role="3cqZAp">
+          <node concept="2OqwBi" id="GOgb$sa0AD" role="3clFbG">
+            <node concept="2OqwBi" id="GOgb$s9YNz" role="2Oq$k0">
+              <node concept="2Sf5sV" id="GOgb$s9YkZ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="GOgb$s9YYQ" role="2OqNvi">
+                <ref role="3TtcxE" to="j6tt:1TBjFCGoJK7" resolve="holes" />
+              </node>
+            </node>
+            <node concept="ANE8D" id="GOgb$sa26P" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="GOgb$s9XPC" role="3ddBve">
+        <ref role="ehGHo" to="j6tt:19DD6w4Kkw4" resolve="TunnelHole" />
       </node>
     </node>
   </node>

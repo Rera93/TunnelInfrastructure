@@ -20,13 +20,13 @@ import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public final class ChangedTunnelRoadLanes_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
-  public ChangedTunnelRoadLanes_Intention() {
+public final class ChangeTunnelRoadLanes_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+  public ChangeTunnelRoadLanes_Intention() {
     super(Kind.NORMAL, false, new SNodePointer("r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)", "807341396988984580"));
   }
   @Override
   public String getPresentation() {
-    return "ChangedTunnelRoadLanes";
+    return "ChangeTunnelRoadLanes";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -92,7 +92,7 @@ public final class ChangedTunnelRoadLanes_Intention extends AbstractIntentionDes
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return ChangedTunnelRoadLanes_Intention.this;
+      return ChangeTunnelRoadLanes_Intention.this;
     }
     public Object getParameter() {
       return myParameter;

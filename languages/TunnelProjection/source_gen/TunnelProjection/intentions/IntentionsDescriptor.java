@@ -56,18 +56,26 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 3:
         if (true) {
           // concept 
-          intentions = new IntentionFactory[3];
+          intentions = new IntentionFactory[4];
           intentions[0] = new AddNewRightTunnelPoint_Intention();
           intentions[1] = new AddNewLeftTunnelPoint_Intention();
           intentions[2] = new AddNewTunnelHole_Intention();
+          intentions[3] = new AddNewTunnelRoad_Intention();
         }
         break;
       case 4:
         if (true) {
           // concept 
+          intentions = new IntentionFactory[1];
+          intentions[0] = new AddNewOuterTunnelRoad_Intention();
+        }
+        break;
+      case 5:
+        if (true) {
+          // concept 
           intentions = new IntentionFactory[2];
           intentions[0] = new ChangeTunnelRoadType_Intention();
-          intentions[1] = new ChangedTunnelRoadLanes_Intention();
+          intentions[1] = new ChangeTunnelRoadLanes_Intention();
         }
         break;
       default:
@@ -79,17 +87,19 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[9];
+    IntentionFactory[] rv = new IntentionFactory[11];
     rv[0] = new FlipLeftPointDirection_Intention();
     rv[1] = new FlipRightPointDirection_Intention();
     rv[2] = new ChangeRoadType_Intention();
     rv[3] = new ChangeTunnelRoadType_Intention();
     rv[4] = new ChangeRoadLanes_Intention();
-    rv[5] = new ChangedTunnelRoadLanes_Intention();
+    rv[5] = new ChangeTunnelRoadLanes_Intention();
     rv[6] = new AddNewRightTunnelPoint_Intention();
     rv[7] = new AddNewLeftTunnelPoint_Intention();
     rv[8] = new AddNewTunnelHole_Intention();
+    rv[9] = new AddNewOuterTunnelRoad_Intention();
+    rv[10] = new AddNewTunnelRoad_Intention();
     return Arrays.asList(rv);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b0eb01L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x4799c809c7d0add2L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b0eb01L)).seal();
 }

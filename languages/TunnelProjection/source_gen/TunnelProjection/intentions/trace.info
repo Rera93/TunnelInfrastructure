@@ -15,7 +15,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
   <root>
     <file name="IntentionsDescriptor.java">
-      <unit at="18,0,96,0" name="TunnelProjection.intentions.IntentionsDescriptor" />
+      <unit at="18,0,106,0" name="TunnelProjection.intentions.IntentionsDescriptor" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/7640032606618865789">
@@ -83,7 +83,7 @@
     </file>
     <file name="IntentionsDescriptor.java">
       <node id="7640032606618865789" at="37,47,38,65" concept="3" />
-      <node id="7640032606618865789" at="82,52,83,51" concept="3" />
+      <node id="7640032606618865789" at="90,53,91,51" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396988368955">
@@ -192,7 +192,7 @@
     </file>
     <file name="IntentionsDescriptor.java">
       <node id="807341396988368955" at="51,47,52,57" concept="3" />
-      <node id="807341396988368955" at="84,52,85,43" concept="3" />
+      <node id="807341396988368955" at="92,52,93,43" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396988474816">
@@ -300,8 +300,8 @@
       <unit id="807341396988474816" at="26,0,103,0" name="TunnelProjection.intentions.ChangeTunnelRoadType_Intention" />
     </file>
     <file name="IntentionsDescriptor.java">
-      <node id="807341396988474816" at="68,47,69,63" concept="3" />
-      <node id="807341396988474816" at="85,43,86,49" concept="3" />
+      <node id="807341396988474816" at="76,47,77,63" concept="3" />
+      <node id="807341396988474816" at="93,43,94,49" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396988499507">
@@ -419,13 +419,13 @@
     </file>
     <file name="IntentionsDescriptor.java">
       <node id="807341396988499507" at="52,57,53,58" concept="3" />
-      <node id="807341396988499507" at="86,49,87,44" concept="3" />
+      <node id="807341396988499507" at="94,49,95,44" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396988984580">
-    <file name="ChangedTunnelRoadLanes_Intention.java">
-      <node id="807341396988984580" at="24,45,25,141" concept="11" />
-      <node id="807341396988984580" at="28,35,29,36" concept="9" />
+    <file name="ChangeTunnelRoadLanes_Intention.java">
+      <node id="807341396988984580" at="24,44,25,141" concept="11" />
+      <node id="807341396988984580" at="28,35,29,35" concept="9" />
       <node id="807341396988984580" at="32,84,33,16" concept="9" />
       <node id="807341396988984580" at="36,35,37,17" concept="9" />
       <node id="807341396988984580" at="39,99,40,97" concept="8" />
@@ -448,13 +448,13 @@
       <node id="807341396988994989" at="85,36,86,59" concept="3" />
       <node id="807341396988995001" at="87,36,88,59" concept="3" />
       <node id="807341396988994965" at="89,14,90,59" concept="3" />
-      <node id="807341396988984580" at="94,48,95,51" concept="9" />
+      <node id="807341396988984580" at="94,48,95,50" concept="9" />
       <node id="807341396988984580" at="97,34,98,25" concept="9" />
       <node id="807341396988984580" at="103,0,104,0" concept="10" trace="lanes$GiK_" />
       <node id="807341396988988247" at="60,10,62,5" concept="0" />
       <node id="807341396988992588" at="73,12,75,7" concept="0" />
       <node id="807341396988994963" at="89,12,91,7" concept="0" />
-      <node id="807341396988984580" at="24,0,27,0" concept="2" trace="ChangedTunnelRoadLanes_Intention#()V" />
+      <node id="807341396988984580" at="24,0,27,0" concept="2" trace="ChangeTunnelRoadLanes_Intention#()V" />
       <node id="807341396988984580" at="42,28,45,7" concept="5" />
       <node id="807341396988984580" at="66,0,69,0" concept="2" trace="IntentionImplementation#(I)V" />
       <node id="807341396988984580" at="97,0,100,0" concept="7" trace="getParameter#()Ljava/lang/Object;" />
@@ -470,8 +470,8 @@
       <node id="807341396988994939" at="78,78,91,7" concept="6" />
       <node id="807341396988984580" at="49,0,64,0" concept="7" trace="parameter#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
       <node id="807341396988984580" at="77,0,93,0" concept="7" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <scope id="807341396988984580" at="24,45,25,141" />
-      <scope id="807341396988984580" at="28,35,29,36" />
+      <scope id="807341396988984580" at="24,44,25,141" />
+      <scope id="807341396988984580" at="28,35,29,35" />
       <scope id="807341396988984580" at="32,84,33,16" />
       <scope id="807341396988984580" at="36,35,37,17" />
       <scope id="807341396988984580" at="43,35,44,83" />
@@ -490,7 +490,7 @@
       <scope id="807341396988994988" at="85,36,86,59" />
       <scope id="807341396988995000" at="87,36,88,59" />
       <scope id="807341396988994964" at="89,14,90,59" />
-      <scope id="807341396988984580" at="94,48,95,51" />
+      <scope id="807341396988984580" at="94,48,95,50" />
       <scope id="807341396988984580" at="97,34,98,25" />
       <scope id="807341396988984580" at="24,0,27,0" />
       <scope id="807341396988984580" at="42,28,45,7" />
@@ -531,13 +531,13 @@
         <var name="editorContext" id="807341396988984580" />
         <var name="node" id="807341396988984580" />
       </scope>
-      <unit id="807341396988984580" at="102,0,105,0" name="TunnelProjection.intentions.ChangedTunnelRoadLanes_Intention$PROPS" />
-      <unit id="807341396988984580" at="64,0,101,0" name="TunnelProjection.intentions.ChangedTunnelRoadLanes_Intention$IntentionImplementation" />
-      <unit id="807341396988984580" at="23,0,106,0" name="TunnelProjection.intentions.ChangedTunnelRoadLanes_Intention" />
+      <unit id="807341396988984580" at="102,0,105,0" name="TunnelProjection.intentions.ChangeTunnelRoadLanes_Intention$PROPS" />
+      <unit id="807341396988984580" at="64,0,101,0" name="TunnelProjection.intentions.ChangeTunnelRoadLanes_Intention$IntentionImplementation" />
+      <unit id="807341396988984580" at="23,0,106,0" name="TunnelProjection.intentions.ChangeTunnelRoadLanes_Intention" />
     </file>
     <file name="IntentionsDescriptor.java">
-      <node id="807341396988984580" at="69,63,70,65" concept="3" />
-      <node id="807341396988984580" at="87,44,88,51" concept="3" />
+      <node id="807341396988984580" at="77,63,78,64" concept="3" />
+      <node id="807341396988984580" at="95,44,96,50" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396989021822">
@@ -634,7 +634,7 @@
     </file>
     <file name="IntentionsDescriptor.java">
       <node id="807341396989021822" at="59,47,60,65" concept="3" />
-      <node id="807341396989021822" at="88,51,89,51" concept="3" />
+      <node id="807341396989021822" at="96,50,97,51" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396989813695">
@@ -731,7 +731,7 @@
     </file>
     <file name="IntentionsDescriptor.java">
       <node id="807341396989813695" at="60,65,61,64" concept="3" />
-      <node id="807341396989813695" at="89,51,90,50" concept="3" />
+      <node id="807341396989813695" at="97,51,98,50" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396990145859">
@@ -796,7 +796,169 @@
     </file>
     <file name="IntentionsDescriptor.java">
       <node id="807341396990145859" at="61,64,62,59" concept="3" />
-      <node id="807341396990145859" at="90,50,91,45" concept="3" />
+      <node id="807341396990145859" at="98,50,99,45" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396991588905">
+    <file name="AddNewOuterTunnelRoad_Intention.java">
+      <node id="807341396991588905" at="22,0,23,0" concept="4" trace="myCachedExecutable" />
+      <node id="807341396991588905" at="23,44,24,141" concept="11" />
+      <node id="807341396991588905" at="27,35,28,35" concept="9" />
+      <node id="807341396991588905" at="31,84,32,16" concept="9" />
+      <node id="807341396991588905" at="35,35,36,17" concept="9" />
+      <node id="807341396991588905" at="39,37,40,105" concept="3" />
+      <node id="807341396991588905" at="41,5,42,30" concept="9" />
+      <node id="807341396991589243" at="48,87,49,41" concept="9" />
+      <node id="807341396991590288" at="52,78,53,87" concept="3" />
+      <node id="807341396991588905" at="56,48,57,50" concept="9" />
+      <node id="807341396991588905" at="62,0,63,0" concept="10" trace="outerTunnelRoads$Lh$z" />
+      <node id="807341396991588905" at="66,0,67,0" concept="10" trace="Road$CO" />
+      <node id="807341396991588905" at="45,0,47,0" concept="2" trace="IntentionImplementation#()V" />
+      <node id="807341396991588905" at="23,0,26,0" concept="2" trace="AddNewOuterTunnelRoad_Intention#()V" />
+      <node id="807341396991588905" at="38,99,41,5" concept="6" />
+      <node id="807341396991588905" at="26,0,30,0" concept="7" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="807341396991588905" at="30,0,34,0" concept="7" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="807341396991588905" at="34,0,38,0" concept="7" trace="isSurroundWith#()Z" />
+      <node id="807341396991588905" at="47,0,51,0" concept="7" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="807341396991588905" at="51,0,55,0" concept="7" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="807341396991588905" at="55,0,59,0" concept="7" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="807341396991588905" at="38,0,44,0" concept="7" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <scope id="807341396991588905" at="45,38,45,38" />
+      <scope id="807341396991588905" at="23,44,24,141" />
+      <scope id="807341396991588905" at="27,35,28,35" />
+      <scope id="807341396991588905" at="31,84,32,16" />
+      <scope id="807341396991588905" at="35,35,36,17" />
+      <scope id="807341396991588905" at="39,37,40,105" />
+      <scope id="807341396991588907" at="48,87,49,41" />
+      <scope id="807341396991588909" at="52,78,53,87" />
+      <scope id="807341396991588905" at="56,48,57,50" />
+      <scope id="807341396991588905" at="45,0,47,0" />
+      <scope id="807341396991588905" at="23,0,26,0" />
+      <scope id="807341396991588905" at="26,0,30,0" />
+      <scope id="807341396991588905" at="30,0,34,0">
+        <var name="editorContext" id="807341396991588905" />
+        <var name="node" id="807341396991588905" />
+      </scope>
+      <scope id="807341396991588905" at="34,0,38,0" />
+      <scope id="807341396991588905" at="38,99,42,30" />
+      <scope id="807341396991588905" at="47,0,51,0">
+        <var name="editorContext" id="807341396991588905" />
+        <var name="node" id="807341396991588905" />
+      </scope>
+      <scope id="807341396991588905" at="51,0,55,0">
+        <var name="editorContext" id="807341396991588905" />
+        <var name="node" id="807341396991588905" />
+      </scope>
+      <scope id="807341396991588905" at="55,0,59,0" />
+      <scope id="807341396991588905" at="38,0,44,0">
+        <var name="context" id="807341396991588905" />
+        <var name="node" id="807341396991588905" />
+      </scope>
+      <unit id="807341396991588905" at="61,0,64,0" name="TunnelProjection.intentions.AddNewOuterTunnelRoad_Intention$LINKS" />
+      <unit id="807341396991588905" at="65,0,68,0" name="TunnelProjection.intentions.AddNewOuterTunnelRoad_Intention$CONCEPTS" />
+      <unit id="807341396991588905" at="44,0,60,0" name="TunnelProjection.intentions.AddNewOuterTunnelRoad_Intention$IntentionImplementation" />
+      <unit id="807341396991588905" at="21,0,69,0" name="TunnelProjection.intentions.AddNewOuterTunnelRoad_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="807341396991588905" at="69,47,70,64" concept="3" />
+      <node id="807341396991588905" at="99,45,100,50" concept="3" />
+    </file>
+  </root>
+  <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/807341396991662727">
+    <file name="AddNewTunnelRoad_Intention.java">
+      <node id="807341396991662727" at="27,39,28,141" concept="11" />
+      <node id="807341396991662727" at="31,35,32,30" concept="9" />
+      <node id="807341396991662727" at="35,84,36,16" concept="9" />
+      <node id="807341396991662727" at="39,35,40,17" concept="9" />
+      <node id="807341396991662727" at="42,99,43,97" concept="8" />
+      <node id="807341396991662727" at="43,97,44,53" concept="8" />
+      <node id="807341396991662727" at="46,37,47,83" concept="3" />
+      <node id="807341396991662727" at="49,5,50,16" concept="9" />
+      <node id="807341396991665472" at="52,86,53,103" concept="9" />
+      <node id="807341396991662727" at="56,0,57,0" concept="4" trace="myParameter" />
+      <node id="807341396991662727" at="57,53,58,30" concept="3" />
+      <node id="807341396991681086" at="61,87,62,70" concept="9" />
+      <node id="807341396991689951" at="67,130,68,275" concept="3" />
+      <node id="807341396991662727" at="73,48,74,45" concept="9" />
+      <node id="807341396991662727" at="76,34,77,25" concept="9" />
+      <node id="807341396991662727" at="82,0,83,0" concept="10" trace="holes$OmIQ" />
+      <node id="807341396991662727" at="83,0,84,0" concept="10" trace="tunnelHoleRoads$TjOt" />
+      <node id="807341396991662727" at="87,0,88,0" concept="10" trace="name$tAp1" />
+      <node id="807341396991662727" at="27,0,30,0" concept="2" trace="AddNewTunnelRoad_Intention#()V" />
+      <node id="807341396991662727" at="45,28,48,7" concept="5" />
+      <node id="807341396991662727" at="52,0,55,0" concept="7" trace="parameter#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
+      <node id="807341396991662727" at="57,0,60,0" concept="2" trace="IntentionImplementation#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="807341396991689942" at="66,101,69,9" concept="6" />
+      <node id="807341396991662727" at="76,0,79,0" concept="7" trace="getParameter#()Ljava/lang/Object;" />
+      <node id="807341396991662727" at="30,0,34,0" concept="7" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="807341396991662727" at="34,0,38,0" concept="7" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="807341396991662727" at="38,0,42,0" concept="7" trace="isSurroundWith#()Z" />
+      <node id="807341396991662727" at="60,0,64,0" concept="7" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="807341396991662727" at="72,0,76,0" concept="7" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="807341396991662727" at="44,53,49,5" concept="6" />
+      <node id="807341396991689936" at="65,78,70,7" concept="5" />
+      <node id="807341396991662727" at="64,0,72,0" concept="7" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="807341396991662727" at="42,0,52,0" concept="7" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <scope id="807341396991662727" at="27,39,28,141" />
+      <scope id="807341396991662727" at="31,35,32,30" />
+      <scope id="807341396991662727" at="35,84,36,16" />
+      <scope id="807341396991662727" at="39,35,40,17" />
+      <scope id="807341396991662727" at="46,37,47,83" />
+      <scope id="807341396991662727" at="52,86,53,103" />
+      <scope id="807341396991662727" at="57,53,58,30" />
+      <scope id="807341396991662729" at="61,87,62,70" />
+      <scope id="807341396991689950" at="67,130,68,275" />
+      <scope id="807341396991662727" at="73,48,74,45" />
+      <scope id="807341396991662727" at="76,34,77,25" />
+      <scope id="807341396991662727" at="27,0,30,0" />
+      <scope id="807341396991662727" at="45,28,48,7" />
+      <scope id="807341396991662727" at="45,28,48,7">
+        <var name="param" id="807341396991662727" />
+      </scope>
+      <scope id="807341396991662727" at="52,0,55,0">
+        <var name="editorContext" id="807341396991662727" />
+        <var name="node" id="807341396991662727" />
+      </scope>
+      <scope id="807341396991662727" at="57,0,60,0">
+        <var name="parameter" id="807341396991662727" />
+      </scope>
+      <scope id="807341396991689941" at="66,101,69,9" />
+      <scope id="807341396991662727" at="76,0,79,0" />
+      <scope id="807341396991662727" at="30,0,34,0" />
+      <scope id="807341396991662727" at="34,0,38,0">
+        <var name="editorContext" id="807341396991662727" />
+        <var name="node" id="807341396991662727" />
+      </scope>
+      <scope id="807341396991662727" at="38,0,42,0" />
+      <scope id="807341396991662727" at="60,0,64,0">
+        <var name="editorContext" id="807341396991662727" />
+        <var name="node" id="807341396991662727" />
+      </scope>
+      <scope id="807341396991662727" at="72,0,76,0" />
+      <scope id="807341396991662731" at="65,78,70,7" />
+      <scope id="807341396991689936" at="65,78,70,7">
+        <var name="hole" id="807341396991689937" />
+      </scope>
+      <scope id="807341396991662727" at="42,99,50,16">
+        <var name="list" id="807341396991662727" />
+        <var name="paramList" id="807341396991662727" />
+      </scope>
+      <scope id="807341396991662727" at="64,0,72,0">
+        <var name="editorContext" id="807341396991662727" />
+        <var name="node" id="807341396991662727" />
+      </scope>
+      <scope id="807341396991662727" at="42,0,52,0">
+        <var name="context" id="807341396991662727" />
+        <var name="node" id="807341396991662727" />
+      </scope>
+      <unit id="807341396991662727" at="86,0,89,0" name="TunnelProjection.intentions.AddNewTunnelRoad_Intention$PROPS" />
+      <unit id="807341396991662727" at="81,0,85,0" name="TunnelProjection.intentions.AddNewTunnelRoad_Intention$LINKS" />
+      <unit id="807341396991662727" at="55,0,80,0" name="TunnelProjection.intentions.AddNewTunnelRoad_Intention$IntentionImplementation" />
+      <unit id="807341396991662727" at="26,0,90,0" name="TunnelProjection.intentions.AddNewTunnelRoad_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="807341396991662727" at="62,59,63,59" concept="3" />
+      <node id="807341396991662727" at="100,50,101,46" concept="3" />
     </file>
   </root>
   <root nodeRef="r:2b869ca2-ccf5-4cfa-ac42-87fb5d120400(TunnelProjection.intentions)/8412887467097895632">
@@ -864,7 +1026,7 @@
     </file>
     <file name="IntentionsDescriptor.java">
       <node id="8412887467097895632" at="44,47,45,66" concept="3" />
-      <node id="8412887467097895632" at="83,51,84,52" concept="3" />
+      <node id="8412887467097895632" at="91,51,92,52" concept="3" />
     </file>
   </root>
 </debug-info>

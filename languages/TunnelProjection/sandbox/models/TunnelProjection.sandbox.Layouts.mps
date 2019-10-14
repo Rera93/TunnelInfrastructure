@@ -594,6 +594,20 @@
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
+      <node concept="37mRIm" id="GOgb$s9T0K" role="37mRID">
+        <property role="37mO49" value="807341396991643687" />
+        <node concept="gqqVs" id="GOgb$s9T0J" role="37mO4d">
+          <property role="gqqTZ" value="0.0" />
+          <property role="gqqTW" value="0.0" />
+          <property role="gqqTX" value="99.0" />
+          <property role="gqqTy" value="30.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="mZfhg" id="GOgb$s9T0B" role="mZfhj">
+      <property role="$d6Ui" value="19DD6w4_l31/Bicycle" />
+      <property role="$d6Uk" value="4" />
     </node>
   </node>
   <node concept="20imnr" id="GOgb$rVRgh">
