@@ -57,7 +57,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         EditorCell contentCell = createEmpty_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new TunnelShape(ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.holes$OmIQ)).count());
+        final IShape shape = new TunnelShape(ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.holes$OmIQ)).count(), ((SNode) _variablesContext.getValue("thisNode")));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {

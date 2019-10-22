@@ -56,7 +56,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         EditorCell contentCell = createEmpty_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new Road(SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$Gizw), SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.lanes$GiK_));
+        final IShape shape = new Road(SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$Gizw), true, SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.lanes$GiK_));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {

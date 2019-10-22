@@ -55,6 +55,7 @@
     <dependency reexport="false">5dae8159-ab99-46bb-a40d-0cee30ee7018(jetbrains.mps.lang.constraints.rules.kinds)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:c32b788d-8e4b-4023-97f5-3e90d04ed77b:DclareMPS" version="1" />
     <language slang="l:72c81d76-4250-49a4-8dfa-274e9e7a2b19:TunnelProjection" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:fa13cc63-c476-4d46-9c96-d53670abe7bc:de.itemis.mps.editor.diagram" version="0" />

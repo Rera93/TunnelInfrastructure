@@ -124,11 +124,11 @@ public final class SetStandardLayout_Intention extends AbstractIntentionDescript
       SPropertyOperations.assign(hole2, PROPS.name$tAp1, "Hole2");
 
       // Tunnel Roads for Hole2 
-      SNode tunnelRoad1Hole2 = SLinkOperations.addNewChild(hole1, LINKS.tunnelHoleRoads$TjOt, CONCEPTS.TunnelRoad$J5);
+      SNode tunnelRoad1Hole2 = SLinkOperations.addNewChild(hole2, LINKS.tunnelHoleRoads$TjOt, CONCEPTS.TunnelRoad$J5);
       SPropertyOperations.set(tunnelRoad1Hole2, PROPS.lanes$GiK_, 5);
       SPropertyOperations.setEnum(tunnelRoad1Hole2, PROPS.connectionType$Ixv2, 0x1181c13235b5af9aL, "TunnelRoad");
       SPropertyOperations.setEnum(tunnelRoad1Hole2, PROPS.type$Gizw, 0x1269a468049550c9L, "Highway");
-      SNode tunnelRoad2Hole2 = SLinkOperations.addNewChild(hole1, LINKS.tunnelHoleRoads$TjOt, CONCEPTS.TunnelRoad$J5);
+      SNode tunnelRoad2Hole2 = SLinkOperations.addNewChild(hole2, LINKS.tunnelHoleRoads$TjOt, CONCEPTS.TunnelRoad$J5);
       SPropertyOperations.set(tunnelRoad2Hole2, PROPS.lanes$GiK_, 5);
       SPropertyOperations.setEnum(tunnelRoad2Hole2, PROPS.connectionType$Ixv2, 0x1181c13235b5af9bL, "RightTunnelPoint");
       SPropertyOperations.setEnum(tunnelRoad2Hole2, PROPS.type$Gizw, 0x1269a468049550c9L, "Highway");
@@ -137,7 +137,7 @@ public final class SetStandardLayout_Intention extends AbstractIntentionDescript
       SLinkOperations.setTarget(SLinkOperations.setNewChild(tunnelRoad1Hole2, LINKS.tunnelRoadConnection$IwPo, CONCEPTS.TunnelRoadReference$y_), LINKS.tunnelRoadReference$Jttw, tunnelRoad2Hole2);
 
       // Left Point for Hole2 
-      SNode hole2LeftPoint = SLinkOperations.addNewChild(hole1, LINKS.leftPoints$jm9$, CONCEPTS.LeftTunnelPoint$5I);
+      SNode hole2LeftPoint = SLinkOperations.addNewChild(hole2, LINKS.leftPoints$jm9$, CONCEPTS.LeftTunnelPoint$5I);
       SPropertyOperations.set(hole2LeftPoint, PROPS.leftToRightDirection$XJAF, false);
       SLinkOperations.setTarget(SLinkOperations.setNewChild(hole2LeftPoint, LINKS.tunnelRoadConnection$lMl5, CONCEPTS.TunnelRoadReference$y_), LINKS.tunnelRoadReference$Jttw, tunnelRoad1Hole2);
 
@@ -145,7 +145,7 @@ public final class SetStandardLayout_Intention extends AbstractIntentionDescript
       SLinkOperations.setTarget(SLinkOperations.setNewChild(outerRoad3, LINKS.leftPointConnection$uDEV, CONCEPTS.LeftPointReference$GL), LINKS.leftPointConnect$Vlnw, hole2LeftPoint);
 
       // Right Point for Hole2 
-      SNode hole2RightPoint = SLinkOperations.addNewChild(hole1, LINKS.rightPoints$jm8A, CONCEPTS.RightTunnelPoint$$f);
+      SNode hole2RightPoint = SLinkOperations.addNewChild(hole2, LINKS.rightPoints$jm8A, CONCEPTS.RightTunnelPoint$$f);
       SPropertyOperations.set(hole2RightPoint, PROPS.leftToRightDirection$3_Ot, false);
       SLinkOperations.setTarget(SLinkOperations.setNewChild(tunnelRoad2Hole2, LINKS.rightPointConnection$Ix1Y, CONCEPTS.RightPointReference$56), LINKS.rightPointConnection$IrX0, hole2RightPoint);
       SLinkOperations.setTarget(SLinkOperations.setNewChild(hole2RightPoint, LINKS.roadConnection$Bbhk, CONCEPTS.RoadReference$mj), LINKS.roadReference$FS6w, outerRoad4);

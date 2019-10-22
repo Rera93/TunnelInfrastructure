@@ -16,10 +16,12 @@ import java.awt.BasicStroke;
 public class Road extends AbstractShape {
 
   private SEnumerationLiteral type;
+  private boolean isTunnelRoad;
   private int lanes;
 
-  public Road(SEnumerationLiteral type, int lanes) {
+  public Road(SEnumerationLiteral type, boolean isTunnelRoad, int lanes) {
     this.type = type;
+    this.isTunnelRoad = isTunnelRoad;
     this.lanes = lanes;
   }
 
@@ -52,9 +54,14 @@ public class Road extends AbstractShape {
     int rightPointX = (int) bounds.getMaxX();
     int rightPointY = leftPointY;
 
+    if (this.isTunnelRoad) {
+      graphics.setColor(Color.MAGENTA);
+      graphics.drawRect((int) (bounds.getX()), (int) (bounds.getY()), (int) (bounds.getWidth()), (int) (bounds.getHeight()));
+    }
+
     Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0);
     graphics.setStroke(dashed);
-
+    graphics.setColor(Color.WHITE);
     int equalLanesDivision = 0;
 
     if (this.lanes == 1) {
