@@ -117,6 +117,18 @@
       <property role="20kJfa" value="leftPointConnection" />
       <ref role="20lvS9" node="1fCD9eBpzd8" resolve="LeftPointReference" />
     </node>
+    <node concept="1TJgyj" id="2oom8_vVwEL" role="1TKVEi">
+      <property role="IQ2ns" value="2745041319925516977" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="hasBeam" />
+      <ref role="20lvS9" node="2oom8_vVwE1" resolve="Beam" />
+    </node>
+    <node concept="1TJgyj" id="2oom8_vVwEP" role="1TKVEi">
+      <property role="IQ2ns" value="2745041319925516981" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="hasSemaphore" />
+      <ref role="20lvS9" node="2oom8_vVwDY" resolve="Semaphore" />
+    </node>
   </node>
   <node concept="25R3W" id="19DD6w4_l30">
     <property role="3F6X1D" value="1326772331897770176" />
@@ -373,6 +385,18 @@
       <property role="20kJfa" value="rightPointConnection" />
       <ref role="20lvS9" node="1TBjFCGeoR1" resolve="RightPointReference" />
     </node>
+    <node concept="1TJgyj" id="2oom8_vXC8L" role="1TKVEi">
+      <property role="IQ2ns" value="2745041319926071857" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="hasBeam" />
+      <ref role="20lvS9" node="2oom8_vVwE1" resolve="Beam" />
+    </node>
+    <node concept="1TJgyj" id="2oom8_vXC8P" role="1TKVEi">
+      <property role="IQ2ns" value="2745041319926071861" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="hasSemaphore" />
+      <ref role="20lvS9" node="2oom8_vVwDY" resolve="Semaphore" />
+    </node>
     <node concept="PrWs8" id="161Kj8QeyLS" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -459,6 +483,69 @@
       <property role="20kJfa" value="tunnelRoadReference" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="161Kj8PGeG1" resolve="TunnelRoad" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2oom8_vVwDY">
+    <property role="EcuMT" value="2745041319925516926" />
+    <property role="TrG5h" value="Semaphore" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2oom8_vVwDZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="2oom8_vVwE4" role="1TKVEl">
+      <property role="IQ2nx" value="2745041319925516932" />
+      <property role="TrG5h" value="x" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2oom8_vVwE6" role="1TKVEl">
+      <property role="IQ2nx" value="2745041319925516934" />
+      <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2oom8_vZ2ZJ" role="1TKVEl">
+      <property role="IQ2nx" value="2745041319926444015" />
+      <property role="TrG5h" value="currentLight" />
+      <ref role="AX2Wp" node="2oom8_vZ2ZA" resolve="SemaphoreLights" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2oom8_vVwE1">
+    <property role="EcuMT" value="2745041319925516929" />
+    <property role="TrG5h" value="Beam" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2oom8_vVwE2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="2oom8_vVwE9" role="1TKVEl">
+      <property role="IQ2nx" value="2745041319925516937" />
+      <property role="TrG5h" value="x" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2oom8_vVwEb" role="1TKVEl">
+      <property role="IQ2nx" value="2745041319925516939" />
+      <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2oom8_vYls9" role="1TKVEl">
+      <property role="IQ2nx" value="2745041319926257417" />
+      <property role="TrG5h" value="isClosed" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="25R3W" id="2oom8_vZ2ZA">
+    <property role="3F6X1D" value="2745041319926444006" />
+    <property role="TrG5h" value="SemaphoreLights" />
+    <ref role="1H5jkz" node="2oom8_vZ2ZB" resolve="Green" />
+    <node concept="25R33" id="2oom8_vZ2ZB" role="25R1y">
+      <property role="3tVfz5" value="2745041319926444007" />
+      <property role="TrG5h" value="Green" />
+    </node>
+    <node concept="25R33" id="2oom8_vZ2ZC" role="25R1y">
+      <property role="3tVfz5" value="2745041319926444008" />
+      <property role="TrG5h" value="Orange" />
+    </node>
+    <node concept="25R33" id="2oom8_vZ2ZF" role="25R1y">
+      <property role="3tVfz5" value="2745041319926444011" />
+      <property role="TrG5h" value="Red" />
     </node>
   </node>
 </model>

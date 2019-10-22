@@ -36,10 +36,13 @@
       <concept id="1326772331897770040" name="TunnelProjection.structure.Road" flags="ng" index="mZfhg">
         <property id="1261501792034054050" name="connectionType" index="$d9Ug" />
         <child id="1434577435393143627" name="leftPointConnection" index="2OzDvo" />
+        <child id="2745041319925516981" name="hasSemaphore" index="1TX_8W" />
       </concept>
       <concept id="1261501792033762049" name="TunnelProjection.structure.TunnelRoad" flags="ng" index="$ciCN">
         <property id="1261501792034075152" name="connectionType" index="$d7cy" />
         <child id="1261501792034075134" name="rightPointConnection" index="$d73c" />
+        <child id="2745041319926071857" name="hasBeam" index="1TVHES" />
+        <child id="2745041319926071861" name="hasSemaphore" index="1TVHEW" />
       </concept>
       <concept id="1261501792034074527" name="TunnelProjection.structure.RoadProperties" flags="ng" index="$d6UH">
         <property id="1261501792034074528" name="type" index="$d6Ui" />
@@ -54,6 +57,8 @@
       <concept id="1434577435393143624" name="TunnelProjection.structure.LeftPointReference" flags="ng" index="2OzDvr">
         <reference id="1434577435393143625" name="leftPointConnect" index="2OzDvq" />
       </concept>
+      <concept id="2745041319925516929" name="TunnelProjection.structure.Beam" flags="ng" index="1TX_88" />
+      <concept id="2745041319925516926" name="TunnelProjection.structure.Semaphore" flags="ng" index="1TX_bR" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -621,11 +626,16 @@
           </node>
         </node>
         <node concept="mPxc7" id="GOgb$rVRgm" role="mEeLy" />
-        <node concept="$ciCN" id="GOgb$rVRgn" role="M133B" />
+        <node concept="$ciCN" id="GOgb$rVRgn" role="M133B">
+          <node concept="1TX_88" id="2oom8_vYls5" role="1TVHES" />
+          <node concept="1TX_bR" id="2oom8_vYls7" role="1TVHEW" />
+        </node>
         <node concept="mPxc7" id="GOgb$s2UeH" role="mEeLy" />
       </node>
     </node>
-    <node concept="mZfhg" id="GOgb$rVRgo" role="mZfhj" />
+    <node concept="mZfhg" id="GOgb$rVRgo" role="mZfhj">
+      <node concept="1TX_bR" id="2oom8_vWeiz" role="1TX_8W" />
+    </node>
     <node concept="37mRI7" id="GOgb$rVRgq" role="lGtFl">
       <node concept="37mRIm" id="GOgb$rVRgr" role="37mRID">
         <property role="37mO49" value="807341396987966482" />

@@ -7,78 +7,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed6757e0-28e6-4209-80c9-1cd57afa0ae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.rules.mps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/rules/dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/rules/generated" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPointEditorComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPointEditorComponent_ComponentBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPoint_InspectorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPointEditorComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPointEditorComponent_ComponentBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_InspectorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RoadEditorComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road_InspectorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHoleEditorComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHoleEditorComponent_ComponentBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_InspectorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoadEditorComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoadEditorComponent_ComponentBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoad_InspectorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_InspectorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/rules/trace.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/BeamEditorComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/BeamEditorComponent_ComponentBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Beam_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Beam_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Beam_Textual_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Beam_Textual_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/SemaphoreEditorComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/SemaphoreEditorComponent_ComponentBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Semaphore_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Semaphore_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Semaphore_Textual_Editor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Semaphore_Textual_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/EnumerationDescriptor_SemaphoreLights.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/TunnelProjection.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/TunnelProjection.mpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Road_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelHole_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelHole_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelHole_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelHole_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelRoad_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelRoad_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelRoad_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelRoad_EditorBuilder_a$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelRoad_Textual_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelRoad_Textual_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/TunnelShape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_Editor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$Inline_Builder1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$Inline_Builder1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$Inline_Builder1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0$Inline_Builder1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$Inline_Builder3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$Inline_Builder3$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$Inline_Builder3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2$Inline_Builder3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$Inline_Builder2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/LanguageConceptSwitch.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/LanguageConceptSwitch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/classes_gen/TunnelProjection/structure/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/models/TunnelProjection.structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.Layouts.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.Layouts.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen.caches/TunnelProjection/structure/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPoint_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPoint_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/LeftTunnelPoint_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RightTunnelPoint_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Road_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelHole_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoad_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoad_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoad_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoad_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoad_Textual_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoad_Textual_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_Editor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/Tunnel_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/RoadEditorComponent_ComponentBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoadEditorComponent_ComponentBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/TunnelRoadEditorComponent_ComponentBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelSketch/classes_gen/TunnelSketch/intentions/SetStandardLayout_Intention$IntentionImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelSketch/classes_gen/TunnelSketch/intentions/SetStandardLayout_Intention$IntentionImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelSketch/models/TunnelSketch.intentions.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelSketch/models/TunnelSketch.intentions.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelSketch/sandbox/models/TunnelSketch.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelSketch/sandbox/models/TunnelSketch.sandbox.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelSketch/source_gen.caches/TunnelSketch/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelSketch/source_gen.caches/TunnelSketch/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelSketch/source_gen.caches/TunnelSketch/intentions/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelSketch/source_gen.caches/TunnelSketch/intentions/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/TunnelSketch/source_gen/TunnelSketch/intentions/SetStandardLayout_Intention.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelSketch/source_gen/TunnelSketch/intentions/SetStandardLayout_Intention.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/LanguageConceptSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/TunnelProjection/source_gen/TunnelProjection/structure/trace.info" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -516,11 +508,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7294e63d-7b2c-4558-94ad-164a65f48ae2" />
+              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TunnelSketch" />
+              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,7 +522,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7294e63d-7b2c-4558-94ad-164a65f48ae2" />
+              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,196 +537,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:aeecc9ff-280a-4b40-8b5c-ea5d4216840b(TunnelSketch.intentions) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.intentions.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:42c0481e-3e0c-436e-9d1a-6c1630c3c226(TunnelSketch.structure) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7602151113222873726" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7602151113222873728" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7602151113222873726" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="properties" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7602151113222873726" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7294e63d-7b2c-4558-94ad-164a65f48ae2" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunnelSketch" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:c69b49f2-62d2-4710-8997-b1b576e2983f(TunnelSketch.sandbox) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/sandbox/models/TunnelSketch.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunnelProjection" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunnelProjection" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:4aeff14b-faa3-4dcd-b902-b3176a080e0a(TunnelProjection.sandbox) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f412b4d7-7fa6-482b-a6b4-ebb812714b46(TunnelProjection.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/models/TunnelProjection.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:b430b43b-68ec-4108-b211-fbdcc4d055e3(TunnelSketch.constraints) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.constraints.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -770,7 +572,21 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
+              <option name="myItemId" value="r:42c0481e-3e0c-436e-9d1a-6c1630c3c226(TunnelSketch.structure) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunnelProjection" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -800,7 +616,125 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7602151113222873726" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7602151113222873726" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7602151113222873728" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7294e63d-7b2c-4558-94ad-164a65f48ae2" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunnelSketch" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/models/TunnelProjection.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:d39eaadc-4c38-4c6b-9aba-e2a87d6c20de(TunnelSketch.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7602151113222873726" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="properties" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunnelProjection" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4aeff14b-faa3-4dcd-b902-b3176a080e0a(TunnelProjection.sandbox) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
@@ -817,8 +751,84 @@
               <option name="myItemId" value="r:c69b49f2-62d2-4710-8997-b1b576e2983f(TunnelSketch.sandbox) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/sandbox/models/TunnelSketch.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="807341396992570303" />
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="72c81d76-4250-49a4-8dfa-274e9e7a2b19(TunnelProjection)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:f412b4d7-7fa6-482b-a6b4-ebb812714b46(TunnelProjection.editor) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/models/TunnelProjection.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7294e63d-7b2c-4558-94ad-164a65f48ae2" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a181095e-e04c-42f1-9ea7-b771b750f4d2(TunnelSketch)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:b430b43b-68ec-4108-b211-fbdcc4d055e3(TunnelSketch.constraints) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelSketch/models/TunnelSketch.constraints.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ac944ca7-a3d0-44f4-9be5-20a7293426f4" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TunnelProjection" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:4aeff14b-faa3-4dcd-b902-b3176a080e0a(TunnelProjection.sandbox) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:359cf1c3-9b97-4367-92c4-a29d976ef343(TunnelProjection.sandbox.Layouts) in IdeaFile[file://C:/Users/bpineti/Desktop/TunnelInfrastructure/languages/TunnelProjection/sandbox/models/TunnelProjection.sandbox.Layouts.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="807341396987966481" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>

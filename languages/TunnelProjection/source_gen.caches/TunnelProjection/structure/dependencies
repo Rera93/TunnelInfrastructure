@@ -41,6 +41,16 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
   </dependency>
+  <dependency className="TunnelProjection.structure.EnumerationDescriptor_SemaphoreLights">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.EnumerationLiteralsIndex" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
   <dependency className="TunnelProjection.structure.EnumerationDescriptor_TunnelPointType">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -71,6 +81,7 @@
     <classNode dependClassName="TunnelProjection.structure.EnumerationDescriptor_ConnectionType" />
     <classNode dependClassName="TunnelProjection.structure.EnumerationDescriptor_RoadConnectionType" />
     <classNode dependClassName="TunnelProjection.structure.EnumerationDescriptor_RoadType" />
+    <classNode dependClassName="TunnelProjection.structure.EnumerationDescriptor_SemaphoreLights" />
     <classNode dependClassName="TunnelProjection.structure.EnumerationDescriptor_TunnelPointType" />
     <classNode dependClassName="TunnelProjection.structure.EnumerationDescriptor_TunnelRoadConnectionType" />
     <classNode dependClassName="TunnelProjection.structure.LanguageConceptSwitch" />

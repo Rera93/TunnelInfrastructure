@@ -16,6 +16,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptBeam = createDescriptorForBeam();
   /*package*/ final ConceptDescriptor myConceptLeftPointReference = createDescriptorForLeftPointReference();
   /*package*/ final ConceptDescriptor myConceptLeftTunnelPoint = createDescriptorForLeftTunnelPoint();
   /*package*/ final ConceptDescriptor myConceptRightPointReference = createDescriptorForRightPointReference();
@@ -23,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRoad = createDescriptorForRoad();
   /*package*/ final ConceptDescriptor myConceptRoadProperties = createDescriptorForRoadProperties();
   /*package*/ final ConceptDescriptor myConceptRoadReference = createDescriptorForRoadReference();
+  /*package*/ final ConceptDescriptor myConceptSemaphore = createDescriptorForSemaphore();
   /*package*/ final ConceptDescriptor myConceptTunnel = createDescriptorForTunnel();
   /*package*/ final ConceptDescriptor myConceptTunnelHole = createDescriptorForTunnelHole();
   /*package*/ final ConceptDescriptor myConceptTunnelHoleReference = createDescriptorForTunnelHoleReference();
@@ -32,6 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationConnectionType = new EnumerationDescriptor_ConnectionType();
   /*package*/ final EnumerationDescriptor myEnumerationRoadConnectionType = new EnumerationDescriptor_RoadConnectionType();
   /*package*/ final EnumerationDescriptor myEnumerationRoadType = new EnumerationDescriptor_RoadType();
+  /*package*/ final EnumerationDescriptor myEnumerationSemaphoreLights = new EnumerationDescriptor_SemaphoreLights();
   /*package*/ final EnumerationDescriptor myEnumerationTunnelPointType = new EnumerationDescriptor_TunnelPointType();
   /*package*/ final EnumerationDescriptor myEnumerationTunnelRoadConnectionType = new EnumerationDescriptor_TunnelRoadConnectionType();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -48,13 +51,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptLeftPointReference, myConceptLeftTunnelPoint, myConceptRightPointReference, myConceptRightTunnelPoint, myConceptRoad, myConceptRoadProperties, myConceptRoadReference, myConceptTunnel, myConceptTunnelHole, myConceptTunnelHoleReference, myConceptTunnelLayout, myConceptTunnelRoad, myConceptTunnelRoadReference);
+    return Arrays.asList(myConceptBeam, myConceptLeftPointReference, myConceptLeftTunnelPoint, myConceptRightPointReference, myConceptRightTunnelPoint, myConceptRoad, myConceptRoadProperties, myConceptRoadReference, myConceptSemaphore, myConceptTunnel, myConceptTunnelHole, myConceptTunnelHoleReference, myConceptTunnelLayout, myConceptTunnelRoad, myConceptTunnelRoadReference);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Beam:
+        return myConceptBeam;
       case LanguageConceptSwitch.LeftPointReference:
         return myConceptLeftPointReference;
       case LanguageConceptSwitch.LeftTunnelPoint:
@@ -69,6 +74,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRoadProperties;
       case LanguageConceptSwitch.RoadReference:
         return myConceptRoadReference;
+      case LanguageConceptSwitch.Semaphore:
+        return myConceptSemaphore;
       case LanguageConceptSwitch.Tunnel:
         return myConceptTunnel;
       case LanguageConceptSwitch.TunnelHole:
@@ -88,13 +95,24 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationConnectionType, myEnumerationRoadConnectionType, myEnumerationRoadType, myEnumerationTunnelPointType, myEnumerationTunnelRoadConnectionType);
+    return Arrays.asList(myEnumerationConnectionType, myEnumerationRoadConnectionType, myEnumerationRoadType, myEnumerationSemaphoreLights, myEnumerationTunnelPointType, myEnumerationTunnelRoadConnectionType);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForBeam() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "Beam", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895fee0a81L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/2745041319925516929");
+    b.version(2);
+    b.property("x", 0x261858895fee0a89L).type(PrimitiveTypeId.INTEGER).origin("2745041319925516937").done();
+    b.property("y", 0x261858895fee0a8bL).type(PrimitiveTypeId.INTEGER).origin("2745041319925516939").done();
+    b.property("isClosed", 0x261858895ff95709L).type(PrimitiveTypeId.BOOLEAN).origin("2745041319926257417").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForLeftPointReference() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "LeftPointReference", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x13e8a493a7663348L);
     b.class_(false, false, false);
@@ -146,6 +164,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("isConnected", 0x2ba1f2d9f9637ce7L).type(PrimitiveTypeId.BOOLEAN).origin("3144061032887188711").done();
     b.aggregate("roadConnection", 0x1e674eba2c5843a7L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804c1fb06L).optional(true).ordered(true).multiple(false).origin("2190806305253901223").done();
     b.aggregate("leftPointConnection", 0x13e8a493a766334bL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x13e8a493a7663348L).optional(true).ordered(true).multiple(false).origin("1434577435393143627").done();
+    b.aggregate("hasBeam", 0x261858895fee0ab1L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895fee0a81L).optional(true).ordered(true).multiple(false).origin("2745041319925516977").done();
+    b.aggregate("hasSemaphore", 0x261858895fee0ab5L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895fee0a7eL).optional(true).ordered(true).multiple(false).origin("2745041319925516981").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRoadProperties() {
@@ -168,6 +188,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/1326772331900697350");
     b.version(2);
     b.associate("roadReference", 0x1269a46804c1fb07L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L).optional(false).origin("1326772331900697351").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSemaphore() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("TunnelProjection", "Semaphore", 0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895fee0a7eL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:6e36a64b-b1ea-431d-940e-d48e4716b989(TunnelProjection.structure)/2745041319925516926");
+    b.version(2);
+    b.property("x", 0x261858895fee0a84L).type(PrimitiveTypeId.INTEGER).origin("2745041319925516932").done();
+    b.property("y", 0x261858895fee0a86L).type(PrimitiveTypeId.INTEGER).origin("2745041319925516934").done();
+    b.property("currentLight", 0x261858895ffc2fefL).type(MetaIdFactory.dataTypeId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895ffc2fe6L)).origin("2745041319926444015").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTunnel() {
@@ -218,6 +249,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("connectionType", 0x1181c13235b5b210L).type(MetaIdFactory.dataTypeId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b5af99L)).origin("1261501792034075152").done();
     b.aggregate("tunnelRoadConnection", 0x1181c13235b5b1f9L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b5b1fbL).optional(true).ordered(true).multiple(false).origin("1261501792034075129").done();
     b.aggregate("rightPointConnection", 0x1181c13235b5b1feL).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1e674eba2c398dc1L).optional(true).ordered(true).multiple(false).origin("1261501792034075134").done();
+    b.aggregate("hasBeam", 0x261858895ff68231L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895fee0a81L).optional(true).ordered(true).multiple(false).origin("2745041319926071857").done();
+    b.aggregate("hasSemaphore", 0x261858895ff68235L).target(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895fee0a7eL).optional(true).ordered(true).multiple(false).origin("2745041319926071861").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTunnelRoadReference() {

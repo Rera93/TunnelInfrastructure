@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="5h0v8x7gvttpcmmqt67zosb9wa2jo6g">
-  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_ConnectionType.java:EnumerationDescriptor_RoadConnectionType.java:EnumerationDescriptor_RoadType.java:EnumerationDescriptor_TunnelPointType.java:EnumerationDescriptor_TunnelRoadConnectionType.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
+<product version="3" modelHash="-buuaiv1fokqln49bcwnf8w32p2t2oj">
+  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_ConnectionType.java:EnumerationDescriptor_RoadConnectionType.java:EnumerationDescriptor_RoadType.java:EnumerationDescriptor_SemaphoreLights.java:EnumerationDescriptor_TunnelPointType.java:EnumerationDescriptor_TunnelRoadConnectionType.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
 </product>
 

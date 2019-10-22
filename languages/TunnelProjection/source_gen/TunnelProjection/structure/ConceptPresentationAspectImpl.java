@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Beam;
   private ConceptPresentation props_LeftPointReference;
   private ConceptPresentation props_LeftTunnelPoint;
   private ConceptPresentation props_RightPointReference;
@@ -16,6 +17,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Road;
   private ConceptPresentation props_RoadProperties;
   private ConceptPresentation props_RoadReference;
+  private ConceptPresentation props_Semaphore;
   private ConceptPresentation props_Tunnel;
   private ConceptPresentation props_TunnelHole;
   private ConceptPresentation props_TunnelHoleReference;
@@ -28,6 +30,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Beam:
+        if (props_Beam == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Beam = cpb.create();
+        }
+        return props_Beam;
       case LanguageConceptSwitch.LeftPointReference:
         if (props_LeftPointReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -76,6 +85,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_RoadReference = cpb.create();
         }
         return props_RoadReference;
+      case LanguageConceptSwitch.Semaphore:
+        if (props_Semaphore == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Semaphore = cpb.create();
+        }
+        return props_Semaphore;
       case LanguageConceptSwitch.Tunnel:
         if (props_Tunnel == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

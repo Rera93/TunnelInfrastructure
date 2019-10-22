@@ -5728,18 +5728,18 @@
         </node>
         <node concept="2iRfu4" id="1eAWAuC5_ZG" role="2iSdaV" />
       </node>
-      <node concept="1X3_iC" id="1eAWAuC5_ZH" role="lGtFl">
-        <property role="3V$3am" value="childCellModel" />
-        <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
-        <node concept="3EZMnI" id="1eAWAuC5_ZI" role="8Wnug">
-          <node concept="2iRfu4" id="1eAWAuC5_ZJ" role="2iSdaV" />
-          <node concept="3XFhqQ" id="1eAWAuC5_ZK" role="3EZMnx" />
-          <node concept="3F0ifn" id="1eAWAuC5_ZL" role="3EZMnx">
-            <property role="3F0ifm" value="length = " />
-          </node>
-          <node concept="3F0A7n" id="1eAWAuC5_ZM" role="3EZMnx">
-            <ref role="1NtTu8" to="j6tt:161Kj8PHqYx" resolve="length" />
-          </node>
+      <node concept="3EZMnI" id="2oom8_vVx4t" role="3EZMnx">
+        <node concept="2iRfu4" id="2oom8_vVx4u" role="2iSdaV" />
+        <node concept="3XFhqQ" id="2oom8_vVxbP" role="3EZMnx" />
+        <node concept="3F1sOY" id="2oom8_vVx05" role="3EZMnx">
+          <ref role="1NtTu8" to="j6tt:2oom8_vVwEL" resolve="hasBeam" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2oom8_vVxbT" role="3EZMnx">
+        <node concept="2iRfu4" id="2oom8_vVxbU" role="2iSdaV" />
+        <node concept="3XFhqQ" id="2oom8_vVxd$" role="3EZMnx" />
+        <node concept="3F1sOY" id="2oom8_vVx2Z" role="3EZMnx">
+          <ref role="1NtTu8" to="j6tt:2oom8_vVwEP" resolve="hasSemaphore" />
         </node>
       </node>
       <node concept="3EZMnI" id="1eAWAuC5_ZN" role="3EZMnx">
@@ -5876,6 +5876,20 @@
           <property role="3F0ifm" value=":" />
         </node>
         <node concept="2iRfu4" id="5rkcn5D9u9a" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2oom8_vXCr4" role="3EZMnx">
+        <node concept="2iRfu4" id="2oom8_vXCr5" role="2iSdaV" />
+        <node concept="3XFhqQ" id="2oom8_vXCsD" role="3EZMnx" />
+        <node concept="3F1sOY" id="2oom8_vXCgP" role="3EZMnx">
+          <ref role="1NtTu8" to="j6tt:2oom8_vXC8L" resolve="hasBeam" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2oom8_vXCsH" role="3EZMnx">
+        <node concept="2iRfu4" id="2oom8_vXCsI" role="2iSdaV" />
+        <node concept="3XFhqQ" id="2oom8_vXCul" role="3EZMnx" />
+        <node concept="3F1sOY" id="2oom8_vXCjL" role="3EZMnx">
+          <ref role="1NtTu8" to="j6tt:2oom8_vXC8P" resolve="hasSemaphore" />
+        </node>
       </node>
       <node concept="3EZMnI" id="5rkcn5D9u9h" role="3EZMnx">
         <node concept="2iRfu4" id="5rkcn5D9u9i" role="2iSdaV" />
@@ -6175,6 +6189,104 @@
         </node>
       </node>
       <node concept="3F0ifn" id="5rkcn5DbyPl" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2oom8_vVwEm">
+    <ref role="1XX52x" to="j6tt:2oom8_vVwE1" resolve="Beam" />
+    <node concept="2aJ2om" id="2oom8_vVwEq" role="CpUAK">
+      <ref role="2$4xQ3" node="19DD6w4ydgI" resolve="Textual" />
+    </node>
+    <node concept="PMmxH" id="2oom8_vWeiY" role="2wV5jI">
+      <ref role="PMmxG" node="2oom8_vWeiC" resolve="BeamEditorComponent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2oom8_vVxxz">
+    <ref role="1XX52x" to="j6tt:2oom8_vVwDY" resolve="Semaphore" />
+    <node concept="2aJ2om" id="2oom8_vVxxB" role="CpUAK">
+      <ref role="2$4xQ3" node="19DD6w4ydgI" resolve="Textual" />
+    </node>
+    <node concept="PMmxH" id="2oom8_vWUXC" role="2wV5jI">
+      <ref role="PMmxG" node="2oom8_vWUXA" resolve="SemaphoreEditorComponent" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2oom8_vWeiA">
+    <ref role="1XX52x" to="j6tt:2oom8_vVwE1" resolve="Beam" />
+    <node concept="PMmxH" id="2oom8_vWej0" role="2wV5jI">
+      <ref role="PMmxG" node="2oom8_vWeiC" resolve="BeamEditorComponent" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="2oom8_vWeiC">
+    <property role="TrG5h" value="BeamEditorComponent" />
+    <ref role="1XX52x" to="j6tt:2oom8_vVwE1" resolve="Beam" />
+    <node concept="3EZMnI" id="2oom8_vWeiE" role="2wV5jI">
+      <node concept="2iRfu4" id="2oom8_vWeiF" role="2iSdaV" />
+      <node concept="3F0ifn" id="2oom8_vWeiG" role="3EZMnx">
+        <property role="3F0ifm" value="Beam" />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vWeiH" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vWeiI" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vWeiJ" role="3EZMnx">
+        <ref role="1NtTu8" to="j6tt:2oom8_vVwE9" resolve="x" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vWeiK" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vWeiL" role="3EZMnx">
+        <ref role="1NtTu8" to="j6tt:2oom8_vVwEb" resolve="y" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vWeiM" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vYlsm" role="3EZMnx">
+        <property role="3F0ifm" value=" closed =" />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vYlsY" role="3EZMnx">
+        <ref role="1NtTu8" to="j6tt:2oom8_vYls9" resolve="isClosed" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2oom8_vWUXA">
+    <property role="TrG5h" value="SemaphoreEditorComponent" />
+    <ref role="1XX52x" to="j6tt:2oom8_vVwDY" resolve="Semaphore" />
+    <node concept="3EZMnI" id="2oom8_vVxxH" role="2wV5jI">
+      <node concept="2iRfu4" id="2oom8_vVxxI" role="2iSdaV" />
+      <node concept="3F0ifn" id="2oom8_vVxxE" role="3EZMnx">
+        <property role="3F0ifm" value="Semaphore" />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vVxxQ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vVxxY" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vVxy8" role="3EZMnx">
+        <ref role="1NtTu8" to="j6tt:2oom8_vVwE4" resolve="x" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vVxyk" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vVxyE" role="3EZMnx">
+        <ref role="1NtTu8" to="j6tt:2oom8_vVwE6" resolve="y" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vVxyU" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="3F0ifn" id="2oom8_vZ30g" role="3EZMnx">
+        <property role="3F0ifm" value=" current =" />
+      </node>
+      <node concept="3F0A7n" id="2oom8_vZ2ZW" role="3EZMnx">
+        <ref role="1NtTu8" to="j6tt:2oom8_vZ2ZJ" resolve="currentLight" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2oom8_vWUXN">
+    <ref role="1XX52x" to="j6tt:2oom8_vVwDY" resolve="Semaphore" />
+    <node concept="PMmxH" id="2oom8_vWUXP" role="2wV5jI">
+      <ref role="PMmxG" node="2oom8_vWUXA" resolve="SemaphoreEditorComponent" />
     </node>
   </node>
 </model>
