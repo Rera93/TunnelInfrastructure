@@ -4,6 +4,7 @@ package TunnelProjection.editor;
 
 import de.itemis.mps.editor.diagram.runtime.shape.AbstractShape;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
+import org.jetbrains.mps.openapi.model.SNode;
 import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
 import de.itemis.mps.editor.diagram.runtime.shape.IShapeStyle;
@@ -18,11 +19,15 @@ public class Road extends AbstractShape {
   private SEnumerationLiteral type;
   private boolean isTunnelRoad;
   private int lanes;
+  private SNode semaphore;
+  private SEnumerationLiteral light;
 
-  public Road(SEnumerationLiteral type, boolean isTunnelRoad, int lanes) {
+  public Road(SEnumerationLiteral type, boolean isTunnelRoad, int lanes, SNode semaphore, SEnumerationLiteral light) {
     this.type = type;
     this.isTunnelRoad = isTunnelRoad;
     this.lanes = lanes;
+    this.semaphore = semaphore;
+    this.light = light;
   }
 
 
@@ -85,6 +90,34 @@ public class Road extends AbstractShape {
       graphics.drawLine(leftPointX, ((int) bounds.getMinY()) + equalLanesDivision * 4, rightPointX, ((int) bounds.getMinY()) + equalLanesDivision * 4);
 
     }
+
+
+    // Semaphore creation if available in Road 
+    if ((this.semaphore != null)) {
+      graphics.setColor(Color.BLACK);
+      graphics.fillRect((int) bounds.getX() + 10, (int) bounds.getY(), 35, (int) bounds.getHeight());
+      graphics.setStroke(new BasicStroke());
+      graphics.setColor(Color.RED);
+      if (this.light.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895ffc2fe6L, "TunnelProjection.structure.SemaphoreLights"), 0x261858895ffc2febL, "Red"))) {
+        graphics.fillOval((int) bounds.getX() + 15, (int) bounds.getY() + 5, 25, (int) bounds.getHeight() / 3 - 5);
+      } else {
+        graphics.drawOval((int) bounds.getX() + 15, (int) bounds.getY() + 5, 25, (int) bounds.getHeight() / 3 - 5);
+      }
+      graphics.setColor(Color.ORANGE);
+      if (this.light.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895ffc2fe6L, "TunnelProjection.structure.SemaphoreLights"), 0x261858895ffc2fe8L, "Orange"))) {
+        graphics.fillOval((int) bounds.getX() + 15, (int) bounds.getY() + (int) bounds.getHeight() / 3 + 5, 25, (int) bounds.getHeight() / 3 - 5);
+      } else {
+        graphics.drawOval((int) bounds.getX() + 15, (int) bounds.getY() + (int) bounds.getHeight() / 3 + 5, 25, (int) bounds.getHeight() / 3 - 5);
+      }
+      graphics.setColor(Color.GREEN);
+      if (this.light.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895ffc2fe6L, "TunnelProjection.structure.SemaphoreLights"), 0x261858895ffc2fe7L, "Green"))) {
+        graphics.fillOval((int) bounds.getX() + 15, (int) bounds.getY() + (int) bounds.getHeight() / 3 * 2 + 5, 25, (int) bounds.getHeight() / 3 - 5);
+      } else {
+        graphics.drawOval((int) bounds.getX() + 15, (int) bounds.getY() + (int) bounds.getHeight() / 3 * 2 + 5, 25, (int) bounds.getHeight() / 3 - 5);
+      }
+
+    }
+
   }
 
 }

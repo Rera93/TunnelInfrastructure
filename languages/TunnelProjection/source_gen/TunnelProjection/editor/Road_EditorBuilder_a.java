@@ -15,6 +15,7 @@ import de.itemis.mps.editor.diagram.runtime.model.Port;
 import java.util.ArrayList;
 import de.itemis.mps.editor.diagram.runtime.shape.IShape;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
@@ -22,6 +23,7 @@ import de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 /*package*/ class Road_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -54,7 +56,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         EditorCell contentCell = createConstant_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new Road(SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$Gizw), false, SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.lanes$GiK_));
+        final IShape shape = new Road(SPropertyOperations.getEnum(((SNode) _variablesContext.getValue("thisNode")), PROPS.type$Gizw), false, SPropertyOperations.getInteger(((SNode) _variablesContext.getValue("thisNode")), PROPS.lanes$GiK_), SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.hasSemaphore$DTpI), SPropertyOperations.getEnum(SLinkOperations.getTarget(((SNode) _variablesContext.getValue("thisNode")), LINKS.hasSemaphore$DTpI), PROPS.currentLight$jETz));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
@@ -109,5 +111,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   private static final class PROPS {
     /*package*/ static final SProperty type$Gizw = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b5af9fL, 0x1181c13235b5afa0L, "type");
     /*package*/ static final SProperty lanes$GiK_ = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b5af9fL, 0x1181c13235b5afa6L, "lanes");
+    /*package*/ static final SProperty currentLight$jETz = MetaAdapterFactory.getProperty(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x261858895fee0a7eL, 0x261858895ffc2fefL, "currentLight");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink hasSemaphore$DTpI = MetaAdapterFactory.getContainmentLink(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L, 0x261858895fee0ab5L, "hasSemaphore");
   }
 }
