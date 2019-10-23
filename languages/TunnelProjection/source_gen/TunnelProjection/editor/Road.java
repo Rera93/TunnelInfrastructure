@@ -148,9 +148,6 @@ public class Road extends AbstractShape {
         graphics.drawLine((int) (bounds.getX() + bounds.getWidth()), (int) bounds.getY(), (int) (bounds.getX() + bounds.getWidth() - 20), (int) (bounds.getY() + bounds.getHeight()));
       }
     }
-
-
-
   }
 
 }

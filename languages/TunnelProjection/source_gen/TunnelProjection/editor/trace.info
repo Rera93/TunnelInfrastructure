@@ -1674,9 +1674,6 @@
       <node id="3321041496539398368" at="145,0,146,115" concept="2" />
       <node id="3321041496539398373" at="146,115,147,37" concept="2" />
       <node id="3321041496539398378" at="147,37,148,182" concept="2" />
-      <node id="3321041496538422138" at="150,5,151,0" concept="11" />
-      <node id="3321041496538422902" at="151,0,152,0" concept="11" />
-      <node id="2745041319927262490" at="152,0,153,0" concept="11" />
       <node id="4217665362111745669" at="50,10,52,5" concept="0" />
       <node id="2745041319930313722" at="112,12,114,7" concept="0" />
       <node id="2745041319930303676" at="118,12,120,7" concept="0" />
@@ -1693,7 +1690,7 @@
       <node id="3321041496538640430" at="130,34,150,5" concept="6" />
       <node id="4217665362115501921" at="81,119,102,5" concept="6" />
       <node id="2745041319926655382" at="104,63,128,5" concept="6" />
-      <node id="1326772331897770240" at="56,0,155,0" concept="7" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <node id="1326772331897770240" at="56,0,152,0" concept="7" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
       <scope id="4217665362111731604" at="42,223,43,48" />
       <scope id="4217665362111741235" at="44,226,45,50" />
       <scope id="4217665362111876552" at="46,230,47,50" />
@@ -1731,7 +1728,7 @@
       </scope>
       <scope id="3321041496538640432" at="131,30,149,7" />
       <scope id="2745041319926655384" at="105,35,127,0" />
-      <scope id="1326772331897770240" at="57,95,153,0">
+      <scope id="1326772331897770240" at="57,95,150,5">
         <var name="dashed" id="4217665362115317928" />
         <var name="equalLanesDivision" id="4217665362116106957" />
         <var name="leftPointX" id="1326772331900309666" />
@@ -1739,12 +1736,12 @@
         <var name="rightPointX" id="1326772331900313553" />
         <var name="rightPointY" id="1326772331900315753" />
       </scope>
-      <scope id="1326772331897770240" at="56,0,155,0">
+      <scope id="1326772331897770240" at="56,0,152,0">
         <var name="bounds" id="1326772331897770240" />
         <var name="graphics" id="1326772331897770240" />
         <var name="style" id="1326772331897770240" />
       </scope>
-      <unit id="1326772331897770240" at="17,0,157,0" name="TunnelProjection.editor.Road" />
+      <unit id="1326772331897770240" at="17,0,154,0" name="TunnelProjection.editor.Road" />
     </file>
   </root>
   <root nodeRef="r:f412b4d7-7fa6-482b-a6b4-ebb812714b46(TunnelProjection.editor)/1326772331897789066">

@@ -637,10 +637,8 @@
         </node>
         <node concept="$ciCN" id="GOgb$rVRgn" role="M133B">
           <property role="$d6Uk" value="2" />
-          <node concept="1TX_bR" id="2SmHqkXv3jm" role="1TVHEW">
-            <property role="1TT7tA" value="2oom8_vZ2ZF/Red" />
-          </node>
-          <node concept="1TX_88" id="2SmHqkXAM33" role="1TVHES" />
+          <node concept="1TX_bR" id="2SmHqkXv3jm" role="1TVHEW" />
+          <node concept="1TX_88" id="2SmHqkXC7zl" role="1TVHES" />
         </node>
         <node concept="mPxc7" id="GOgb$s2UeH" role="mEeLy" />
       </node>
