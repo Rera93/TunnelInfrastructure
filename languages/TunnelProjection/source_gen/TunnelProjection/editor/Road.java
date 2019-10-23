@@ -21,19 +21,24 @@ public class Road extends AbstractShape {
   private int lanes;
   private SNode semaphore;
   private SEnumerationLiteral light;
+  private SNode beam;
+  private boolean isBeamClosed;
 
-  public Road(SEnumerationLiteral type, boolean isTunnelRoad, int lanes, SNode semaphore, SEnumerationLiteral light) {
+  public Road(SEnumerationLiteral type, boolean isTunnelRoad, int lanes, SNode semaphore, SEnumerationLiteral light, SNode beam, boolean isBeamClosed) {
     this.type = type;
     this.isTunnelRoad = isTunnelRoad;
     this.lanes = lanes;
     this.semaphore = semaphore;
     this.light = light;
+    this.beam = beam;
+    this.isBeamClosed = isBeamClosed;
   }
 
 
 
   @Override
   protected void drawShadow(final Graphics2D graphics, final Rectangle2D bounds, IShapeStyle style) {
+    // Filling road rectangle with the corresponding color depending on the road type. 
     if (this.type.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a468049550c0L, "TunnelProjection.structure.RoadType"), 0x1269a468049550c1L, "Bicycle"))) {
       graphics.setColor(new Color(108, 76, 81));
     } else if (this.type.equals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a468049550c0L, "TunnelProjection.structure.RoadType"), 0x1269a468049550c5L, "Car"))) {
@@ -59,16 +64,21 @@ public class Road extends AbstractShape {
     int rightPointX = (int) bounds.getMaxX();
     int rightPointY = leftPointY;
 
+
+    // Differentiate between outer roads and inner tunnel roads. Tunnel roads are outlined with magenta while outer roads are not. 
     if (this.isTunnelRoad) {
       graphics.setColor(Color.MAGENTA);
       graphics.drawRect((int) (bounds.getX()), (int) (bounds.getY()), (int) (bounds.getWidth()), (int) (bounds.getHeight()));
     }
+
+    // Creation of dashed lines 
 
     Stroke dashed = new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0);
     graphics.setStroke(dashed);
     graphics.setColor(Color.WHITE);
     int equalLanesDivision = 0;
 
+    //  Depending on the number of lanes ==> The roads will be re-drawn with the corresponding number of dashed lines. 
     if (this.lanes == 1) {
       // do nothing 
     } else if (this.lanes == 2) {
@@ -91,8 +101,7 @@ public class Road extends AbstractShape {
 
     }
 
-
-    // Semaphore creation if available in Road 
+    // Semaphore creation if available in Road or Tunnel Road  
     if ((this.semaphore != null)) {
       graphics.setColor(Color.BLACK);
       graphics.fillRect((int) bounds.getX() + 10, (int) bounds.getY(), 35, (int) bounds.getHeight());
@@ -117,6 +126,30 @@ public class Road extends AbstractShape {
       }
 
     }
+
+    // Beam creation if available 
+    if ((this.beam != null)) {
+      // If beam is closed, a red-white vertical stripe is drawn on the road 
+      if (this.isBeamClosed) {
+        graphics.setStroke(new BasicStroke(3));
+        graphics.setColor(Color.WHITE);
+        graphics.drawLine((int) (bounds.getX() + bounds.getWidth() - 20), (int) bounds.getY(), (int) (bounds.getX() + bounds.getWidth() - 20), (int) (bounds.getY() + bounds.getHeight()));
+
+        graphics.setStroke(new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0));
+        graphics.setColor(Color.RED);
+        graphics.drawLine((int) (bounds.getX() + bounds.getWidth() - 20), (int) bounds.getY(), (int) (bounds.getX() + bounds.getWidth() - 20), (int) (bounds.getY() + bounds.getHeight()));
+      } else {
+        graphics.setStroke(new BasicStroke(3));
+        graphics.setColor(Color.WHITE);
+        graphics.drawLine((int) (bounds.getX() + bounds.getWidth()), (int) bounds.getY(), (int) (bounds.getX() + bounds.getWidth() - 20), (int) (bounds.getY() + bounds.getHeight()));
+
+        graphics.setStroke(new BasicStroke(3, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{9}, 0));
+        graphics.setColor(Color.RED);
+        graphics.drawLine((int) (bounds.getX() + bounds.getWidth()), (int) bounds.getY(), (int) (bounds.getX() + bounds.getWidth() - 20), (int) (bounds.getY() + bounds.getHeight()));
+      }
+    }
+
+
 
   }
 

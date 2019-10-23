@@ -469,8 +469,8 @@
       <node id="1261501792036496557" at="57,0,58,49" concept="8" />
       <node id="1261501792036496557" at="58,49,59,74" concept="8" />
       <node id="1261501792036496557" at="59,74,60,38" concept="2" />
-      <node id="1261501792036496557" at="60,38,61,498" concept="8" />
-      <node id="1261501792036496557" at="61,498,62,0" concept="11" />
+      <node id="1261501792036496557" at="60,38,61,745" concept="8" />
+      <node id="1261501792036496557" at="61,745,62,0" concept="11" />
       <node id="1261501792036496557" at="62,0,63,0" concept="11" />
       <node id="1261501792036496557" at="66,40,67,25" concept="9" />
       <node id="1261501792036496557" at="69,36,70,25" concept="9" />
@@ -496,7 +496,9 @@
       <node id="1261501792036496557" at="115,0,116,0" concept="12" trace="type$Gizw" />
       <node id="1261501792036496557" at="116,0,117,0" concept="12" trace="lanes$GiK_" />
       <node id="1261501792036496557" at="117,0,118,0" concept="12" trace="currentLight$jETz" />
-      <node id="1261501792036496557" at="121,0,122,0" concept="12" trace="hasSemaphore$jjmF" />
+      <node id="1261501792036496557" at="118,0,119,0" concept="12" trace="isClosed$oMz0" />
+      <node id="1261501792036496557" at="122,0,123,0" concept="12" trace="hasSemaphore$jjmF" />
+      <node id="1261501792036496557" at="123,0,124,0" concept="12" trace="hasBeam$jja$" />
       <node id="1261501792036496557" at="31,0,33,0" concept="3" trace="myNode" />
       <node id="1261501792036496557" at="45,0,48,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1261501792036496557" at="69,0,72,0" concept="7" trace="getShape#()Lde/itemis/mps/editor/diagram/runtime/shape/IShape;" />
@@ -556,11 +558,11 @@
         <var name="editorContext" id="1261501792036496557" />
         <var name="node" id="1261501792036496557" />
       </scope>
-      <unit id="1261501792036496557" at="120,0,123,0" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a$LINKS" />
-      <unit id="1261501792036496557" at="114,0,119,0" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a$PROPS" />
+      <unit id="1261501792036496557" at="121,0,125,0" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a$LINKS" />
+      <unit id="1261501792036496557" at="114,0,120,0" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a$PROPS" />
       <unit id="1261501792036496557" at="64,36,90,9" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a$1$1" />
       <unit id="1261501792036496557" at="53,53,99,5" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a$1" />
-      <unit id="1261501792036496557" at="30,0,124,0" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a" />
+      <unit id="1261501792036496557" at="30,0,126,0" name="TunnelProjection.editor.TunnelRoad_EditorBuilder_a" />
     </file>
     <file name="TunnelRoad_InspectorBuilder_a.java">
       <node id="1261501792036496557" at="16,93,17,19" concept="13" />
@@ -1452,8 +1454,8 @@
       <node id="1326772331897770108" at="55,0,56,52" concept="8" />
       <node id="1326772331897770108" at="56,52,57,74" concept="8" />
       <node id="1326772331897770108" at="57,74,58,38" concept="2" />
-      <node id="1326772331897770108" at="58,38,59,499" concept="8" />
-      <node id="1326772331897770108" at="59,499,60,0" concept="11" />
+      <node id="1326772331897770108" at="58,38,59,746" concept="8" />
+      <node id="1326772331897770108" at="59,746,60,0" concept="11" />
       <node id="1326772331897770108" at="60,0,61,0" concept="11" />
       <node id="1326772331897770108" at="64,40,65,25" concept="9" />
       <node id="1326772331897770108" at="67,36,68,25" concept="9" />
@@ -1478,7 +1480,9 @@
       <node id="1326772331897770108" at="112,0,113,0" concept="12" trace="type$Gizw" />
       <node id="1326772331897770108" at="113,0,114,0" concept="12" trace="lanes$GiK_" />
       <node id="1326772331897770108" at="114,0,115,0" concept="12" trace="currentLight$jETz" />
-      <node id="1326772331897770108" at="118,0,119,0" concept="12" trace="hasSemaphore$DTpI" />
+      <node id="1326772331897770108" at="115,0,116,0" concept="12" trace="isClosed$oMz0" />
+      <node id="1326772331897770108" at="119,0,120,0" concept="12" trace="hasSemaphore$DTpI" />
+      <node id="1326772331897770108" at="120,0,121,0" concept="12" trace="hasBeam$DTdB" />
       <node id="1326772331897770108" at="29,0,31,0" concept="3" trace="myNode" />
       <node id="1326772331897770108" at="43,0,46,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="1326772331897770108" at="67,0,70,0" concept="7" trace="getShape#()Lde/itemis/mps/editor/diagram/runtime/shape/IShape;" />
@@ -1538,11 +1542,11 @@
         <var name="editorContext" id="1326772331897770108" />
         <var name="node" id="1326772331897770108" />
       </scope>
-      <unit id="1326772331897770108" at="117,0,120,0" name="TunnelProjection.editor.Road_EditorBuilder_a$LINKS" />
-      <unit id="1326772331897770108" at="111,0,116,0" name="TunnelProjection.editor.Road_EditorBuilder_a$PROPS" />
+      <unit id="1326772331897770108" at="118,0,122,0" name="TunnelProjection.editor.Road_EditorBuilder_a$LINKS" />
+      <unit id="1326772331897770108" at="111,0,117,0" name="TunnelProjection.editor.Road_EditorBuilder_a$PROPS" />
       <unit id="1326772331897770108" at="62,36,88,9" name="TunnelProjection.editor.Road_EditorBuilder_a$1$1" />
       <unit id="1326772331897770108" at="51,53,97,5" name="TunnelProjection.editor.Road_EditorBuilder_a$1" />
-      <unit id="1326772331897770108" at="28,0,121,0" name="TunnelProjection.editor.Road_EditorBuilder_a" />
+      <unit id="1326772331897770108" at="28,0,123,0" name="TunnelProjection.editor.Road_EditorBuilder_a" />
     </file>
     <file name="Road_InspectorBuilder_a.java">
       <node id="1326772331897770108" at="16,87,17,19" concept="13" />
@@ -1585,113 +1589,149 @@
       <node id="4217665362115498501" at="21,0,22,0" concept="3" trace="lanes" />
       <node id="2745041319926647096" at="22,0,23,0" concept="3" trace="semaphore" />
       <node id="2745041319930083319" at="23,0,24,0" concept="3" trace="light" />
-      <node id="1434577435398073571" at="25,118,26,21" concept="2" />
-      <node id="6256680145490603960" at="26,21,27,37" concept="2" />
-      <node id="4217665362115498501" at="27,37,28,23" concept="2" />
-      <node id="2745041319926647096" at="28,23,29,31" concept="2" />
-      <node id="2745041319930083319" at="29,31,30,23" concept="2" />
-      <node id="1434577435398090394" at="37,223,38,48" concept="2" />
-      <node id="1434577435398099125" at="39,226,40,50" concept="2" />
-      <node id="4217665362111881529" at="41,230,42,50" concept="2" />
-      <node id="4217665362112025750" at="43,232,44,47" concept="2" />
-      <node id="4217665362111746944" at="45,12,46,35" concept="2" />
-      <node id="1434577435398389778" at="47,5,48,129" concept="2" />
-      <node id="1434577435400124173" at="52,95,53,0" concept="11" />
-      <node id="1434577435397924952" at="53,0,54,35" concept="2" />
-      <node id="1434577435397923841" at="54,35,55,0" concept="11" />
-      <node id="1326772331900309012" at="55,0,56,0" concept="11" />
-      <node id="1326772331900309663" at="56,0,57,44" concept="8" />
-      <node id="1326772331900310667" at="57,44,58,92" concept="8" />
-      <node id="1326772331900313550" at="58,92,59,45" concept="8" />
-      <node id="1326772331900315750" at="59,45,60,33" concept="8" />
-      <node id="6256680145490606259" at="60,33,61,0" concept="11" />
-      <node id="6256680145490616730" at="62,28,63,39" concept="2" />
-      <node id="6256680145490615463" at="63,39,64,125" concept="2" />
-      <node id="1326772331899053329" at="65,5,66,0" concept="11" />
-      <node id="4217665362115317927" at="66,0,67,107" concept="8" />
-      <node id="4217665362115313202" at="67,107,68,31" concept="2" />
-      <node id="6256680145490762490" at="68,31,69,35" concept="2" />
-      <node id="4217665362116106954" at="69,35,70,31" concept="8" />
-      <node id="4217665362115525996" at="70,31,71,0" concept="11" />
-      <node id="4217665362116429103" at="72,26,73,20" concept="10" />
-      <node id="4217665362115982992" at="74,33,75,74" concept="2" />
-      <node id="4217665362116109007" at="76,33,77,58" concept="2" />
-      <node id="4217665362116125163" at="77,58,78,143" concept="2" />
-      <node id="4217665362116154479" at="78,143,79,151" concept="2" />
-      <node id="4217665362116438423" at="80,33,81,58" concept="2" />
-      <node id="4217665362116448633" at="81,58,82,143" concept="2" />
-      <node id="4217665362116449570" at="82,143,83,151" concept="2" />
-      <node id="4217665362116450236" at="83,151,84,151" concept="2" />
-      <node id="4217665362116603754" at="85,33,86,58" concept="2" />
-      <node id="4217665362116603765" at="86,58,87,143" concept="2" />
-      <node id="4217665362116603787" at="87,143,88,151" concept="2" />
-      <node id="4217665362116603813" at="88,151,89,151" concept="2" />
-      <node id="4217665362116606818" at="89,151,90,151" concept="2" />
-      <node id="4217665362116605781" at="90,151,91,0" concept="11" />
-      <node id="2745041319927262079" at="92,5,93,0" concept="11" />
-      <node id="2745041319927464461" at="93,0,94,0" concept="11" />
-      <node id="2745041319927466962" at="94,0,95,47" concept="10" />
-      <node id="2745041319926673084" at="96,35,97,37" concept="2" />
-      <node id="2745041319926665571" at="97,37,98,101" concept="2" />
-      <node id="2745041319927874175" at="98,101,99,44" concept="2" />
-      <node id="2745041319927469741" at="99,44,100,35" concept="2" />
-      <node id="2745041319930316057" at="101,229,102,115" concept="2" />
-      <node id="2745041319927458394" at="103,14,104,115" concept="2" />
-      <node id="2745041319928065391" at="105,7,106,38" concept="2" />
-      <node id="2745041319930305242" at="107,232,108,146" concept="2" />
-      <node id="2745041319928065396" at="109,14,110,146" concept="2" />
-      <node id="2745041319928067176" at="111,7,112,37" concept="2" />
-      <node id="2745041319928485655" at="113,231,114,150" concept="2" />
-      <node id="2745041319928067181" at="115,14,116,150" concept="2" />
-      <node id="2745041319928066343" at="117,7,118,0" concept="11" />
-      <node id="2745041319927262490" at="119,5,120,0" concept="11" />
-      <node id="4217665362111745669" at="45,10,47,5" concept="0" />
-      <node id="2745041319930313722" at="103,12,105,7" concept="0" />
-      <node id="2745041319930303676" at="109,12,111,7" concept="0" />
-      <node id="2745041319928484375" at="115,12,117,7" concept="0" />
-      <node id="6256680145490612879" at="61,0,65,5" concept="6" />
-      <node id="2745041319930307775" at="100,35,105,7" concept="6" />
-      <node id="2745041319930297862" at="106,38,111,7" concept="6" />
-      <node id="2745041319928469630" at="112,37,117,7" concept="6" />
-      <node id="1326772331897770240" at="25,0,32,0" concept="1" trace="Road#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;ZILorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)V" />
-      <node id="4217665362111731602" at="36,101,47,5" concept="6" />
-      <node id="1326772331897770240" at="35,0,50,0" concept="7" trace="drawShadow#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
-      <node id="4217665362115501921" at="71,0,92,5" concept="6" />
-      <node id="2745041319926655382" at="95,47,119,5" concept="6" />
-      <node id="1326772331897770240" at="51,0,122,0" concept="7" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
-      <scope id="4217665362111731604" at="37,223,38,48" />
-      <scope id="4217665362111741235" at="39,226,40,50" />
-      <scope id="4217665362111876552" at="41,230,42,50" />
-      <scope id="4217665362112020674" at="43,232,44,47" />
-      <scope id="4217665362111745670" at="45,12,46,35" />
-      <scope id="4217665362115501923" at="72,26,73,20" />
-      <scope id="4217665362115537415" at="74,33,75,74" />
-      <scope id="2745041319930307777" at="101,229,102,115" />
-      <scope id="2745041319930313723" at="103,14,104,115" />
-      <scope id="2745041319930297864" at="107,232,108,146" />
-      <scope id="2745041319930303677" at="109,14,110,146" />
-      <scope id="2745041319928469632" at="113,231,114,150" />
-      <scope id="2745041319928484376" at="115,14,116,150" />
-      <scope id="6256680145490612881" at="62,28,64,125" />
-      <scope id="4217665362115975790" at="76,33,79,151" />
-      <scope id="4217665362116430576" at="80,33,84,151" />
-      <scope id="1326772331897770240" at="25,118,30,23" />
-      <scope id="4217665362116595428" at="85,33,91,0" />
-      <scope id="1326772331897770240" at="25,0,32,0">
+      <node id="3321041496538429012" at="24,0,25,0" concept="3" trace="beam" />
+      <node id="3321041496538429088" at="25,0,26,0" concept="3" trace="isBeamClosed" />
+      <node id="1434577435398073571" at="27,152,28,21" concept="2" />
+      <node id="6256680145490603960" at="28,21,29,37" concept="2" />
+      <node id="4217665362115498501" at="29,37,30,23" concept="2" />
+      <node id="2745041319926647096" at="30,23,31,31" concept="2" />
+      <node id="2745041319930083319" at="31,31,32,23" concept="2" />
+      <node id="3321041496538429012" at="32,23,33,21" concept="2" />
+      <node id="3321041496538429088" at="33,21,34,37" concept="2" />
+      <node id="3321041496538179036" at="40,101,41,87" concept="10" />
+      <node id="1434577435398090394" at="42,223,43,48" concept="2" />
+      <node id="1434577435398099125" at="44,226,45,50" concept="2" />
+      <node id="4217665362111881529" at="46,230,47,50" concept="2" />
+      <node id="4217665362112025750" at="48,232,49,47" concept="2" />
+      <node id="4217665362111746944" at="50,12,51,35" concept="2" />
+      <node id="1434577435398389778" at="52,5,53,129" concept="2" />
+      <node id="1434577435400124173" at="57,95,58,0" concept="11" />
+      <node id="1434577435397924952" at="58,0,59,35" concept="2" />
+      <node id="1434577435397923841" at="59,35,60,0" concept="11" />
+      <node id="1326772331900309012" at="60,0,61,0" concept="11" />
+      <node id="1326772331900309663" at="61,0,62,44" concept="8" />
+      <node id="1326772331900310667" at="62,44,63,92" concept="8" />
+      <node id="1326772331900313550" at="63,92,64,45" concept="8" />
+      <node id="1326772331900315750" at="64,45,65,33" concept="8" />
+      <node id="6256680145490606259" at="65,33,66,0" concept="11" />
+      <node id="3321041496538151275" at="66,0,67,0" concept="11" />
+      <node id="3321041496538157176" at="67,0,68,131" concept="10" />
+      <node id="6256680145490616730" at="69,28,70,39" concept="2" />
+      <node id="6256680145490615463" at="70,39,71,125" concept="2" />
+      <node id="1326772331899053329" at="72,5,73,0" concept="11" />
+      <node id="3321041496538136877" at="73,0,74,32" concept="10" />
+      <node id="3321041496538115403" at="74,32,75,0" concept="11" />
+      <node id="4217665362115317927" at="75,0,76,107" concept="8" />
+      <node id="4217665362115313202" at="76,107,77,31" concept="2" />
+      <node id="6256680145490762490" at="77,31,78,35" concept="2" />
+      <node id="4217665362116106954" at="78,35,79,31" concept="8" />
+      <node id="4217665362115525996" at="79,31,80,0" concept="11" />
+      <node id="3321041496538147284" at="80,0,81,119" concept="10" />
+      <node id="4217665362116429103" at="82,26,83,20" concept="10" />
+      <node id="4217665362115982992" at="84,33,85,74" concept="2" />
+      <node id="4217665362116109007" at="86,33,87,58" concept="2" />
+      <node id="4217665362116125163" at="87,58,88,143" concept="2" />
+      <node id="4217665362116154479" at="88,143,89,151" concept="2" />
+      <node id="4217665362116438423" at="90,33,91,58" concept="2" />
+      <node id="4217665362116448633" at="91,58,92,143" concept="2" />
+      <node id="4217665362116449570" at="92,143,93,151" concept="2" />
+      <node id="4217665362116450236" at="93,151,94,151" concept="2" />
+      <node id="4217665362116603754" at="95,33,96,58" concept="2" />
+      <node id="4217665362116603765" at="96,58,97,143" concept="2" />
+      <node id="4217665362116603787" at="97,143,98,151" concept="2" />
+      <node id="4217665362116603813" at="98,151,99,151" concept="2" />
+      <node id="4217665362116606818" at="99,151,100,151" concept="2" />
+      <node id="4217665362116605781" at="100,151,101,0" concept="11" />
+      <node id="2745041319927464461" at="102,5,103,0" concept="11" />
+      <node id="2745041319927466962" at="103,0,104,63" concept="10" />
+      <node id="2745041319926673084" at="105,35,106,37" concept="2" />
+      <node id="2745041319926665571" at="106,37,107,101" concept="2" />
+      <node id="2745041319927874175" at="107,101,108,44" concept="2" />
+      <node id="2745041319927469741" at="108,44,109,35" concept="2" />
+      <node id="2745041319930316057" at="110,229,111,115" concept="2" />
+      <node id="2745041319927458394" at="112,14,113,115" concept="2" />
+      <node id="2745041319928065391" at="114,7,115,38" concept="2" />
+      <node id="2745041319930305242" at="116,232,117,146" concept="2" />
+      <node id="2745041319928065396" at="118,14,119,146" concept="2" />
+      <node id="2745041319928067176" at="120,7,121,37" concept="2" />
+      <node id="2745041319928485655" at="122,231,123,150" concept="2" />
+      <node id="2745041319928067181" at="124,14,125,150" concept="2" />
+      <node id="2745041319928066343" at="126,7,127,0" concept="11" />
+      <node id="3321041496538635455" at="128,5,129,0" concept="11" />
+      <node id="3321041496538657495" at="129,0,130,34" concept="10" />
+      <node id="3321041496539397433" at="131,30,132,77" concept="10" />
+      <node id="3321041496539136842" at="133,30,134,47" concept="2" />
+      <node id="3321041496538926602" at="134,47,135,39" concept="2" />
+      <node id="3321041496538932206" at="135,39,136,187" concept="2" />
+      <node id="3321041496538926294" at="136,187,137,0" concept="11" />
+      <node id="3321041496538669081" at="137,0,138,115" concept="2" />
+      <node id="3321041496538670511" at="138,115,139,37" concept="2" />
+      <node id="3321041496538673039" at="139,37,140,187" concept="2" />
+      <node id="3321041496539398298" at="141,14,142,47" concept="2" />
+      <node id="3321041496539398305" at="142,47,143,39" concept="2" />
+      <node id="3321041496539398310" at="143,39,144,182" concept="2" />
+      <node id="3321041496539398353" at="144,182,145,0" concept="11" />
+      <node id="3321041496539398368" at="145,0,146,115" concept="2" />
+      <node id="3321041496539398373" at="146,115,147,37" concept="2" />
+      <node id="3321041496539398378" at="147,37,148,182" concept="2" />
+      <node id="3321041496538422138" at="150,5,151,0" concept="11" />
+      <node id="3321041496538422902" at="151,0,152,0" concept="11" />
+      <node id="2745041319927262490" at="152,0,153,0" concept="11" />
+      <node id="4217665362111745669" at="50,10,52,5" concept="0" />
+      <node id="2745041319930313722" at="112,12,114,7" concept="0" />
+      <node id="2745041319930303676" at="118,12,120,7" concept="0" />
+      <node id="2745041319928484375" at="124,12,126,7" concept="0" />
+      <node id="6256680145490612879" at="68,131,72,5" concept="6" />
+      <node id="2745041319930307775" at="109,35,114,7" concept="6" />
+      <node id="2745041319930297862" at="115,38,120,7" concept="6" />
+      <node id="2745041319928469630" at="121,37,126,7" concept="6" />
+      <node id="3321041496539394089" at="141,12,149,7" concept="0" />
+      <node id="1326772331897770240" at="27,0,36,0" concept="1" trace="Road#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;ZILorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;Lorg/jetbrains/mps/openapi/model/SNode;Z)V" />
+      <node id="4217665362111731602" at="41,87,52,5" concept="6" />
+      <node id="1326772331897770240" at="39,0,55,0" concept="7" trace="drawShadow#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <node id="3321041496539389414" at="132,77,149,7" concept="6" />
+      <node id="3321041496538640430" at="130,34,150,5" concept="6" />
+      <node id="4217665362115501921" at="81,119,102,5" concept="6" />
+      <node id="2745041319926655382" at="104,63,128,5" concept="6" />
+      <node id="1326772331897770240" at="56,0,155,0" concept="7" trace="draw#(Ljava/awt/Graphics2D;Ljava/awt/geom/Rectangle2D;Lde/itemis/mps/editor/diagram/runtime/shape/IShapeStyle;)V" />
+      <scope id="4217665362111731604" at="42,223,43,48" />
+      <scope id="4217665362111741235" at="44,226,45,50" />
+      <scope id="4217665362111876552" at="46,230,47,50" />
+      <scope id="4217665362112020674" at="48,232,49,47" />
+      <scope id="4217665362111745670" at="50,12,51,35" />
+      <scope id="4217665362115501923" at="82,26,83,20" />
+      <scope id="4217665362115537415" at="84,33,85,74" />
+      <scope id="2745041319930307777" at="110,229,111,115" />
+      <scope id="2745041319930313723" at="112,14,113,115" />
+      <scope id="2745041319930297864" at="116,232,117,146" />
+      <scope id="2745041319930303677" at="118,14,119,146" />
+      <scope id="2745041319928469632" at="122,231,123,150" />
+      <scope id="2745041319928484376" at="124,14,125,150" />
+      <scope id="6256680145490612881" at="69,28,71,125" />
+      <scope id="4217665362115975790" at="86,33,89,151" />
+      <scope id="4217665362116430576" at="90,33,94,151" />
+      <scope id="4217665362116595428" at="95,33,101,0" />
+      <scope id="1326772331897770240" at="27,152,34,37" />
+      <scope id="3321041496539389416" at="133,30,140,187" />
+      <scope id="3321041496539394090" at="141,14,148,182" />
+      <scope id="1326772331897770240" at="27,0,36,0">
+        <var name="beam" id="3321041496538429012" />
+        <var name="isBeamClosed" id="3321041496538429088" />
         <var name="isTunnelRoad" id="6256680145490603960" />
         <var name="lanes" id="4217665362115498501" />
         <var name="light" id="2745041319930083319" />
         <var name="semaphore" id="2745041319926647096" />
         <var name="type" id="1434577435398073571" />
       </scope>
-      <scope id="1326772331897770240" at="36,101,48,129" />
-      <scope id="1326772331897770240" at="35,0,50,0">
+      <scope id="1326772331897770240" at="40,101,53,129" />
+      <scope id="1326772331897770240" at="39,0,55,0">
         <var name="bounds" id="1326772331897770240" />
         <var name="graphics" id="1326772331897770240" />
         <var name="style" id="1326772331897770240" />
       </scope>
-      <scope id="2745041319926655384" at="96,35,118,0" />
-      <scope id="1326772331897770240" at="52,95,120,0">
+      <scope id="3321041496538640432" at="131,30,149,7" />
+      <scope id="2745041319926655384" at="105,35,127,0" />
+      <scope id="1326772331897770240" at="57,95,153,0">
         <var name="dashed" id="4217665362115317928" />
         <var name="equalLanesDivision" id="4217665362116106957" />
         <var name="leftPointX" id="1326772331900309666" />
@@ -1699,12 +1739,12 @@
         <var name="rightPointX" id="1326772331900313553" />
         <var name="rightPointY" id="1326772331900315753" />
       </scope>
-      <scope id="1326772331897770240" at="51,0,122,0">
+      <scope id="1326772331897770240" at="56,0,155,0">
         <var name="bounds" id="1326772331897770240" />
         <var name="graphics" id="1326772331897770240" />
         <var name="style" id="1326772331897770240" />
       </scope>
-      <unit id="1326772331897770240" at="17,0,124,0" name="TunnelProjection.editor.Road" />
+      <unit id="1326772331897770240" at="17,0,157,0" name="TunnelProjection.editor.Road" />
     </file>
   </root>
   <root nodeRef="r:f412b4d7-7fa6-482b-a6b4-ebb812714b46(TunnelProjection.editor)/1326772331897789066">

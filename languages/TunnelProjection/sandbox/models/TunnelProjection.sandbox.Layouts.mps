@@ -57,7 +57,9 @@
       <concept id="1434577435393143624" name="TunnelProjection.structure.LeftPointReference" flags="ng" index="2OzDvr">
         <reference id="1434577435393143625" name="leftPointConnect" index="2OzDvq" />
       </concept>
-      <concept id="2745041319925516929" name="TunnelProjection.structure.Beam" flags="ng" index="1TX_88" />
+      <concept id="2745041319925516929" name="TunnelProjection.structure.Beam" flags="ng" index="1TX_88">
+        <property id="2745041319926257417" name="isClosed" index="1TSgY0" />
+      </concept>
       <concept id="2745041319925516926" name="TunnelProjection.structure.Semaphore" flags="ng" index="1TX_bR">
         <property id="2745041319926444015" name="currentLight" index="1TT7tA" />
       </concept>
@@ -634,7 +636,9 @@
         <node concept="mPxc7" id="GOgb$rVRgm" role="mEeLy" />
         <node concept="$ciCN" id="GOgb$rVRgn" role="M133B">
           <property role="$d6Uk" value="2" />
-          <node concept="1TX_88" id="2oom8_vYls5" role="1TVHES" />
+          <node concept="1TX_88" id="2oom8_vYls5" role="1TVHES">
+            <property role="1TSgY0" value="true" />
+          </node>
           <node concept="1TX_bR" id="2SmHqkXv3jm" role="1TVHEW">
             <property role="1TT7tA" value="2oom8_vZ2ZF/Red" />
           </node>
@@ -670,18 +674,18 @@
       <node concept="37mRIm" id="GOgb$rVRgv" role="37mRID">
         <property role="37mO49" value="807341396987966487" />
         <node concept="gqqVs" id="GOgb$rVRgu" role="37mO4d">
-          <property role="gqqTZ" value="175.0" />
-          <property role="gqqTW" value="17.0" />
-          <property role="gqqTX" value="237.0" />
-          <property role="gqqTy" value="67.0" />
+          <property role="gqqTZ" value="149.0" />
+          <property role="gqqTW" value="6.0" />
+          <property role="gqqTX" value="382.0" />
+          <property role="gqqTy" value="85.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
       <node concept="37mRIm" id="GOgb$rVRgx" role="37mRID">
         <property role="37mO49" value="807341396987966484" />
         <node concept="gqqVs" id="GOgb$rVRgw" role="37mO4d">
-          <property role="gqqTZ" value="47.0" />
-          <property role="gqqTW" value="17.0" />
+          <property role="gqqTZ" value="15.0" />
+          <property role="gqqTW" value="2.0" />
           <property role="gqqTX" value="30.0" />
           <property role="gqqTy" value="30.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -700,8 +704,8 @@
       <node concept="37mRIm" id="GOgb$s2UeL" role="37mRID">
         <property role="37mO49" value="807341396989813677" />
         <node concept="gqqVs" id="GOgb$s2UeK" role="37mO4d">
-          <property role="gqqTZ" value="111.0" />
-          <property role="gqqTW" value="-13.0" />
+          <property role="gqqTZ" value="58.0" />
+          <property role="gqqTW" value="54.0" />
           <property role="gqqTX" value="30.0" />
           <property role="gqqTy" value="30.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
