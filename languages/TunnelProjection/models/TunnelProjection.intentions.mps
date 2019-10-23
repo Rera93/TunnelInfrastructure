@@ -2709,5 +2709,165 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2SmHqkXAkYX">
+    <property role="TrG5h" value="AddOrRemoveBeamRoad" />
+    <ref role="2ZfgGC" to="j6tt:19DD6w4_l0S" resolve="Road" />
+    <node concept="2S6ZIM" id="2SmHqkXAkYY" role="2ZfVej">
+      <node concept="3clFbS" id="2SmHqkXAkYZ" role="2VODD2">
+        <node concept="3clFbJ" id="2SmHqkXAl4i" role="3cqZAp">
+          <node concept="2OqwBi" id="2SmHqkXAlN_" role="3clFbw">
+            <node concept="2OqwBi" id="2SmHqkXAloW" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2SmHqkXAl90" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2SmHqkXAlA3" role="2OqNvi">
+                <ref role="3Tt5mk" to="j6tt:2oom8_vVwEL" resolve="hasBeam" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2SmHqkXAm0q" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="2SmHqkXAl4k" role="3clFbx">
+            <node concept="3cpWs6" id="2SmHqkXAm4Z" role="3cqZAp">
+              <node concept="Xl_RD" id="2SmHqkXAm5G" role="3cqZAk">
+                <property role="Xl_RC" value="Add Beam" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2SmHqkXAmkM" role="9aQIa">
+            <node concept="3clFbS" id="2SmHqkXAmkN" role="9aQI4">
+              <node concept="3cpWs6" id="2SmHqkXAmlA" role="3cqZAp">
+                <node concept="Xl_RD" id="2SmHqkXAmmu" role="3cqZAk">
+                  <property role="Xl_RC" value="Remove Beam" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2SmHqkXAkZ0" role="2ZfgGD">
+      <node concept="3clFbS" id="2SmHqkXAkZ1" role="2VODD2">
+        <node concept="3clFbJ" id="2SmHqkXAmqQ" role="3cqZAp">
+          <node concept="2OqwBi" id="2SmHqkXAn1n" role="3clFbw">
+            <node concept="2OqwBi" id="2SmHqkXAmAU" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2SmHqkXAmrh" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2SmHqkXAmNV" role="2OqNvi">
+                <ref role="3Tt5mk" to="j6tt:2oom8_vVwEL" resolve="hasBeam" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2SmHqkXAne6" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="2SmHqkXAmqS" role="3clFbx">
+            <node concept="3clFbF" id="2SmHqkXAniA" role="3cqZAp">
+              <node concept="2OqwBi" id="2SmHqkXAnQ_" role="3clFbG">
+                <node concept="2OqwBi" id="2SmHqkXAns8" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2SmHqkXAni_" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2SmHqkXAnD9" role="2OqNvi">
+                    <ref role="3Tt5mk" to="j6tt:2oom8_vVwEL" resolve="hasBeam" />
+                  </node>
+                </node>
+                <node concept="zfrQC" id="2SmHqkXAo3j" role="2OqNvi">
+                  <ref role="1A9B2P" to="j6tt:2oom8_vVwE1" resolve="Beam" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2SmHqkXAo71" role="9aQIa">
+            <node concept="3clFbS" id="2SmHqkXAo72" role="9aQI4">
+              <node concept="3clFbF" id="2SmHqkXAoc1" role="3cqZAp">
+                <node concept="2OqwBi" id="2SmHqkXAoAm" role="3clFbG">
+                  <node concept="2OqwBi" id="2SmHqkXAocj" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="2SmHqkXAoc0" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2SmHqkXAoqR" role="2OqNvi">
+                      <ref role="3Tt5mk" to="j6tt:2oom8_vVwEL" resolve="hasBeam" />
+                    </node>
+                  </node>
+                  <node concept="3YRAZt" id="2SmHqkXAoN4" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2SmHqkXA$sd">
+    <property role="TrG5h" value="AddOrRemoveBeamTunnelRoad" />
+    <ref role="2ZfgGC" to="j6tt:161Kj8PGeG1" resolve="TunnelRoad" />
+    <node concept="2S6ZIM" id="2SmHqkXA$se" role="2ZfVej">
+      <node concept="3clFbS" id="2SmHqkXA$sf" role="2VODD2">
+        <node concept="3clFbJ" id="2SmHqkXA$xu" role="3cqZAp">
+          <node concept="2OqwBi" id="2SmHqkXA_kY" role="3clFbw">
+            <node concept="2OqwBi" id="2SmHqkXA$Q8" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2SmHqkXA$Ac" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2SmHqkXA_7s" role="2OqNvi">
+                <ref role="3Tt5mk" to="j6tt:2oom8_vXC8L" resolve="hasBeam" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2SmHqkXA_AE" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="2SmHqkXA$xw" role="3clFbx">
+            <node concept="3cpWs6" id="2SmHqkXA_Ff" role="3cqZAp">
+              <node concept="Xl_RD" id="2SmHqkXA_FV" role="3cqZAk">
+                <property role="Xl_RC" value="Add Beam" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2SmHqkXA_IT" role="9aQIa">
+            <node concept="3clFbS" id="2SmHqkXA_IU" role="9aQI4">
+              <node concept="3cpWs6" id="2SmHqkXA_U1" role="3cqZAp">
+                <node concept="Xl_RD" id="2SmHqkXA_UU" role="3cqZAk">
+                  <property role="Xl_RC" value="Remove Beam" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2SmHqkXA$sg" role="2ZfgGD">
+      <node concept="3clFbS" id="2SmHqkXA$sh" role="2VODD2">
+        <node concept="3clFbJ" id="2SmHqkXA_Zi" role="3cqZAp">
+          <node concept="2OqwBi" id="2SmHqkXAAiZ" role="3clFbw">
+            <node concept="2OqwBi" id="2SmHqkXAA4a" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2SmHqkXA_ZH" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2SmHqkXAA5z" role="2OqNvi">
+                <ref role="3Tt5mk" to="j6tt:2oom8_vXC8L" resolve="hasBeam" />
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2SmHqkXAAvI" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="2SmHqkXA_Zk" role="3clFbx">
+            <node concept="3clFbF" id="2SmHqkXAAHd" role="3cqZAp">
+              <node concept="2OqwBi" id="2SmHqkXAAU$" role="3clFbG">
+                <node concept="2OqwBi" id="2SmHqkXAAJK" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="2SmHqkXAAHc" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2SmHqkXAALh" role="2OqNvi">
+                    <ref role="3Tt5mk" to="j6tt:2oom8_vXC8L" resolve="hasBeam" />
+                  </node>
+                </node>
+                <node concept="zfrQC" id="2SmHqkXAB7i" role="2OqNvi">
+                  <ref role="1A9B2P" to="j6tt:2oom8_vVwE1" resolve="Beam" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="2SmHqkXABaQ" role="9aQIa">
+            <node concept="3clFbS" id="2SmHqkXABaR" role="9aQI4">
+              <node concept="3clFbF" id="2SmHqkXABif" role="3cqZAp">
+                <node concept="2OqwBi" id="2SmHqkXABvk" role="3clFbG">
+                  <node concept="2OqwBi" id="2SmHqkXABk_" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="2SmHqkXABie" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2SmHqkXABm1" role="2OqNvi">
+                      <ref role="3Tt5mk" to="j6tt:2oom8_vXC8L" resolve="hasBeam" />
+                    </node>
+                  </node>
+                  <node concept="3YRAZt" id="2SmHqkXABG2" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

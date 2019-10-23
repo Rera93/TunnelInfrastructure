@@ -48,11 +48,12 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 2:
         if (true) {
           // concept 
-          intentions = new IntentionFactory[4];
+          intentions = new IntentionFactory[5];
           intentions[0] = new ChangeRoadType_Intention();
           intentions[1] = new ChangeRoadLanes_Intention();
           intentions[2] = new ChangeSemaphoreLightForRoad_Intention();
           intentions[3] = new AddOrRemoveSemaphoreRoad_Intention();
+          intentions[4] = new AddOrRemoveBeamRoad_Intention();
         }
         break;
       case 3:
@@ -75,11 +76,12 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 5:
         if (true) {
           // concept 
-          intentions = new IntentionFactory[4];
+          intentions = new IntentionFactory[5];
           intentions[0] = new ChangeTunnelRoadType_Intention();
           intentions[1] = new ChangeTunnelRoadLanes_Intention();
           intentions[2] = new ChangeSemaphoreLightForTunnelRoad_Intention();
           intentions[3] = new AddOrRemoveSemaphoreTunnelRoad_Intention();
+          intentions[4] = new AddOrRemoveBeamTunnelRoad_Intention();
         }
         break;
       default:
@@ -91,7 +93,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[15];
+    IntentionFactory[] rv = new IntentionFactory[17];
     rv[0] = new FlipLeftPointDirection_Intention();
     rv[1] = new FlipRightPointDirection_Intention();
     rv[2] = new ChangeRoadType_Intention();
@@ -107,6 +109,8 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[12] = new ChangeSemaphoreLightForTunnelRoad_Intention();
     rv[13] = new AddOrRemoveSemaphoreRoad_Intention();
     rv[14] = new AddOrRemoveSemaphoreTunnelRoad_Intention();
+    rv[15] = new AddOrRemoveBeamRoad_Intention();
+    rv[16] = new AddOrRemoveBeamTunnelRoad_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb75aL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb76fL), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804955038L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1269a46804bfb761L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x4799c809c7d0add2L), MetaIdFactory.conceptId(0x72c81d76425049a4L, 0x8dfa274e9e7a2b19L, 0x1181c13235b0eb01L)).seal();
