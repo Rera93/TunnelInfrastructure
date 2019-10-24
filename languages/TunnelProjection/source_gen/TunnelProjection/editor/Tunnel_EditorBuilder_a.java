@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import de.itemis.mps.editor.diagram.runtime.shape.IShape;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor;
 import de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor;
@@ -57,7 +58,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
         EditorCell contentCell = createEmpty_0();
         final List<EditorCell> contentCells = new ArrayList<EditorCell>();
         contentCells.add(contentCell);
-        final IShape shape = new TunnelShape(ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.holes$OmIQ)).count(), ((SNode) _variablesContext.getValue("thisNode")));
+        final IShape shape = new TunnelShape(ListSequence.fromList(SLinkOperations.getChildren(((SNode) _variablesContext.getValue("thisNode")), LINKS.holes$OmIQ)).count(), SLinkOperations.getChildren(SNodeOperations.copyNode(((SNode) _variablesContext.getValue("thisNode"))), LINKS.holes$OmIQ));
 
 
         IBoxAccessor accessor = new SNodeBoxAccessor(node) {
